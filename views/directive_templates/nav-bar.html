@@ -1,0 +1,30 @@
+<nav>
+    <div class="wrapper show-for-medium">
+        <ul>
+            <li ng-repeat="rec in copy.navBar.links" ng-class="{'show-border': menuChange==rec.route}">
+                <a href='#{{rec.route}}' ng-click="menuChangeClick(rec.route)">{{rec.name}}</a>
+            </li>
+        </ul>
+    </div>
+    <div class="show-for-small-only">
+        <div class="title-bar" >
+            <button class="menu-button" ng-class="{'active': menuClick}" ng-init="menuClick=false" ng-click="menuClick = !menuClick" type="button" data-toggle>
+                <span></span>
+            </button>
+            <div class="title-bar-title">{{copy.navBar.heading.who}}</div>
+        </div>
+
+        <div class="top-bar" ng-class="{'open':menuClick}">
+            <div class="top-bar-child">
+                <ul class="dropdown menu" data-dropdown-menu>
+                    <li ng-repeat="rec in copy.navBar.links" >
+                        <a href='#{{rec.route}}' ng-click="menuChangeClick(rec.route)">
+                            <span ng-class="{'show-border': menuChange==rec.route}">{{rec.name}}</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</nav>
