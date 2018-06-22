@@ -103,6 +103,23 @@ app.directive('welcomeDir', function(){
     };
 });
 
+
+app.directive('servicesDir', function(){
+    return {
+        restrict: 'EA',
+        scope: false,
+        templateUrl: 'directive_templates/services.html',
+        link: function($scope, elem, attrs){
+
+        },
+        controller: function($scope){
+
+
+
+        }
+    };
+});
+
 app.directive('contactDir', function(){
     return {
         restrict: 'EA',

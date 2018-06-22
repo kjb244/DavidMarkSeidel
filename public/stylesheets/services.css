@@ -1,0 +1,46 @@
+[data-section="services"] .pricing-wrapper{
+    margin-top: 20px;
+}
+
+[data-section="services"] ul:nth-child(n+2){
+    margin-top: 20px;
+}
+
+[data-section="services"] ul{
+    margin: 0;
+}
+[data-section="services"] li{
+    list-style-type: none;
+
+}
+
+[data-section="services"] .pricing-table{
+    border: solid 1px #DDDDDD;
+
+}
+
+[data-section="services"]  li {
+    border-bottom: dotted 1px #DDDDDD;
+    font-size: 0.75rem;
+    padding: 0.875rem 1.125rem;
+
+}
+
+[data-section="services"] .title {
+    background-color: #333333;
+    color: #EEEEEE;
+    font-size: 0.875rem;
+    border-bottom: 0;
+}
+
+[data-section="services"] .price {
+    background-color: #F6F6F6;
+    color: #333333;
+    font-size: 1.75rem;
+    border-bottom: 0;
+}
+
+[data-section="services"] .description {
+    color: #777777;
+    font-size: 1.1rem;
+}

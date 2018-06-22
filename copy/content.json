@@ -40,6 +40,41 @@
     ]
   },
   "routes": {
+    "services": {
+      "heading": "David Mark Seidel has a package to fit every couple’s needs and budget. He will customize one just for you that is perfect for your ceremony. He is an ordained minister and wedding officiant in good standing and  licensed to perform weddings in the United States.",
+      "subHeading": "",
+      "data": [
+        {
+          "heading": "Civil Ceremony",
+          "price": "$700",
+          "description": "Our Civil Ceremony is the most basic of our packages. These ceremonies are perfect for couples looking to tie the knot in a quick, but meaningful manner.",
+          "points": [
+            "Set ceremony script",
+            "Lovely, keepsake certificates of marriage suitable for framing",
+            "Experienced, professional and caring officiant for your ceremony",
+            "Vocal music can be sung by David if requested",
+            "Marriage license(s) sent by certified mail back to the County Clerk of Record",
+            "Can be performed anywhere within Mecklenburg County – outside of county may include a small travel fee"
+          ]
+        },
+        {
+          "heading": "Planned Ceremony",
+          "price": "$900",
+          "description": "Planned ceremony description",
+          "points": [
+            "Ceremony, wedding vows, and custom script development for the big day",
+            "As much phone and e-mail communication and personal consultation as needed",
+            "Experienced, professional and caring officiant for your ceremony",
+            "Vocal music can be sung by David if requested",
+            "Lovely, keepsake certificates of marriage suitable for framing",
+            "Marriage license(s) sent by certified mail back to the County Clerk of Record",
+            "Travel within Mecklenburg County – a small travel fee may incur if outside the county",
+            "Rehearsals are optional",
+            "Optional professional music coordination for the ceremony with our in-house audio technician."
+          ]
+        }
+      ]
+    },
     "testimonials": {
       "heading": "Testimonials",
       "data": [
