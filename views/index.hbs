@@ -1,0 +1,26 @@
+<div class="overlay"></div>
+<div ng-app="myApp">
+    <div ng-controller="ctrlMain" class="angular-controller-main">
+        <section class="main-wrapper">
+            
+            <div class="row collapse">
+                <div class="small-12 columns" data-section="menu">
+                    <nav-bar-dir/>
+                </div>
+            </div>
+
+
+            <div id="main" class="animate-switch-container">
+                <div class="animate-switch"  ng-class="menuChangeDirection"   ng-view></div>
+            </div>
+
+
+        </section>
+        <section class="modal-wrapper">
+            <modal-overlay-dir/>
+        </section>
+        <footer-dir></footer-dir>
+
+    </div>
+</div>
+

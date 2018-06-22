@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="small-12 medium-8 medium-centered columns">
+        <h2>{{copy.routes.contact.header}}</h2>
+        <h4>{{copy.routes.contact.subHeader}}</h4>
+        <form name="contactForm">
+            <label>
+                *Name
+                <input type="text" name="name" ng-minlength="3" ng-model="form.name"/>
+            </label>
+            <label>
+                *Email
+                <input type="email" required name="email"  ng-model="form.email"/>
+            </label>
+            <label>
+                Phone
+                <input type="text" name="phone"  ng-model="form.phone"/>
+            </label>
+            <label>
+                Comments
+                <textarea name="comments" ng-model="form.comments"/>
+            </label>
+            <a class="button" ng-disabled="!contactForm.$valid">Submit</a>
+        </form>
+
+    </div>
+</div>

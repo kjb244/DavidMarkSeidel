@@ -1,0 +1,62 @@
+section.modal-wrapper .modal{
+    position: fixed;
+    top: 0;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #f3f3f3;
+    padding: 20px 10px 10px 20px;
+    border-radius: 3px;
+    z-index: 12;
+}
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    section.modal-wrapper .modal {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    section.modal-wrapper .modal {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+section.modal-wrapper .modal-bootstrapped{
+    animation: topDown .8s ease-out forwards;
+}
+
+@keyframes topDown {
+    0%{
+        top: -600px;
+        opacity: 0;
+    }
+    80%{
+        top: 180px;
+        opacity: .7;
+    }
+    100%{
+        top: 100px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 39.9375em) {
+    section.modal-wrapper .modal{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+}
+
+section.modal-wrapper .button{
+    width: 100%;
+}
+
+section.modal-wrapper p{
+    text-align: center;
+}

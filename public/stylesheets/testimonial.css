@@ -1,0 +1,63 @@
+[data-section="testimonial"] h3{
+    text-align: center;
+}
+
+[data-section="testimonial"] .container {
+    padding: 20px;
+    background-color: #f6ddf6;
+    position: relative;
+}
+
+[data-section="testimonial"] .container-wrapper{
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+[data-section="testimonial"] .container-wrapper:not(:last-child){
+    border-bottom: 1px solid #afa2a2;
+    padding-bottom: 30px;
+}
+
+[data-section="testimonial"] .container-wrapper p{
+    padding: 0 12px;
+    margin: 0;
+}
+
+[data-section="testimonial"] .container-wrapper .container::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #f6ddf6;
+}
+
+[data-section="testimonial"] .container-wrapper.even .container::after {
+
+    left: 20px;
+
+}
+
+[data-section="testimonial"] .container-wrapper.odd .container::after {
+    right: 20px;
+
+}
+
+[data-section="testimonial"] .container-wrapper.odd .bottom {
+    text-align: right;
+}
+
+[data-section="testimonial"] .bottom{
+    margin-top: 20px;
+
+}
+
+[data-section="testimonial"] .bottom h4{
+    font-weight: bold;
+}
+
+[data-section="testimonial"] .bottom h5{
+    color: #9c8b8b;
+}

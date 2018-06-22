@@ -1,0 +1,9 @@
+<div class="modal row" ng-class="{'modal-bootstrapped': showModal, 'hide': !showModal}">
+    <div class="small-12 medium-7 large-6 medium-centered large-centered columns">
+        <p>{{copy.modal.heading}}</p>
+        <div ng-repeat="rec in copy.modal.inputs">
+            <input type="{{rec.type}}" placeholder="{{rec.placeholder}}" ng-model="inputs[$index]"/>
+        </div>
+        <a class="button" ng-click="submitModal()">{{copy.modal.buttonText}}</a>
+    </div>
+</div>

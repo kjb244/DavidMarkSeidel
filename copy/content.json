@@ -1,0 +1,817 @@
+{
+  "modal": {
+    "heading": "This site requires a password",
+    "inputs": [
+      {
+        "type": "password",
+        "placeholder": "password",
+        "model": "password"
+      }
+    ],
+    "buttonText": "Submit"
+  },
+  "navBar": {
+    "heading": {
+      "who": "David Seidel",
+      "date": "October 27, 2018",
+      "location": "Charlotte, NC"
+    },
+    "links": [
+      {
+        "name": "Welcome",
+        "route": "welcome"
+      },
+      {
+        "name": "About",
+        "route": "about"
+      },
+      {
+        "name": "Services",
+        "route": "services"
+      },
+      {
+        "name": "Testimonial",
+        "route": "testimonial"
+      },
+      {
+        "name": "Contact",
+        "route": "contact"
+      }
+    ]
+  },
+  "routes": {
+    "testimonials": {
+      "heading": "Testimonials",
+      "data": [
+        {
+          "text": [
+            "It is with pleasure that I can attest that David is truly an inspiration of ideas and goodwill to everyone he encounters.",
+            "He is revered by his peers and constantly pays it forward with his boundless energy to mentor those in need of direction and growth. And he does all of these with grace and ease. One of David’s best traits is his ability to listen to not only what someone is saying but what is also not being said and with this observation he allows us to gain further insight into ourselves and the issue at hand.   David is truly a person who leads by example and “walks the walk” for others to learn from him."
+          ],
+          "person": "Brian J.",
+          "sub": "Charlotte Graduate Student"
+        },
+        {
+          "text": [
+            "Mr. Seidel has a wealth of experience working with diverse groups and helping them connect with the conversations, lessons, etc., he is sharing. He is thoughtful in his planning and implementation and sets high expectations for those under his instruction."
+          ],
+          "person": "Dr. Fuller",
+          "sub": "UNC Charlotte and Winthrop University, College of Education"
+        },
+        {
+          "text": [
+            "Mr. Seidel has the power of connecting students with their emotional identities. He can bridge a human connection with a student in a world where essentially we are disconnected from each other emotionally by the basic ways we converse day to day. He incorporates into the formulation of his teachings three things: trust, inspiration, and empathy.",
+            "He is transparent in his intentions for us as students by engaging our short attention spans, and appealing to our need to make a positive impact on our community."
+          ],
+          "person": "Caroline D.",
+          "sub": "UNC Charlotte Marketing Major"
+        },
+        {
+          "text": [
+            "Your book made me realize a life lesson that I couldn’t quite teach myself. It taught me the importance of understanding exactly what it is that I want to do with my life. I came to UNCC thinking I would study physics, the subject that captivated me in high school, and take four years of math and science classes, earn my degree, ride off into the sunset. You get the picture. During my first semester I only had one class that required any sort of formal writing assignments. It was in that class that I came to understand my passion for writing and research. I always had a knack for writing and speaking in high school; I even competed in speech and debate. It was not until reading your book for Professor Ingram’s class that I decided to switch my major from physics to communications with a focus in journalism. When people ask me what I want to do with my life, I am now overjoyed to tell them that I want to write. If it were not for your book, I may not have made that decision."
+          ],
+          "person": "JS",
+          "sub": "Feb 2016"
+        }
+      ]
+    },
+    "contact": {
+      "header": "Interested in Connecting?",
+      "subHeader": "Please fill out the information below"
+    },
+    "welcome": {
+      "heading": "David Mark Seidel - Wedding Officiant",
+      "headingSub": "Wedding Officiant, Multi-Lingual, Multi-Cultural, Ambassador of Love",
+      "paras": [
+        "For more than 35 years, David has been performing ceremonies both spiritual and secular all over the  world.  He is a student and practitioner of World Faiths, among them: Christian, Jewish, Hindu, and Native American.  He spent 10 years of dedicated scriptural study in monastic settings both in New York and India.  His successful married life is 38 years strong and that was preceded by a 10 year blossoming friendship to his wife Jeanette ( and he is father to the handsomest 16 year old young man in Charlotte,  son Jonathan ).",
+        "He currently officiates non-denominational weddings in the Charlotte region and beyond! He approaches the marriage ceremony as a wondrous vessel infused with joy and celebration.   Yes, you will be married and you will have a very great time! The sacred and the sublime are guests at your wedding.  Allow David to meet with you and create a ceremony and an event that launches your marriage with exquisite positive energy, a day that will “love you back to life again and again.",
+        "AND, his wedding team includes the most amazing DJ,  the classic 1958 Rolls Royce Silver Cloud and the finest musicians and performers from all musical genres.  If you are interested in booking David as your Officiant you can reach him at 704- 526-7284, or email david@davidmarkseidel.com for availability. See Officiating Services page on this site.  David is multi-lingual Spanish/English and also is skilled in Hindi/Sanskrit for Indian weddings and Pujas. Same Sex Unions are Welcome."
+      ],
+      "slider": {
+        "showPrevNext": true,
+        "figures": [
+          {
+            "imageLocation": "images/slider-1.jpg",
+            "caption": "Example caption if needed"
+          },
+          {
+            "imageLocation": "https://foundation.zurb.com/sites/docs/assets/img/orbit/01.jpg",
+            "caption": "Example caption if needed"
+          },
+          {
+            "imageLocation": "images/slider-2.jpg",
+            "caption": "Example caption if needed"
+          },
+          {
+            "imageLocation": "images/slider-3.jpg",
+            "caption": "Example caption if needed"
+          },
+          {
+            "imageLocation": "images/slider-4.jpg",
+            "caption": "Example caption if needed"
+          }
+        ],
+        "showButtons": true
+      }
+    },
+    "home": {
+      "backgroundImage": "",
+      "heading": "Kevin & Robyn",
+      "aboutUs": {
+        "heading": "Hello",
+        "subHeading": "Welcome to our wedding website! You should find all information you need to share our special day with us."
+      }
+    },
+    "info": {
+      "content": [
+        {
+          "heading": "Guests",
+          "paras": [
+            "Respectfully, only children of immediate family will be in attendance, otherwise this will be an adult only event."
+          ]
+        },
+        {
+          "heading": "Attire",
+          "paras": [
+            "Semi-formal"
+          ]
+        },
+        {
+          "heading": "Menu",
+          "paras": [
+            "Dinner will be catered by Midwood Smokehouse (local Carolina BBQ restaurant); there will be vegetarian options -  if you have any dietary restrictions, please indicate them on the RSVP page."
+          ]
+        },
+        {
+          "heading": "Event Parking",
+          "paras": [
+            "Parking is charged at the prevailing rate of $18.00/day for self-parking and $24.00/day for valet parking. However, there are numerous cheaper garages and lots very close to the hotel."
+          ]
+        },
+        {
+          "heading": "Accomodations",
+          "paras": [
+            "We have blocked a book of discounted rooms in Uptown Charlotte at the Holiday Inn Charlotte Center City under 'Bacino/Gonzales' (<a href='https://goo.gl/maps/YnH4QPgH7t12' id='holidayInnHotel' target='_blank' >View on Map</a>). The hotel is just around the corner from the ceremony/reception (Levine Museum). Please use the link below or call the hotel at <a href='tel:7043355400'>704.335.5400</a> (mention our names) to reserve your room.<br> <a href='https://www.holidayinn.com/redirect?path=hd&brandCode=HI&localeCode=en&regionCode=1&hotelCode=CLTDT&_PMID=99801505&GPC=GBW&viewfullsite=true' id='reserveRoom' target='_blank'>Reserve Room Bacino/Gonzales</a>",
+            "Also, note that you must book by <b>9/26/2018</b> to get the group rate."
+          ]
+        },
+        {
+          "heading": "Travel",
+          "paras": [
+            "If you are flying in to Charlotte International Airport, you can get an Uber/Lyft to the hotel for about $15. There is also a shuttle (<a href='https://www.charlottecentercity.org/transportation/sprinter/' id='sprinterShuttle' target='_blank'>Sprinter Shuttle</a>) that will take you near the hotel for a few dollars."
+          ]
+        },
+        {
+          "heading": "Airport to Hotel Directions",
+          "iframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d52139.759188488795!2d-80.92995509352606!3d35.23796750659305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x8856987db74ad489%3A0x1aba4a6f3cc4a737!2sCharlotte+Douglas+International+Airport%2C+5501+Josh+Birmingham+Pkwy%2C+Charlotte%2C+NC+28208!3m2!1d35.2144026!2d-80.9473146!4m5!1s0x8856a024fd9b6487%3A0xa736e2d40a93d76d!2sHoliday+Inn+Charlotte-Center+City%2C+230+N+College+St%2C+Charlotte%2C+NC+28202!3m2!1d35.2275673!2d-80.83978139999999!5e0!3m2!1sen!2sus!4v1523046196648\" width=\"100%\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>"
+        },
+        {
+          "heading": "Hotel to Ceremony/Reception Directions (Walkable)",
+          "iframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3259.132314762799!2d-80.8412948355745!3d35.22807613030241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x8856a024fd9b6487%3A0xa736e2d40a93d76d!2sHoliday+Inn+Charlotte-Center+City%2C+North+College+Street%2C+Charlotte%2C+NC!3m2!1d35.2275673!2d-80.83978139999999!4m5!1s0x8856a024bc5716dd%3A0x709e0e7838b9b467!2sLevine+Museum+of+the+New+South%2C+East+7th+Street%2C+Charlotte%2C+NC!3m2!1d35.2281616!2d-80.8383917!5e0!3m2!1sen!2sus!4v1523048339602\" width=\"100%\" height=\"450\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>"
+        }
+      ]
+    },
+    "schedule": {
+      "mainHeading": "Schedule",
+      "nodes": [
+        {
+          "sub": {
+            "title": "Ceremony",
+            "subTitle": "Saturday",
+            "subSubTitle": "5:30pm"
+          },
+          "details": {
+            "image": "",
+            "heading": "Ceremony",
+            "paras": [
+              "Ceremony will be held in the atrium of the Levine Museum of New South."
+            ],
+            "aside": {
+              "note": "<b>Dress:</b> Semi-formal",
+              "mapLink": {
+                "href": "https://goo.gl/maps/ACpP4Dg5qEG2",
+                "text": "Map View"
+              }
+            }
+          }
+        },
+        {
+          "sub": {
+            "title": "Cocktail Hour",
+            "subTitle": "Saturday",
+            "subSubTitle": "6pm-7pm"
+          },
+          "details": {
+            "image": "",
+            "heading": "Cocktail Hour",
+            "paras": [
+              "After the ceremony, we will start the celebrations with cocktails and live music. Guests will have full access to the first floor exhibits of the museum during these hours."
+            ],
+            "aside": {}
+          }
+        },
+        {
+          "sub": {
+            "title": "Reception",
+            "subTitle": "Saturday",
+            "subSubTitle": "7pm-10pm"
+          },
+          "details": {
+            "image": "",
+            "heading": "Reception",
+            "paras": [
+              "Guest will enjoy a full Southern BBQ dinner in the Harris Hall of the museum. Post dinner be prepared to dance the night away!"
+            ],
+            "aside": {}
+          }
+        }
+      ]
+    },
+    "registry": {
+      "paras": [
+        "In lieu of gifts please dontate to charities"
+      ]
+    },
+    "rsvp": {
+      "heading": "We hope you can attend!",
+      "addAnother": "Add Another Person",
+      "inputFirst": {
+        "placeholder": "first name*"
+      },
+      "inputSecond": {
+        "placeholder": "last name*"
+      },
+      "switchButtonLabel": "Attending?",
+      "submitButtonLabel": "Submit Invitation"
+    },
+    "thingsToDo": {
+      "heading": "Things to Do",
+      "headingParas": [
+        "If you're in town for the whole weekend, here are some of our suggestions on how to get to know Charlotte better. We have broken our favorite things to do by types below.",
+        "<b>Beer</b> - Charlotte is home to over 30 local breweries. If you're looking for a fun afternoon, you can walk the Rail Trail in South End or stroll around NoDa to hit up some of the more popular spots.",
+        "<b>Food</b> - While Charlotte might not be on the culinary level of bigger cities like New York or Chicago, the food scene is rapidly growing. And for all of you Yankees, Charlotte knows how to do Southern food right.",
+        "<b>Activities</b> - You don't need to eat or drink to have fun!"
+      ],
+      "dropDown": {
+        "activity": {
+          "select": [
+            "Beer",
+            "Food",
+            "Activities"
+          ],
+          "label": "Filter on Type"
+        },
+        "location": {
+          "select": [
+            "SouthEnd",
+            "NoDa",
+            "Plaza Midwood"
+          ],
+          "label": "Filter on Location"
+        },
+        "foodType": {
+          "select": [
+            "Southern",
+            "Everything Else"
+          ],
+          "label": "Filter on Food Type"
+        }
+      },
+      "cards": [
+        {
+          "googleLatLong": [
+            35.227528,
+            -80.837982
+          ],
+          "type": "food",
+          "foodType": "Everything Else",
+          "heading": {
+            "text": "7th Street Market",
+            "link": "http://www.7thstreetpublicmarket.com/"
+          },
+          "para": "Charlotte's own bustling food destination in the heart of the city! Great coffee, food, and even a few bars inside with tvs.",
+          "sideNotes": [
+            {
+              "heading": "Walkable from hotel",
+              "text": "yes"
+            },
+            {
+              "heading": "Time Required",
+              "text": "30 minutes - 2 hours"
+            }
+          ]
+        },
+        {
+          "googleLatLong": [
+            35.224110,
+            -80.845047
+          ],
+          "type": "food",
+          "foodType": "Everything Else",
+          "heading": {
+            "text": "Amelies",
+            "link": "http://www.7thstreetpublicmarket.com/"
+          },
+          "para": "Our first date spot! Great coffee and sandwiches.",
+          "sideNotes": [
+            {
+              "heading": "Walkable from hotel",
+              "text": "yes"
+            },
+            {
+              "heading": "Time Required",
+              "text": "30 minutes - 2 hours"
+            }
+          ]
+        },
+        {
+          "googleLatLong": [
+            35.226498,
+            -80.842674
+          ],
+          "type": "food",
+          "foodType": "Everything Else",
+          "heading": {
+            "text": "Essex",
+            "link": "http://www.7thstreetpublicmarket.com/"
+          },
+          "para": "Good food, but better cocktails. Great for people watching if you sit outside.",
+          "sideNotes": [
+            {
+              "heading": "Walkable from hotel",
+              "text": "yes"
+            },
+            {
+              "heading": "Time Required",
+              "text": "30 minutes - 2 hours"
+            }
+          ]
+        },
+        {
+          "googleLatLong": [
+            35.214382,
+            -80.857536
+          ],
+          "type": "food",
+          "foodType": "Southern",
+          "heading": {
+            "text": "Prices Chicken",
+            "link": "http://www.7thstreetpublicmarket.com/"
+          },
+          "para": "Classic fried food joint that's been there since the 60s. Actually, you almost go back in time when you go there since the workers dress in all white and require cash only.",
+          "sideNotes": [
+            {
+              "heading": "Walkable from hotel",
+              "text": "no - but can take light rail"
+            },
+            {
+              "heading": "Time Required",
+              "text": "30 minutes - 2 hours"
+            }
+          ]
+        },
+        {
+          "googleLatLong": [
+            35.202915,
+            -80.864357
+          ],
+          "type": "food",
+          "foodType": "Southern",
+          "heading": {
+            "text": "Macs Speed Shop (BBQ)",
+            "link": "http://www.7thstreetpublicmarket.com/"
+          },
+          "para": "Always packed - typically Southern BBQ. It's fun to sit outside.",
+          "sideNotes": [
+            {
+              "heading": "Walkable from hotel",
+              "text": "no - but can take light rail"
+            },
+            {
+              "heading": "Time Required",
+              "text": "30 minutes - 2 hours"
+            }
+          ]
+        },
+        {
+          "googleLatLong": [
+            35.226593,
+            -80.840858
+          ],
+          "type": "food",
+          "foodType": "Southern",
+          "heading": {
+            "text": "Roosters",
+            "link": "http://www.7thstreetpublicmarket.com/"
+          },
+          "para": "Great reviews and even better Southern comfort food.",
+          "sideNotes": [
+            {
+              "heading": "Walkable from hotel",
+              "text": "yes"
+            },
+            {
+              "heading": "Time Required",
+              "text": "30 minutes - 2 hours"
+            }
+          ]
+        },
+        {
+          "googleLatLong": [
+            35.213947,
+            -80.861206
+          ],
+          "type": "food",
+          "foodType": "Southern",
+          "heading": {
+            "text": "Saucemans BBQ",
+            "link": "http://www.7thstreetpublicmarket.com/"
+          },
+          "para": "Award winning BBQ haunt. Some people claim it's the best in Charlotte.",
+          "sideNotes": [
+            {
+              "heading": "Walkable from hotel",
+              "text": "no - but can take light rail"
+            },
+            {
+              "heading": "Time Required",
+              "text": "30 minutes - 2 hours"
+            }
+          ]
+        },
+        {
+          "googleLatLong": [
+            35.217037,
+            -80.857208
+          ],
+          "type": "beer",
+          "location": "SouthEnd",
+          "heading": {
+            "text": "Wooden Robot",
+            "link": "https://www.sycamorebrew.com"
+          },
+          "para": "Cool craft beer spot in the ever bustling Southend Neighborhood.",
+          "sideNotes": [
+            {
+              "heading": "Walkable from hotel",
+              "text": "yes (25 min)"
+            },
+            {
+              "heading": "Time Required",
+              "text": "30 minutes to - 3 hours"
+            }
+          ]
+        },
+        {
+          "googleLatLong": [
+            35.208698,
+            -80.862747
+          ],
+          "type": "beer",
+          "location": "SouthEnd",
+          "heading": {
+            "text": "Sycamore Brewery",
+            "link": "https://www.sycamorebrew.com"
+          },
+          "para": "The most popular brewery in Charlotte. Tons of picnic tables for soaking in the sun; they also usually have a band on Saturdays.",
+          "sideNotes": [
+            {
+              "heading": "Walkable from hotel",
+              "text": "no - but can take light rail"
+            },
+            {
+              "heading": "Time Required",
+              "text": "30 minutes to - 3 hours"
+            }
+          ]
+        },
+        {
+          "googleLatLong": [
+            35.201164,
+            -80.869553
+          ],
+          "type": "beer",
+          "location": "SouthEnd",
+          "heading": {
+            "text": "Triple C Brewery",
+            "link": "https://www.sycamorebrew.com"
+          },
+          "para": "One of my favorite breweries since it's a little smaller and cozier. Plus they have free pretzels!",
+          "sideNotes": [
+            {
+              "heading": "Walkable from hotel",
+              "text": "no - but can take light rail"
+            },
+            {
+              "heading": "Time Required",
+              "text": "30 minutes to 3 hours"
+            }
+          ]
+        },
+        {
+          "googleLatLong": [
+            35.187370,
+            -80.881729
+          ],
+          "type": "beer",
+          "location": "SouthEnd",
+          "heading": {
+            "text": "Old Mecklenburg Brewery",
+            "link": "https://www.sycamorebrew.com"
+          },
+          "para": "Huge German style Bier Garden. Definitely the biggest brewery in Charlotte. Huge indoor and outdoor area.",
+          "sideNotes": [
+            {
+              "heading": "Walkable from hotel",
+              "text": "no"
+            },
+            {
+              "heading": "Time Required",
+              "text": "30 minutes to 3 hours"
+            }
+          ]
+        },
+        {
+          "googleLatLong": [
+            35.230728,
+            -80.826462
+          ],
+          "type": "beer",
+          "location": "NoDa",
+          "heading": {
+            "text": "Birdsong Brewery",
+            "link": "https://www.sycamorebrew.com"
+          },
+          "para": "Small but always packed brewery in the NoDa neighborhood. Board games inside and cornhole outside.",
+          "sideNotes": [
+            {
+              "heading": "Walkable from hotel",
+              "text": "no"
+            },
+            {
+              "heading": "Time Required",
+              "text": "30 minutes to 3 hours"
+            }
+          ]
+        },
+        {
+          "googleLatLong": [
+            35.245319,
+            -80.809532
+          ],
+          "type": "beer",
+          "location": "NoDa",
+          "heading": {
+            "text": "Heist Brewery",
+            "link": "https://www.sycamorebrew.com"
+          },
+          "para": "German brewhouse with great food in the heart of NoDa",
+          "sideNotes": [
+            {
+              "heading": "Walkable from hotel",
+              "text": "no - but can take light rail"
+            },
+            {
+              "heading": "Time Required",
+              "text": "30 minutes to 3 hours"
+            }
+          ]
+        },
+        {
+          "googleLatLong": [
+            35.249237,
+            -80.796600
+          ],
+          "type": "beer",
+          "location": "NoDa",
+          "heading": {
+            "text": "Bold Missy",
+            "link": "https://www.sycamorebrew.com"
+          },
+          "para": "Newest brewery in Charlotte - owned and operated by all women!",
+          "sideNotes": [
+            {
+              "heading": "Walkable from hotel",
+              "text": "no - but can take light rail"
+            },
+            {
+              "heading": "Time Required",
+              "text": "30 minutes to 3 hours"
+            }
+          ]
+        },
+        {
+          "googleLatLong": [
+            35.224697,
+            -80.820816
+          ],
+          "type": "beer",
+          "location": "Plaza Midwood",
+          "heading": {
+            "text": "Catawba Brewery",
+            "link": "https://www.sycamorebrew.com"
+          },
+          "para": "Catawba finally expanded from Asheville, NC to Charlotte and everyone loves it. Highly rates 4.8/5 stars on google.",
+          "sideNotes": [
+            {
+              "heading": "Walkable from hotel",
+              "text": "no"
+            },
+            {
+              "heading": "Time Required",
+              "text": "30 minutes to 3 hours"
+            }
+          ]
+        },
+        {
+          "googleLatLong": [
+            35.218410,
+            -80.813026
+          ],
+          "type": "beer",
+          "location": "Plaza Midwood",
+          "heading": {
+            "text": "Legion Brewery",
+            "link": "https://www.sycamorebrew.com"
+          },
+          "para": "Nestled in the heard of Plaza Midwood neighborhood. Comes with plenty of character.",
+          "sideNotes": [
+            {
+              "heading": "Walkable from hotel",
+              "text": "no"
+            },
+            {
+              "heading": "Time Required",
+              "text": "30 minutes to 3 hours"
+            }
+          ]
+        },
+        {
+          "googleLatLong": [
+            35.220207,
+            -80.805374
+          ],
+          "type": "beer",
+          "location": "Plaza Midwood",
+          "heading": {
+            "text": "Resident Culture Brewery",
+            "link": "https://www.sycamorebrew.com"
+          },
+          "para": "Another new brewery to Charlotte. Tons of space inside and a great food truck stationed outside.",
+          "sideNotes": [
+            {
+              "heading": "Walkable from hotel",
+              "text": "no"
+            },
+            {
+              "heading": "Time Required",
+              "text": "30 minutes to 3 hours"
+            }
+          ]
+        },
+        {
+          "googleLatLong": [
+            35.272495,
+            -81.005234
+          ],
+          "googleZoomOut": true,
+          "type": "activities",
+          "heading": {
+            "text": "US National White Water Center",
+            "link": "http://usnwc.org"
+          },
+          "para": "If you have the time on Saturday, this is a cool place. Guests can enjoy whitewater rafting and kayaking, flatwater kayaking, stand-up paddle boarding, rock climbing, zip lines, ropes courses, a canopy tour, and mountain biking on the 30+ mile trail system.",
+          "sideNotes": [
+            {
+              "heading": "Walkable from hotel",
+              "text": "no"
+            },
+            {
+              "heading": "Time Required",
+              "text": "2-4 hours"
+            }
+          ]
+        },
+        {
+          "googleLatLong": [
+            35.221150,
+            -80.843930
+          ],
+          "type": "activities",
+          "heading": {
+            "text": "NASCAR Hall of Fame",
+            "link": "http://www.nascarhall.com/"
+          },
+          "para": "We actually have not been here, but have heard it's a fun time.",
+          "sideNotes": [
+            {
+              "heading": "Walkable from hotel",
+              "text": "yes"
+            },
+            {
+              "heading": "Time Required",
+              "text": "1-3 hours"
+            }
+          ]
+        },
+        {
+          "googleLatLong": [
+            35.102596,
+            -80.941864
+          ],
+          "googleZoomOut": true,
+          "type": "activities",
+          "heading": {
+            "text": "Carowinds",
+            "link": "http://www.nascarhall.com/"
+          },
+          "para": "Typical large amusement park; owned by Cedar Point",
+          "sideNotes": [
+            {
+              "heading": "Walkable from hotel",
+              "text": "no"
+            },
+            {
+              "heading": "Time Required",
+              "text": "2-4 hours"
+            }
+          ]
+        },
+        {
+          "googleLatLong": [
+            35.205761,
+            -80.864947
+          ],
+          "type": "activities",
+          "heading": {
+            "text": "Walk Around Uptown",
+            "link": "#"
+          },
+          "para": "Charlotte is a very walkable modern city; also being October, the weather should be nice. It's small enough that you can explore the whole city in a about an hour or two.",
+          "sideNotes": [
+            {
+              "heading": "Walkable from hotel",
+              "text": "yes"
+            },
+            {
+              "heading": "Time Required",
+              "text": "1-3 hours"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "footer": {
+    "sections": [
+      {
+        "title": "Navigation",
+        "type": "Links",
+        "content": [
+          {
+            "hash": "#/welcome",
+            "text": "Welcome"
+          },
+          {
+            "hash": "#/about",
+            "text": "About"
+          },
+          {
+            "hash": "#/services",
+            "text": "Services"
+          },
+          {
+            "hash": "#/testimonial",
+            "text": "Testimonial"
+          },
+          {
+            "hash": "#/contact",
+            "text": "Contact"
+          }
+        ]
+      },
+      {
+        "title": "Contact",
+        "type": "Contact",
+        "content": [
+          "<a href='tel:7033093319'>703-309-3319</a>"
+        ]
+      },
+      {
+        "title": "Social",
+        "type": "Social",
+        "content": [
+          {
+            "href": "",
+            "icon": "facebook"
+          },
+          {
+            "href": "",
+            "icon": "twitter"
+          }
+        ]
+      }
+    ],
+    "copyright": "@CopyRight David Mark Seidel - All Rights Reserved"
+  }
+}

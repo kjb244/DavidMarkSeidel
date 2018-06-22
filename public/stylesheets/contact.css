@@ -1,0 +1,7 @@
+[data-section="contact"] [name="comments"]{
+    height: 200px;
+}
+
+[data-section="contact"] .button{
+    width: 100%;
+}

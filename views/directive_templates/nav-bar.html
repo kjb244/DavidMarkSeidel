@@ -1,30 +1,31 @@
 <nav>
-    <div class="wrapper show-for-medium">
-        <ul>
-            <li ng-repeat="rec in copy.navBar.links" ng-class="{'show-border': menuChange==rec.route}">
-                <a href='#{{rec.route}}' ng-click="menuChangeClick(rec.route)">{{rec.name}}</a>
-            </li>
-        </ul>
-    </div>
-    <div class="show-for-small-only">
-        <div class="title-bar" >
-            <button class="menu-button" ng-class="{'active': menuClick}" ng-init="menuClick=false" ng-click="menuClick = !menuClick" type="button" data-toggle>
-                <span></span>
-            </button>
-            <div class="title-bar-title">{{copy.navBar.heading.who}}</div>
-        </div>
-
-        <div class="top-bar" ng-class="{'open':menuClick}">
-            <div class="top-bar-child">
-                <ul class="dropdown menu" data-dropdown-menu>
-                    <li ng-repeat="rec in copy.navBar.links" >
-                        <a href='#{{rec.route}}' ng-click="menuChangeClick(rec.route)">
-                            <span ng-class="{'show-border': menuChange==rec.route}">{{rec.name}}</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <div class="title-bar show-for-small-only"  data-hide-for="medium">
+        <button class="menu-button" ng-class="{'active': menuClick}" ng-init="menuClick=false" ng-click="menuClick = !menuClick" type="button" data-toggle>
+            <span></span>
+        </button>
+        <div class="title-bar-title">{{copy.navBar.heading.who}}</div>
     </div>
 
+    <div class="top-bar"  ng-class="{'open':menuClick}" id="topBar">
+        <div class="top-bar-left">
+            <ul class="dropdown menu show-for-medium" data-dropdown-menu>
+                <li class="menu-text">{{copy.navBar.heading.who}}</li>
+
+            </ul>
+        </div>
+        <div class="top-bar-left second">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li ng-repeat="rec in copy.navBar.links">
+                    <a href='#{{rec.route}}' ng-click="menuChangeClick(rec.route)">
+                        <span ng-class="{'show-border': menuChange==rec.route}">{{rec.name}}</span>
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
+
+
+
+

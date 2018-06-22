@@ -1,0 +1,16 @@
+
+
+[data-section="welcome"] h3, [data-section="welcome"] h4{
+    text-align: center;
+}
+
+[data-section="welcome"] .paras-wrapper{
+    margin-top: 25px;
+}
+
+[data-section="welcome"] .orbit img{
+    max-height: 350px;
+}
+
+
+

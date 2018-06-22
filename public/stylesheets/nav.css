@@ -1,0 +1,136 @@
+
+
+[data-section="menu"] nav a{
+    font-size: 17px;
+}
+
+[data-section="menu"] nav .top-bar-left.second ul{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 40em){
+
+    [data-section="menu"] nav{
+        margin-bottom: 20px;
+    }
+    [data-section="menu"] nav .top-bar-left.second ul{
+        flex-direction: row;
+    }
+}
+
+
+
+[data-section="menu"] nav  li:after, [data-section="menu"] nav  li span:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+[data-section="menu"] nav li.show-border:after, [data-section="menu"] nav li span.show-border:after {
+    width: 100%;
+    background: #008CBA;
+}
+
+[data-section="menu"] nav  li span{
+    display: inline-block;
+}
+
+[data-section="menu"] nav .title-bar{
+    display: flex;
+    align-items:center;
+}
+
+[data-section="menu"] nav  .menu-button{
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+}
+
+[data-section="menu"] nav  li:focus, [data-section="menu"] nav  li a:focus {
+    outline-width: 0px !important;
+}
+
+[data-section="menu"] nav  .menu-button span{
+    margin-right: 10px;
+}
+
+[data-section="menu"] nav  .menu-button span,
+[data-section="menu"] nav  .menu-button span:before,
+[data-section="menu"] nav  .menu-button span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: gray;
+    position: absolute;
+    display: block;
+    content: '';
+}
+
+[data-section="menu"] nav  .menu-button span:before {
+    top: -10px;
+}
+
+[data-section="menu"] nav  .menu-button span:after {
+    bottom: -10px;
+}
+
+[data-section="menu"] nav  .menu-button span,
+[data-section="menu"] nav  .menu-button  span:before,
+[data-section="menu"] nav  .menu-button span:after {
+    transition: transform 500ms ease-in-out,
+    top 500ms ease-in-out,
+    background-color 500ms ease-in-out;
+
+}
+
+[data-section="menu"] nav  .menu-button.active span {
+    background-color: transparent;
+}
+
+[data-section="menu"] nav  .menu-button.active span:before,
+[data-section="menu"] nav  .menu-button.active span:after {
+    top: 0;
+}
+
+[data-section="menu"] nav  .menu-button.active span:before {
+    transform: rotate(45deg);
+}
+
+[data-section="menu"] nav  .menu-button.active span:after {
+    transform: rotate(-45deg);
+}
+
+
+
+@media screen and (max-width: 40em) {
+    [data-section="menu"] nav .top-bar {
+
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height .4s ease-in, opacity .6s ease-in;
+        padding: 0 !important;
+        z-index: 10;
+    }
+}
+
+[data-section="menu"] nav  .top-bar.open{
+    opacity: 1;
+
+    max-height: 250px;
+}
+[data-section="menu"] nav  .top-bar-child{
+    height: inherit;
+}
+
+
+[data-section="menu"] nav  .top-bar-child ul li{
+    width: 50%;
+    float: left;
+}

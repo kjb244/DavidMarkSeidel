@@ -1,0 +1,29 @@
+<footer>
+    <div class="sections" >
+        <div class="container" ng-repeat="rec in copy.footer.sections">
+            <p class="title">{{rec.title}}</p>
+            <div class="switch-on" ng-switch="rec.type">
+                <div class="switch-when col" ng-switch-when="Links">
+                    <a ng-repeat="rec2 in rec.content" ng-click="hashChange(rec2.hash)">{{rec2.text}}</a>
+                </div>
+                <div class="switch-when col" ng-switch-when="Contact">
+                    <a ng-repeat="rec2 in rec.content" ng-bind-html="rec2"></a>
+                </div>
+                <div class="switch-when rw" ng-switch-when="Social">
+                    <div class="social" ng-repeat="rec2 in rec.content">
+                        <a ng-if="rec2.icon === 'facebook'">
+                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        </a>
+                        <a ng-if="rec2.icon === 'twitter'">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>{{copy.footer.copyright}} {{now() | date : "yyyy"}}</p>
+    </div>
+</footer>
