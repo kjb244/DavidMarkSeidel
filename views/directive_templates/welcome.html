@@ -3,7 +3,7 @@
         <h3>{{copy.routes.welcome.heading}}</h3>
         <h4>{{copy.routes.welcome.headingSub}}</h4>
         <div class="paras-wrapper" ng-repeat="rec in copy.routes.welcome.paras">
-            <p>{{rec}}</p>
+            <p ng-bind-html="rec"></p>
         </div>
         <div class="orbit" role="region" aria-label="Wedding pics" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
             <div class="orbit-wrapper">

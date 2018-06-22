@@ -7,7 +7,7 @@
                     <a ng-repeat="rec2 in rec.content" ng-click="hashChange(rec2.hash)">{{rec2.text}}</a>
                 </div>
                 <div class="switch-when col" ng-switch-when="Contact">
-                    <a ng-repeat="rec2 in rec.content" ng-bind-html="rec2"></a>
+                    <div ng-repeat="rec2 in rec.content" ng-bind-html="rec2"></div>
                 </div>
                 <div class="switch-when rw" ng-switch-when="Social">
                     <div class="social" ng-repeat="rec2 in rec.content">
