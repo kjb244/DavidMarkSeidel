@@ -148,116 +148,27 @@ body h6{
     flex: 1;
 }
 
-.animate-switch-container{
-
+.animate-switch.ng-enter {
+    animation: .8s appear;
 }
 
-.animate-switch-container {
-    position: relative;
+.animate-switch.ng-leave {
+    animation: .8s disappear;
 }
 
-.animate-switch.ng-enter, .animate-switch.ng-leave {
-    transition: all linear .8s;
-    transition-delay: 150ms;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    min-height: 10000px;
-
-}
-
-.animate-switch-container .animate-switch.right.ng-enter{
-    opacity: 0;
-    left: 1024px;
-    width: 100%;
-}
-
-.animate-switch-container .animate-switch.right.ng-enter.ng-enter-active{
-    left: 0;
-    opacity: 1;
-}
-
-.animate-switch-container .animate-switch.right.ng-leave{
-    opacity: 1;
-    left: 0;
-}
-
-.animate-switch-container .animate-switch.right.ng-leave.ng-leave-active{
-    left: -1024px;
-    right: 1024px;
-    opacity: 0;
-}
-
-
-.animate-switch-container .animate-switch.left.ng-enter{
-    opacity: 0;
-    left: -1024px;
-    width: 100%;
-}
-
-.animate-switch-container .animate-switch.left.ng-enter.ng-enter-active{
-    left: 0;
-    opacity: 1;
-}
-
-.animate-switch-container .animate-switch.left.ng-leave{
-    opacity: 1;
-    left: 0;
-}
-
-.animate-switch-container .animate-switch.left.ng-leave.ng-leave-active{
-    left: 1024px;
-    right: -1024px;
-    opacity: 0;
-}
-
-@media screen and (min-width: 64em) {
-
-    .animate-switch-container .animate-switch.right.ng-enter{
-        opacity: 0;
-        left: 1600px;
-        width: 100%;
-    }
-
-    .animate-switch-container .animate-switch.right.ng-enter.ng-enter-active{
-        left: 0;
-        opacity: 1;
-    }
-
-    .animate-switch-container .animate-switch.right.ng-leave{
-        opacity: 1;
-        left: 0;
-    }
-
-    .animate-switch-container .animate-switch.right.ng-leave.ng-leave-active{
-        left: -1600px;
-        right: 1600px;
+@keyframes appear {
+    from {
         opacity: 0;
     }
-
-
-    .animate-switch-container .animate-switch.left.ng-enter{
-        opacity: 0;
-        left: -1600px;
-        width: 100%;
-    }
-
-    .animate-switch-container .animate-switch.left.ng-enter.ng-enter-active{
-        left: 0;
+    to {
         opacity: 1;
     }
-
-    .animate-switch-container .animate-switch.left.ng-leave{
+}
+@keyframes disappear {
+    from {
         opacity: 1;
-        left: 0;
     }
-
-    .animate-switch-container .animate-switch.left.ng-leave.ng-leave-active{
-        left: 1600px;
-        right: -1600px;
+    to {
         opacity: 0;
     }
-
-
 }
