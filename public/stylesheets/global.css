@@ -43,6 +43,9 @@ body h6{
     display: none;
 }
 
+.main-wrapper >.row{
+    max-width: 200rem !important;
+}
 .row .row {
     margin-left: 0 !important;
     margin-right: 0 !important;
