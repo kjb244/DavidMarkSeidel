@@ -153,6 +153,7 @@ body h6{
 
 .animate-switch.ng-enter {
     animation: .8s appear;
+    animation-delay: .8s;
 }
 
 .animate-switch.ng-leave {
@@ -160,10 +161,10 @@ body h6{
 }
 
 @keyframes appear {
-    from {
+    0% {
         opacity: 0;
     }
-    to {
+    100% {
         opacity: 1;
     }
 }
