@@ -1,9 +1,9 @@
-[data-section="services"] .pricing-wrapper{
+[data-section="services"] ul:first-child{
     margin-top: 20px;
 }
 
 [data-section="services"] ul:nth-child(n+2){
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 [data-section="services"] ul{

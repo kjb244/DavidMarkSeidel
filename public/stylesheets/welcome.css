@@ -8,6 +8,12 @@
     margin-top: 25px;
 }
 
+@media screen and (max-width: 39.9375em) {
+    [data-section="welcome"] .orbit img{
+        height: 245px;
+    }
+}
+
 [data-section="welcome"] .orbit img{
     max-height: 350px;
 }

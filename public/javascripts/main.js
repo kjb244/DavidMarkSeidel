@@ -39,7 +39,8 @@ app.controller("ctrlMain", function($scope,ajaxFetch, angularStore) {
             .then(function (res) {
                 angularStore.setContent('copy', res.data);
                 $scope.copy = res.data;
-                document.querySelector('.main-wrapper').style.minHeight = window.innerHeight + 'px';
+                var buffer = 15;
+                document.querySelector('.main-wrapper').style.minHeight = window.innerHeight + buffer + 'px';
             });
     }
 
