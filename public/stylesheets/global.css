@@ -153,6 +153,7 @@ body h6{
 
 .animate-switch.ng-enter {
     animation: .8s appear;
+    -webkit-animation-delay: .8s;
     animation-delay: .8s;
 }
 
