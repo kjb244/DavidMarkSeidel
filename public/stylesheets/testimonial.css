@@ -20,8 +20,14 @@
 
 [data-section="testimonial"] .container-wrapper p{
     padding: 0 12px;
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
+
+[data-section="testimonial"] .container-wrapper p:not(:first-child){
+    magin-top: 8px;
+}
+
 
 [data-section="testimonial"] .container-wrapper .container::after {
     content: '';

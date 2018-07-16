@@ -4,6 +4,11 @@
     text-align: center;
 }
 
+[data-section="welcome"] h3{
+    font-family: 'Pinyon Script', cursive;
+    font-size: 32px;
+}
+
 [data-section="welcome"] .paras-wrapper{
     margin-top: 25px;
 }

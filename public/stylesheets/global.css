@@ -7,8 +7,8 @@ body{
 }
 
 
-body h4, body h6, body h5 body h4,body p, body a, body label, body select, body span{
-    font-family: 'Work Sans', sans-serif;
+body h4, body h6, body h5 body h4, body h3, body h2, body h1, body p, body a, body label, body select, body span{
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
 
