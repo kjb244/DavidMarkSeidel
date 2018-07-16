@@ -4,7 +4,7 @@
         <div class="container-wrapper" ng-repeat="rec in copy.routes.testimonials.data" ng-class="{'even': $index % 2 === 0, 'odd': $index % 2 === 1}">
             <div class="container">
                 <i class="fa fa-quote-left" aria-hidden="true"></i>
-                <p ng-repeat="rec2 in rec.text">{{rec2}}</p>
+                <p ng-repeat="rec2 in rec.text" ng-class="{'not-first': $index > 0}">{{rec2}}</p>
                 <i class="fa fa-quote-right" aria-hidden="true"></i>
             </div>
             <div class="bottom">

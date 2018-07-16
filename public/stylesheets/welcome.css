@@ -15,12 +15,22 @@
 
 @media screen and (max-width: 39.9375em) {
     [data-section="welcome"] .orbit img{
-        height: 245px;
+        height: 200px;
     }
 }
 
 [data-section="welcome"] .orbit img{
     max-height: 350px;
+}
+
+[data-section="welcome"] iframe {
+    width: 100%;
+}
+
+@media screen and (min-width: 39.9375em) {
+    [data-section="welcome"] iframe {
+        width: 500px;
+    }
 }
 
 
