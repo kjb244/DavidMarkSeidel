@@ -1,0 +1,42 @@
+[data-section="gallery"] .image-details > .columns{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[data-section="gallery"] .image-details .photo-container{
+    flex: 0 0 32.1%;
+    margin: .5%;
+    height: 150px;
+    position: relative;
+}
+
+[data-section="gallery"] .image-details .photo-container .fa-search {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #2a4430;
+    opacity: 0;
+    transition: opacity .5s ease-out;
+}
+[data-section="gallery"] .image-details .photo-container:hover .fa-search{
+    opacity: 1;
+}
+
+[data-section="gallery"] .image-details .photo-container .image-div{
+    transition: opacity .5s ease-out;
+
+}
+
+[data-section="gallery"] .image-details .photo-container:hover .image-div{
+    opacity: .4;
+}
+
+
+
+[data-section="gallery"] .image-details .image-div{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+
+}

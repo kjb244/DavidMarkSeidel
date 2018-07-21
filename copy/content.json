@@ -28,6 +28,10 @@
         "route": "services"
       },
       {
+        "name": "Gallery",
+        "route": "gallery"
+      },
+      {
         "name": "Testimonial",
         "route": "testimonial"
       },
@@ -38,6 +42,87 @@
     ]
   },
   "routes": {
+    "gallery": {
+      "heading": "Gallery",
+      "photos": [
+        {
+          "title": "Wedding Highlights",
+          "photoDetails": [
+            {
+              "imageLocation": "images/wedding-1.jpg"
+            },
+            {
+              "imageLocation": "images/wedding-2.jpg"
+            },
+            {
+              "imageLocation": "images/wedding-3.jpg"
+            },
+            {
+              "imageLocation": "images/wedding-4.jpg"
+            },
+            {
+              "imageLocation": "images/wedding-5.jpg"
+            },
+            {
+              "imageLocation": "images/wedding-6.jpg"
+            },
+            {
+              "imageLocation": "images/wedding-7.jpg"
+            },
+            {
+              "imageLocation": "images/wedding-8.jpg"
+            },
+            {
+              "imageLocation": "images/wedding-9.jpg"
+            },
+            {
+              "imageLocation": "images/wedding-10.jpg"
+            },
+            {
+              "imageLocation": "images/wedding-11.jpg"
+            },
+            {
+              "imageLocation": "images/wedding-12.jpg"
+            },
+            {
+              "imageLocation": "images/wedding-13.jpg"
+            },
+            {
+              "imageLocation": "images/wedding-14.jpg"
+            },
+            {
+              "imageLocation": "images/wedding-15.jpg"
+            },
+            {
+              "imageLocation": "images/wedding-16.jpg"
+            }
+          ]
+        },
+        {
+          "title": "Cape May New Jersey 2018",
+          "photoDetails": [
+            {
+              "imageLocation": "images/capemay-1.jpg"
+            },
+            {
+              "imageLocation": "images/capemay-2.jpg"
+            },
+            {
+              "imageLocation": "images/capemay-3.jpg"
+            },
+            {
+              "imageLocation": "images/capemay-4.jpg"
+            },
+            {
+              "imageLocation": "images/capemay-5.jpg"
+            },
+            {
+              "imageLocation": "images/capemay-6.jpg"
+            }
+          ]
+        }
+      ]
+    },
     "services": {
       "heading": "David Mark Seidel has a package to fit every couple’s needs and budget. He will customize one just for you that is perfect for your ceremony. He is an ordained minister and wedding officiant in good standing and  licensed to perform weddings in the United States.",
       "subHeading": "",
@@ -990,6 +1075,10 @@
           {
             "hash": "#/services",
             "text": "Services"
+          },
+          {
+            "hash": "#/gallery",
+            "text": "Gallery"
           },
           {
             "hash": "#/testimonial",

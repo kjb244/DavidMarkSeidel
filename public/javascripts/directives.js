@@ -31,13 +31,9 @@ app.directive('navBarDir', function($timeout){
 
         });
 
-
-
         $scope.menuChangeClick = function(route){
             $('#offCanvasLeft').foundation('close');
             window.location.hash = '#/' + route;
-
-
 
         }
 
@@ -88,6 +84,53 @@ app.directive('welcomeDir', function(){
     };
 });
 
+app.directive('galleryDir', function(){
+    return {
+        restrict: 'EA',
+        scope: false,
+        templateUrl: 'directive_templates/gallery.html',
+        link: function($scope, elem, attrs){
+
+
+        },
+        controller: function($scope, $timeout){
+
+            $scope.openModalArr = $scope.copy.routes.gallery.photos.map(function(){
+                return false;
+            });
+
+            $scope.imageHash = $scope.copy.routes.gallery.photos.reduce(function(accum, e, i){
+                accum[i] = e.photoDetails.map(function(e2){
+                    return e2.imageLocation;
+                });
+                return accum;
+            },{});
+
+            $scope.photoClick = function(idx){
+                $scope.openModalArr[idx] = !$scope.openModalArr[idx];
+            };
+
+            $scope.initImagesCss = function(run){
+                if(run){
+                    $timeout(function(){
+                        var images = document.querySelectorAll('.image-div');
+
+                        for(var i=0; i<images.length; i++){
+                            var src = images[i].getAttribute('data-src');
+                            images[i].style.backgroundImage = "url('" + src + "')";
+                        }
+                    },1);
+
+                }
+
+            }
+
+
+
+
+        }
+    };
+});
 
 app.directive('servicesDir', function(){
     return {
@@ -172,6 +215,43 @@ app.directive('modalOverlayDir', function($timeout){
 
         }
     };
+});
+
+app.directive('imageModalDir', function() {
+    return {
+        restrict: 'EA',
+        scope: {
+            open: '=',
+            images: '=',
+            index: '='
+        },
+        templateUrl: 'directive_templates/image-modal.html',
+        link: function ($scope, elem, attrs) {
+
+            $scope.$watch('open', function(newValue, oldValue) {
+                if(newValue == true){
+
+                    var modalqs = document.querySelectorAll('[data-container="image-modal"]');
+                    for(var i=0; i<modalqs.length; i++){
+                        var attr = modalqs[i].getAttribute('data-reveal');
+                        if (!attr){
+                            modalqs[i].setAttribute('data-reveal','');
+                        }
+                    }
+
+                    $(document).foundation();
+                    $('#exampleModal' + $scope.index).foundation('open');
+
+                }
+            });
+
+        },
+        controller: function ($scope) {
+            $scope.closeModal = function(){
+                $scope.open = false;
+            }
+        }
+    }
 });
 
 app.directive('spinnerOverlayDir', function(){

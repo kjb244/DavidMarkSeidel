@@ -19,6 +19,10 @@ app.config(function($routeProvider) {
         templateUrl: 'route_templates/route-services.html',
         controller: 'ctrlMain'
     })
+    .when('/gallery', {
+        templateUrl: 'route_templates/route-gallery.html',
+        controller: 'ctrlMain'
+    })
     .when('/testimonial', {
         templateUrl: 'route_templates/route-testimonial.html',
         controller: 'ctrlMain'
