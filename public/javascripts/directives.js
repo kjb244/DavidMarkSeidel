@@ -99,6 +99,8 @@ app.directive('galleryDir', function(){
                 return false;
             });
 
+            $scope.photoIndexClicked = 0;
+
             $scope.imageHash = $scope.copy.routes.gallery.photos.reduce(function(accum, e, i){
                 accum[i] = e.photoDetails.map(function(e2){
                     return e2.imageLocation;
@@ -106,8 +108,9 @@ app.directive('galleryDir', function(){
                 return accum;
             },{});
 
-            $scope.photoClick = function(idx){
+            $scope.photoClick = function(idx, idx2){
                 $scope.openModalArr[idx] = !$scope.openModalArr[idx];
+                $scope.photoIndexClicked = idx2;
             };
 
             $scope.initImagesCss = function(run){
@@ -223,10 +226,19 @@ app.directive('imageModalDir', function() {
         scope: {
             open: '=',
             images: '=',
-            index: '='
+            index: '=',
+            photoindexclicked: '='
         },
         templateUrl: 'directive_templates/image-modal.html',
         link: function ($scope, elem, attrs) {
+
+
+            $(document).on('open.zf.reveal', '[data-reveal]', function () {
+                var $this = $(this);
+                setTimeout(function(){
+                    $this.find('.orbit-bullets button').eq($scope.photoindexclicked).trigger('click');
+                },200);
+            });
 
             $scope.$watch('open', function(newValue, oldValue) {
                 if(newValue == true){
@@ -239,8 +251,13 @@ app.directive('imageModalDir', function() {
                         }
                     }
 
-                    $(document).foundation();
-                    $('#exampleModal' + $scope.index).foundation('open');
+                    $('[data-container="image-modal"]').foundation();
+                    $('.orbit').foundation();
+
+
+                    $('#imageModal' + $scope.index).foundation('open');
+
+
 
                 }
             });
@@ -249,6 +266,7 @@ app.directive('imageModalDir', function() {
         controller: function ($scope) {
             $scope.closeModal = function(){
                 $scope.open = false;
+
             }
         }
     }

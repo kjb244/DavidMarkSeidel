@@ -10,6 +10,14 @@
     position: relative;
 }
 
+@media screen and (min-width: 40em){
+    [data-section="gallery"] .image-details .photo-container{
+        flex: 0 0 24%;
+
+    }
+
+}
+
 [data-section="gallery"] .image-details .photo-container .fa-search {
     position: absolute;
     top: 50%;
@@ -35,8 +43,17 @@
 
 [data-section="gallery"] .image-details .image-div{
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
     height: 100%;
 
+}
+
+@media screen and (min-width: 64em) {
+    [data-section="gallery"] .image-details .image-div{
+    }
+}
+
+[data-section="gallery"] .gallery-wrapper:nth-child(n+2){
+    margin-top: 20px;
 }

@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row collapse">
     <div class="small-12 columns">
         <h3>{{copy.routes.gallery.heading}}</h3>
     </div>
@@ -11,7 +11,7 @@
     </div>
     <div class="row collapse image-details">
         <div class="small-12 columns">
-            <div class="photo-container" ng-click="photoClick($parent.$index)" ng-repeat="photo in rec.photoDetails">
+            <div class="photo-container" ng-click="photoClick($parent.$index, $index)" ng-repeat="photo in rec.photoDetails">
                 <div class="image-div" ng-init="initImagesCss(parentLast && $last)" data-src="{{photo.imageLocation}}"></div>
                 <i class="fa fa-search" aria-hidden="true"></i>
 
@@ -19,7 +19,7 @@
             </div>
         </div>
     </div>
-    <image-modal-dir open="openModalArr[$index]" images="imageHash[$index]" index="$index"></image-modal-dir>
+    <image-modal-dir open="openModalArr[$index]" images="imageHash[$index]" index="$index", photoindexclicked="photoIndexClicked"></image-modal-dir>
 
 
 
