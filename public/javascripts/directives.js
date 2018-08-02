@@ -84,16 +84,50 @@ app.directive('welcomeDir', function(){
     };
 });
 
-app.directive('galleryDir', function(){
+app.directive('galleryDir', function($timeout, $sce, utilityFunctions){
     return {
         restrict: 'EA',
         scope: false,
         templateUrl: 'directive_templates/gallery.html',
-        link: function($scope, elem, attrs){
+        link: function($scope, elem){
+            $timeout(function(){
+                $scope.iframeVideoArr = [];
+                elem.find('[data-iframe]').each(function(i, el){
+                    var iframe = el.getAttribute('data-iframe');
+                    $scope.iframeVideoArr.push($sce.trustAsHtml(iframe));
+                });
+            },1);
 
+            //wait for iframe to load then mess with css
+            $timeout(function(){
+                var hm = {
+                    small: {
+                        height: '300px',
+                        width: '100%'
+                    },
+                    medium: {
+                        height: '300px',
+                        width: '400px'
+                    },
+                    large: {
+                        height: '330px',
+                        width: '440px'
+                    }
+                };
+
+                elem.find('.video-details iframe').each(function(i, el){
+                    var ss = utilityFunctions.screenSize();
+                    if(ss && hm[ss]){
+                        var valu = hm[ss];
+                        el.style.height = valu.height;
+                        el.style.width = valu.width;
+                    }
+                })
+
+            },1000);
 
         },
-        controller: function($scope, $timeout){
+        controller: function($scope){
 
             $scope.openModalArr = $scope.copy.routes.gallery.photos.map(function(){
                 return false;

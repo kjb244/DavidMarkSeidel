@@ -121,6 +121,12 @@
             }
           ]
         }
+      ],
+      "videos": [
+        {
+          "title": "Videos",
+          "iframe": "<iframe src=\"https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffippsfilmingco%2Fvideos%2F766456046812511%2F&width=500&show_text=false&height=280&appId\"  height=\"280\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowTransparency=\"true\" allow=\"encrypted-media\" allowFullScreen=\"true\"></iframe>"
+        }
       ]
     },
     "services": {
@@ -177,7 +183,7 @@
         },
         {
           "text": [
-            "Reverend David was performed my nephew's weeding in a very professional and friendly manner. I like the fact that he likes to come and hour earlier before the ceremony to talk to groom and bride and meet the family member.. It was a very nice and sweet ceremony. Thank you Reverend David."
+            "Reverend David was performed my nephew's wedding in a very professional and friendly manner. I like the fact that he likes to come and hour earlier before the ceremony to talk to groom and bride and meet the family member.. It was a very nice and sweet ceremony. Thank you Reverend David."
           ],
           "person": "Roxana",
           "sub": "6/15/2018"
@@ -198,7 +204,7 @@
         },
         {
           "text": [
-            "Great person and very charasmatic and really friendly and easy to talk too"
+            "Great person and very charismatic and really friendly and easy to talk too"
           ],
           "person": "Marilyn",
           "sub": "3/15/2018"
@@ -262,7 +268,7 @@
         {
           "text": [
             "Weddings are a time of unity, laughter and happily ever after. Reverend David Seidel helped our family to accomplish all those things. His loving, yet professional, demeanor struck just the right note. His sense of humor and understanding heart helped us create a day we will remember always.",
-            " As the song goes, ' Love isn't Love until you give it away.' I am sure that everyone at the wedding loved a bit more deeply as he guided us all through this song and message. Thank You!"
+            " As the song goes, 'Love isn't Love until you give it away.' I am sure that everyone at the wedding loved a bit more deeply as he guided us all through this song and message. Thank You!"
           ],
           "person": "Helen",
           "sub": "1/21/2018"

@@ -19,9 +19,24 @@
             </div>
         </div>
     </div>
-    <image-modal-dir open="openModalArr[$index]" images="imageHash[$index]" index="$index", photoindexclicked="photoIndexClicked"></image-modal-dir>
+    <image-modal-dir open="openModalArr[$index]" images="imageHash[$index]" index="$index" photoindexclicked="photoIndexClicked"></image-modal-dir>
 
+</div>
+
+<div  ng-repeat="rec in copy.routes.gallery.videos" class="video gallery-wrapper">
+    <div class="row collapse heading">
+        <div class="small-12 columns">
+            <h5>{{rec.title}}</h5>
+        </div>
+    </div>
+    <div class="row collapse video-details">
+        <div class="small-12 columns">
+            <div class="iframe-container" data-iframe="{{rec.iframe}}"></div>
+            <div ng-bind-html="iframeVideoArr[$index]" ></div>
+        </div>
+    </div>
 
 
 </div>
+
 

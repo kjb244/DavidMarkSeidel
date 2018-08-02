@@ -43,7 +43,6 @@ app.service('utilityFunctions', function(){
         var int = setInterval(runInterval, ping);
         var i=1;
         function runInterval(){
-            console.log(i*interval);
             if (i*interval <= top){
                 window.scrollTo(0,top - (i*interval));
                 i++;
