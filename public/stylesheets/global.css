@@ -7,9 +7,10 @@ body{
 }
 
 
-body h4, body h6, body h5 body h4, body h3, body h2, body h1, body p, body a, body label, body select, body span{
+body h4, body h6, body h5, body h4, body h3, body h2, body h1, body p, body a, body label, body select, body span, body li{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    color: #5f6c75;
 }
 
 body p{
