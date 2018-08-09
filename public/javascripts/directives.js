@@ -259,9 +259,9 @@ app.directive('imageModalDir', function() {
         restrict: 'EA',
         scope: {
             open: '=',
-            images: '=',
-            index: '=',
-            photoindexclicked: '='
+            images: '<',
+            index: '<',
+            photoindexclicked: '<'
         },
         templateUrl: 'directive_templates/image-modal.html',
         link: function ($scope, elem, attrs) {
