@@ -271,7 +271,7 @@ app.directive('imageModalDir', function() {
                 var $this = $(this);
                 setTimeout(function(){
                     $this.find('.orbit-bullets button').eq($scope.photoindexclicked).trigger('click');
-                },200);
+                },50);
             });
 
             $scope.$watch('open', function(newValue, oldValue) {
