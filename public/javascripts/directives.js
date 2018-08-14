@@ -254,7 +254,7 @@ app.directive('modalOverlayDir', function($timeout){
     };
 });
 
-app.directive('imageModalDir', function() {
+app.directive('imageModalDir', function($timeout, utilityFunctions) {
     return {
         restrict: 'EA',
         scope: {
@@ -274,8 +274,20 @@ app.directive('imageModalDir', function() {
                 },50);
             });
 
+            //hack for modal not scrolling to top
+            $timeout(function(){
+                var ss = utilityFunctions.screenSize();
+                if(ss === 'small'){
+                    var bodyHeight = document.body.scrollHeight;
+                    document.querySelector('html').style.height = bodyHeight + 'px';
+                }
+
+
+            },1000);
+
             $scope.$watch('open', function(newValue, oldValue) {
                 if(newValue == true){
+
 
                     var modalqs = document.querySelectorAll('[data-container="image-modal"]');
                     for(var i=0; i<modalqs.length; i++){

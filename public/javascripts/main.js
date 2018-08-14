@@ -38,6 +38,9 @@ app.config(function($routeProvider) {
 
 app.controller("ctrlMain", function($scope,ajaxFetch, angularStore) {
     $scope.menuChange = window.location.hash.replace(/#\//g,'');
+    //remove any style associated with html node
+    document.querySelector('html').removeAttribute('style');
+
     if(angularStore.getContent('copy') === null) {
         ajaxFetch.getData('/getContent')
             .then(function (res) {
