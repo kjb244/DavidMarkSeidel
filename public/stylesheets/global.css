@@ -1,3 +1,8 @@
+/*fix for reveal modal on small*/
+html{
+    overflow:hidden;
+}
+
 body.hide-scroll {
     overflow-y: hidden;
 }
