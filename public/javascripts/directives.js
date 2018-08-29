@@ -102,16 +102,15 @@ app.directive('galleryDir', function($timeout, $sce, utilityFunctions){
             $timeout(function(){
                 var hm = {
                     small: {
-                        height: '300px',
                         width: '100%'
                     },
                     medium: {
-                        height: '300px',
-                        width: '400px'
+                        height: '330px',
+                        width: '500px'
                     },
                     large: {
-                        height: '330px',
-                        width: '440px'
+                        height: '360px',
+                        width: '550px'
                     }
                 };
 
@@ -119,10 +118,14 @@ app.directive('galleryDir', function($timeout, $sce, utilityFunctions){
                     var ss = utilityFunctions.screenSize();
                     if(ss && hm[ss]){
                         var valu = hm[ss];
-                        el.style.height = valu.height;
+                        if(valu.height){
+                            el.style.height = valu.height;
+
+                        }
                         el.style.width = valu.width;
                     }
-                })
+                });
+
 
             },1000);
 
@@ -282,8 +285,8 @@ app.directive('imageModalDir', function($timeout, utilityFunctions) {
                     document.querySelector('html').style.height = bodyHeight + 'px';
                 }
 
-
             },1000);
+
 
             $scope.$watch('open', function(newValue, oldValue) {
                 if(newValue == true){

@@ -57,3 +57,13 @@
 [data-section="gallery"] .gallery-wrapper:nth-child(n+2){
     margin-top: 20px;
 }
+
+[data-section="gallery"] .special-styling iframe{
+    margin-top: -60px;
+}
+
+@media screen and (min-width: 436px) and (max-width: 39.9375em) {
+    [data-section="gallery"] .special-styling iframe{
+        margin-top: -45px;
+    }
+}
