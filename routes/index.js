@@ -28,10 +28,25 @@ router.get('/route_templates/:name', function (req, res) {
 });
 
 router.get('/getContent', function(req, res){
+    return res.json(content);
     const prom = dbutils.getValue('copy');
     prom.then(function(e){
        return res.json(JSON.parse(e));
     });
+});
+
+router.get('/testEmail', function(req,res){
+    const sgMail = require('@sendgrid/mail');
+    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+    const msg = {
+        to: 'kbacino244@yahoo.com',
+        from: 'test@example.com',
+        subject: 'Sending with SendGrid is Fun',
+        text: 'and easy to do anywhere, even with Node.js',
+        html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+    };
+    sgMail.send(msg);
+    return res.json({});
 });
 
 router.get('/getAuthenticated', function(req, res){

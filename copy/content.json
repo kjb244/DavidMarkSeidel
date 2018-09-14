@@ -12,7 +12,7 @@
   },
   "navBar": {
     "heading": {
-      "who": "David Mark Seidel - Wedding Officiant"
+      "who": "David Mark Seidel - Wedding Officiant, Planner, Vocalist"
     },
     "links": [
       {
@@ -140,7 +140,7 @@
       "data": [
         {
           "heading": "Civil Ceremony",
-          "price": "$700",
+          "price": false,
           "description": "Our Civil Ceremony is the most basic of our packages. These ceremonies are perfect for couples looking to tie the knot in a quick, but meaningful manner.",
           "points": [
             "Set ceremony script",
@@ -153,7 +153,7 @@
         },
         {
           "heading": "Planned Ceremony",
-          "price": "$900",
+          "price": false,
           "description": "Planned ceremony description",
           "points": [
             "Ceremony, wedding vows, and custom script development for the big day",

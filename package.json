@@ -14,6 +14,7 @@
     "url": "https://github.com/kjb244/Wedding"
   },
   "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
     "angular": "^1.6.4",
     "bcrypt": "^3.0.0",
     "body-parser": "~1.15.2",

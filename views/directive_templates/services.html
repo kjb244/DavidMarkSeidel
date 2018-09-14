@@ -7,7 +7,7 @@
                 <div class="pricing-wrapper" >
                     <ul class="pricing-table" ng-repeat = "rec in copy.routes.services.data">
                         <li class="title">{{rec.heading}}</li>
-                        <li class="price">{{rec.price}}</li>
+                        <li ng-if="rec.price != false" class="price">{{rec.price}}</li>
                         <li class="description">{{rec.description}}</li>
                         <li ng-repeat = "rec2 in rec.points">{{rec2}}</li>
                     </ul>
