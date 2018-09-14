@@ -31,6 +31,10 @@ app.config(function($routeProvider) {
         templateUrl: 'route_templates/route-contact.html',
         controller: 'ctrlMain'
     })
+    .when('/cms', {
+        templateUrl: 'route_templates/route-cms.html',
+        controller: 'ctrlMain'
+    })
 
 });
 

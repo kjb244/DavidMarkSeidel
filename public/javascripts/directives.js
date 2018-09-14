@@ -205,6 +205,74 @@ app.directive('contactDir', function(){
     };
 });
 
+app.directive('cmsDir', function(ajaxFetch){
+    return {
+        restrict: 'EA',
+        scope: false,
+        templateUrl: 'directive_templates/cms.html',
+        link: function($scope, elem, attrs){
+            $scope.form = {};
+            $scope.form.lookupCMSForm = {};
+            $scope.cms = {};
+            $scope.authenticationError=false;
+
+        },
+        controller: function($scope){
+
+            $scope.updateModel = function($event){
+                var payload = angular.extend({},
+                    {model: $scope.cms.model},
+                    {login: $scope.form.lookupCMSForm});
+
+                ajaxFetch.getData('/submitCmsUpdate', 'POST', payload)
+                    .then(function (res) {
+                        $event.target.parentNode.classList.add('saved');
+                        setTimeout(function(){
+                            $event.target.parentNode.classList.remove('saved');                        },3000);
+
+                    });
+            };
+
+            $scope.submitClick = function(invalid){
+                if(invalid) return false;
+                ajaxFetch.getData('/getAuthenticated', 'GET', $scope.form.lookupCMSForm)
+                    .then(function(res){
+                       if(res.data.indexOf('success')>-1){
+                           $scope.authenticationError=false;
+                           ajaxFetch.getData('/getContent')
+                               .then(function (res) {
+                                   var payload = res.data;
+
+                                   $scope.cms.model = payload;
+                                   $scope.cms.data = true;
+                                   $scope.cms.routes = {};
+
+
+                               });
+                       }
+                       else {
+                           $scope.cms.data = false;
+                           $scope.authenticationError=true;
+                        }
+                    });
+
+
+            };
+
+            $scope.typeOf = function(obj,typ){
+                if(typ === 'array'){
+                    return Array.isArray(obj);
+                }
+                else{
+                    return typeof obj === typ;
+                }
+            }
+
+
+        }
+    };
+});
+
 app.directive('testimonialDir', function(){
     return {
         restrict: 'EA',

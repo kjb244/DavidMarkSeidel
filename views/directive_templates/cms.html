@@ -1,0 +1,84 @@
+<div class="row collapse">
+    <div class="small-12 columns">
+        <form name="lookupCMSForm" novalidate>
+            <input type="text" placeholder="username" required ng-model="form.lookupCMSForm.username"/>
+            <input type="password" placeholder="password" required ng-model="form.lookupCMSForm.password"/>
+            <div ng-show="authenticationError" class="error">Incorrect username/password</div>
+            <a class="button" ng-disabled="lookupCMSForm.$invalid" ng-click="submitClick(lookupCMSForm.$invalid)">Submit</a>
+        </form>
+        <form name="updateCMSForm">
+            <div ng-show="cms.data">
+            <div class="contact container">
+                <h3>Contact</h3>
+                <div ng-repeat="(k,v) in cms.model.routes.contact">
+                    <p>{{k}}</p>
+                    <div class="wrapper">
+                        <textarea ng-blur="updateModel($event)"  ng-model="cms.model.routes.contact[k]"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="welcome container">
+                <h3>Welcome</h3>
+                <div ng-repeat="(k,v) in cms.model.routes.welcome">
+                    <div ng-if="typeOf(v,'string')">
+                        <p>{{k}}</p>
+                        <div class="wrapper">
+                            <textarea ng-blur="updateModel($event)"  ng-model="cms.model.routes.welcome[k]"></textarea>
+                        </div>
+                    </div>
+                    <div ng-if="typeOf(v,'array')">
+                        <div ng-repeat="para in v track by $index">
+                            <p>paragraph {{$index+1}}</p>
+                            <div class="wrapper">
+                                <textarea ng-blur="updateModel($event)" ng-model="cms.model.routes.welcome.paras[$index]"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="services container">
+                <h3>Services</h3>
+                <div ng-repeat="(k,v) in cms.model.routes.services">
+                    <div ng-if="typeOf(v,'string')">
+                        <p>{{k}}</p>
+                        <div class="wrapper">
+                            <textarea ng-blur="updateModel($event)" ng-model="cms.model.routes.services[k]"></textarea>
+                        </div>
+                    </div>
+                    <div ng-if="typeOf(v,'array')">
+                        <div ng-repeat="(k2,v2) in cms.model.routes.services[k]">
+                            <p>Data {{$index + 1}}</p>
+                            <div ng-repeat="(k3,v3) in cms.model.routes.services[k][$index]">
+                                <div ng-if="typeOf(v3,'string')">
+                                    <p>{{k3}}</p>
+                                    <div class="wrapper">
+                                        <textarea ng-blur="updateModel($event)" ng-model="cms.model.routes.services[k][$parent.$parent.$index][k3]"></textarea>
+                                    </div>
+
+                                </div>
+                                <div ng-if="typeOf(v3,'array')">
+                                    <div ng-repeat="(k4,v4) in cms.model.routes.services[k][$parent.$parent.$index][k3] track by $index">
+                                        <p>{{k3}} {{$index + 1}}</p>
+                                        <div class="wrapper">
+                                            <textarea ng-blur="updateModel($event)" ng-model="cms.model.routes.services[k][$parent.$parent.$parent.$index][k3][$index]"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        </form>
+    </div>
+</div>

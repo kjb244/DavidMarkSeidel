@@ -1,0 +1,32 @@
+[data-section="cms"] .container{
+    margin-bottom: 20px;
+}
+
+[data-section="cms"] textarea{
+    height: 200px;
+    margin: 0;
+}
+
+[data-section="cms"] .wrapper{
+    transition: opacity .5s linear;
+    position: relative;
+}
+[data-section="cms"] .wrapper::after{
+    transition: opacity .5s linear;
+    content: "saved";
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    color: gray;
+    opacity: 0;
+}
+
+
+[data-section="cms"] .saved{
+    border: 1px solid red;
+
+}
+
+[data-section="cms"] .saved::after{
+    opacity: 1;
+}
