@@ -42,6 +42,15 @@
     ]
   },
   "routes": {
+    "about": {
+      "heading": "About David Mark Seidel",
+      "paras": [
+        "For more than 35 years, David has been performing ceremonies all over the  world.  He is a student and practitioner of World Faiths, among them: Christian, Jewish, Hindu, and Native American.  He spent 10 years of dedicated scriptural study in monastic settings both in New York and India.  His successful married life is 39 years strong and that was preceded by a 10 year blossoming friendship to his wife Jeanette ( and he is father to the handsomest 17 year old young man in Charlotte,  son Jonathan ).",
+        "He currently officiates non-denominational weddings in the Charlotte North Carolina region and beyond! He is an expert Wedding Planner, providing FREE Vendor selection and management of:  Venue, Caterer,  DJ, Musicians, Vocalist, Photographer, Videographer, Rentals , Cake, Floral, Décor, Dress, Transportation, and  Lodging.",
+        "As a Vocalist, he approaches the marriage ceremony as a wondrous vessel infused with joy and celebration and offers love songs from the Best of Broadway and the Great American Songbook.  Allow David to meet with you and create a ceremony and an event that launches your marriage with exquisite positive energy, a day that will 'love you back to life again and again.'",
+        "His weddings have been featured on Live with Kelly and Ryan, ABC NEWS, and all major news outlets!  Reverend David is a one-of-a-kind Original.  No one else inside the Wedding industry is able to bring the level of intimacy and trust to a ceremony like he does.  His trademark is to allow the entire gathering of family and friends to bestow their blessings on the Newlyweds, just as the couple blesses each other.  A wedding with Reverend David is a gathering fully engaged in the ritual of celebration, not merely spectators at a distance. When you meet him, you will see and feel what he is all about and you will be very pleased you chose him to make your marriage a sacred and everlasting relationship."
+      ]
+    },
     "gallery": {
       "heading": "Gallery",
       "photos": [
@@ -154,7 +163,7 @@
         {
           "heading": "Planned Ceremony",
           "price": false,
-          "description": "Planned ceremony description",
+          "description": false,
           "points": [
             "Ceremony, wedding vows, and custom script development for the big day",
             "As much phone and e-mail communication and personal consultation as needed",
@@ -164,7 +173,9 @@
             "Marriage license(s) sent by certified mail back to the County Clerk of Record",
             "Travel within Mecklenburg County – a small travel fee may incur if outside the county",
             "Rehearsals are optional",
-            "Optional professional music coordination for the ceremony with our in-house audio technician."
+            "Optional professional music coordination for the ceremony with our in-house audio technician.",
+            "Wedding Planner, providing FREE Vendor selection and management of:  Venue, Caterer,  DJ, Musicians, Vocalist, Photographer, Videographer, Rentals , Cake, Floral, Décor, Dress, Transportation, and  Lodging.",
+            "As a Vocalist, David approaches the marriage ceremony as a wondrous vessel infused with joy and celebration and offers love songs from the Best of Broadway and  The Great American Songbook.  Allow David to meet with you and create a ceremony and an event that launches your marriage with exquisite positive energy, a day that will 'love you back to life again and again.'"
           ]
         }
       ]

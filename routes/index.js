@@ -5,6 +5,7 @@ let router = express.Router();
 let path = require('path');
 let content = require('../copy/content.json');
 let dbutils = require('../utils/dbUtils.js');
+let emailutils = require('../utils/emailUtils');
 
 //GETS
 router.get('/', function(req, res, next) {
@@ -35,10 +36,7 @@ router.get('/getContent', function(req, res){
     });
 });
 
-router.get('/testEmail', function(req,res){
 
-    return res.json({});
-});
 
 router.get('/getAuthenticated', function(req, res){
     const username = req.query.username;
@@ -50,6 +48,18 @@ router.get('/getAuthenticated', function(req, res){
     }).catch(function(){
         return res.json('');
     })
+});
+
+router.post('/submitContactInfo', function(req, res) {
+    const data = req.body.data;
+    const {name, email, phone, comments} = data;
+    const emailProm = emailutils.sendEmailContact(name, email, phone, comments);
+    emailProm.then(function(){
+        return res.json('success');
+    }).catch(function(){
+        return res.json('failure');
+    })
+
 });
 
 router.post('/submitCmsUpdate', function(req, res) {

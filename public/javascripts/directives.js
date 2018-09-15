@@ -64,6 +64,22 @@ app.directive('footerDir', function(){
     };
 });
 
+app.directive('aboutDir', function(){
+    return {
+        restrict: 'EA',
+        scope: false,
+        templateUrl: 'directive_templates/about.html',
+        link: function($scope, elem, attrs){
+
+        },
+        controller: function($scope){
+
+
+
+        }
+    };
+});
+
 app.directive('welcomeDir', function(){
     return {
         restrict: 'EA',
@@ -188,7 +204,7 @@ app.directive('servicesDir', function(){
     };
 });
 
-app.directive('contactDir', function(){
+app.directive('contactDir', function(ajaxFetch){
     return {
         restrict: 'EA',
         scope: false,
@@ -198,7 +214,21 @@ app.directive('contactDir', function(){
 
         },
         controller: function($scope){
+            $scope.submitForm = function(){
+                ajaxFetch.getData('/submitContactInfo', 'POST', $scope.form)
+                    .then(function (res) {
+                        var success = res.data.indexOf('success') > -1;
+                        $scope.openModal=true;
+                        if(success){
+                            $scope.modalHeading="Email successfully sent!";
+                            $scope.modalBody="David Seidel will be in touch shortly";
+                        }
+                        else{
+                            $scope.modalHeading="Error emailing - please try again";
+                        }
 
+                    });
+            }
 
 
         }
@@ -324,6 +354,39 @@ app.directive('modalOverlayDir', function($timeout){
         }
     };
 });
+
+app.directive('nativeModalDir', function() {
+    return {
+        restrict: 'EA',
+        scope: {
+            open: '=',
+            heading: '<',
+            body: '<'
+        },
+        templateUrl: 'directive_templates/native-modal.html',
+        link: function ($scope, elem, attrs) {
+
+            $scope.$watch('open', function(newValue, oldValue) {
+                if(newValue == true){
+
+                    $('[data-container="native-modal"]').foundation();
+                    $('#nativeModal').foundation('open');
+
+                }
+            });
+
+        },
+        controller: function ($scope) {
+
+            $scope.closeModal = function(){
+                $scope.open = false;
+
+            }
+
+        }
+    }
+});
+
 
 app.directive('imageModalDir', function($timeout, utilityFunctions) {
     return {

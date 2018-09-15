@@ -1,25 +1,26 @@
 <div class="row collapse">
+    <native-modal-dir open="openModal" heading="modalHeading" body="modalBody"></native-modal-dir>
     <div class="small-12 medium-10 medium-centered columns">
         <h2>{{copy.routes.contact.header}}</h2>
         <h4>{{copy.routes.contact.subHeader}}</h4>
         <form name="contactForm">
             <label>
                 *Name
-                <input type="text" name="name" ng-minlength="3" ng-model="form.name"/>
+                <input type="text" id="name" name="name" ng-minlength="3" ng-model="form.name"/>
             </label>
             <label>
                 *Email
-                <input type="email" required name="email"  ng-model="form.email"/>
+                <input type="email" id="email" required name="email"  ng-model="form.email"/>
             </label>
             <label>
                 Phone
-                <input type="text" name="phone"  ng-model="form.phone"/>
+                <input type="tel" id="phone" name="phone"  ng-model="form.phone"/>
             </label>
             <label>
                 Comments
-                <textarea name="comments" ng-model="form.comments"/>
+                <textarea name="comments" id="comments" ng-model="form.comments"/>
             </label>
-            <a class="button" ng-disabled="!contactForm.$valid">Submit</a>
+            <a class="button" ng-click="submitForm()" ng-disabled="!contactForm.$valid">Submit</a>
         </form>
 
     </div>
