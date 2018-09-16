@@ -411,10 +411,8 @@ app.directive('imageModalDir', function($timeout, utilityFunctions) {
             //hack for modal not scrolling to top
             $timeout(function(){
                 var ss = utilityFunctions.screenSize();
-                if(ss === 'small'){
-                    var bodyHeight = document.body.scrollHeight;
-                    document.querySelector('html').style.height = bodyHeight + 'px';
-                }
+                var bodyHeight = document.body.scrollHeight;
+                document.querySelector('html').style.height = bodyHeight + 'px';
 
             },1000);
 
