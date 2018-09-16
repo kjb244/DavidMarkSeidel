@@ -165,6 +165,7 @@ body h6{
 
 .animate-switch.ng-leave {
     animation: .8s disappear;
+    min-height: 2000px;
 }
 
 @keyframes appear {
