@@ -27,8 +27,9 @@ class emailUtils{
     }
 
     sendEmailContact(name, email, phone, comments){
+        comments = (comments || '').substr(0,6000);
 
-        const htmlString = `<div><b>Name:</b> ${name}<br><b>Email:</b> ${email}<br><b>Phone:</b> ${phone}<br><b>Comments:</b> ${comments}</div>`;
+        const htmlString = `<div><b>Name:</b> ${name}<br><br><b>Email:</b> ${email}<br><br><b>Phone:</b> ${phone}<br><br><b>Comments:</b> ${comments}</div>`;
 
         return this.sendEmail(
                 'weddingadmin@dms.com',

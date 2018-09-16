@@ -58,52 +58,68 @@
           "title": "Wedding Highlights",
           "photoDetails": [
             {
-              "imageLocation": "images/wedding-1.jpg"
+              "imageLocation": "images/wedding-1.jpg",
+              "alt": "David Mark Seidel Wedding Sunset"
             },
             {
-              "imageLocation": "images/wedding-2.jpg"
+              "imageLocation": "images/wedding-2.jpg",
+              "alt": "David Mark Seidel Wedding with Groom"
             },
             {
-              "imageLocation": "images/wedding-3.jpg"
+              "imageLocation": "images/wedding-3.jpg",
+              "alt": "Flowergirl"
             },
             {
-              "imageLocation": "images/wedding-4.jpg"
+              "imageLocation": "images/wedding-4.jpg",
+              "alt": "Ring bearer"
             },
             {
-              "imageLocation": "images/wedding-5.jpg"
+              "imageLocation": "images/wedding-5.jpg",
+              "alt": "David Mark Seidel Videographer"
             },
             {
-              "imageLocation": "images/wedding-6.jpg"
+              "imageLocation": "images/wedding-6.jpg",
+              "alt": "David Mark Seidel Officiating"
             },
             {
-              "imageLocation": "images/wedding-7.jpg"
+              "imageLocation": "images/wedding-7.jpg",
+              "alt": "David Mark Seidel Officiating 2"
             },
             {
-              "imageLocation": "images/wedding-8.jpg"
+              "imageLocation": "images/wedding-8.jpg",
+              "alt": "Bride Groom kiss"
             },
             {
-              "imageLocation": "images/wedding-9.jpg"
+              "imageLocation": "images/wedding-9.jpg",
+              "alt": "Bride Groom with son"
             },
             {
-              "imageLocation": "images/wedding-10.jpg"
+              "imageLocation": "images/wedding-10.jpg",
+              "alt": "David Mark Seidel Sunset"
             },
             {
-              "imageLocation": "images/wedding-11.jpg"
+              "imageLocation": "images/wedding-11.jpg",
+              "alt": "David Mark Seidel with Bride"
             },
             {
-              "imageLocation": "images/wedding-12.jpg"
+              "imageLocation": "images/wedding-12.jpg",
+              "alt": "David Mark Seidel with Bridesmaids"
             },
             {
-              "imageLocation": "images/wedding-13.jpg"
+              "imageLocation": "images/wedding-13.jpg",
+              "alt": "David Mark Seidel with couple"
             },
             {
-              "imageLocation": "images/wedding-14.jpg"
+              "imageLocation": "images/wedding-14.jpg",
+              "alt": "Bride and Groom"
             },
             {
-              "imageLocation": "images/wedding-15.jpg"
+              "imageLocation": "images/wedding-15.jpg",
+              "alt": "Bride and Groom"
             },
             {
-              "imageLocation": "images/wedding-16.jpg"
+              "imageLocation": "images/wedding-16.jpg",
+              "alt": "Bride and Groom"
             }
           ]
         },
@@ -111,24 +127,63 @@
           "title": "Cape May New Jersey 2018",
           "photoDetails": [
             {
-              "imageLocation": "images/capemay-1.jpg"
+              "imageLocation": "images/capemay-1.jpg",
+              "alt": "David Mark Seidel Officiating"
             },
             {
-              "imageLocation": "images/capemay-2.jpg"
+              "imageLocation": "images/capemay-2.jpg",
+              "alt": "Bride and Groom reading vows"
             },
             {
-              "imageLocation": "images/capemay-3.jpg"
+              "imageLocation": "images/capemay-3.jpg",
+              "alt": "Bride and Groom kissing"
             },
             {
-              "imageLocation": "images/capemay-4.jpg"
+              "imageLocation": "images/capemay-4.jpg",
+              "alt": "David Mark Seidel announcing marriage"
             },
             {
-              "imageLocation": "images/capemay-5.jpg"
+              "imageLocation": "images/capemay-5.jpg",
+              "alt": "Flower toss"
             },
             {
-              "imageLocation": "images/capemay-6.jpg"
+              "imageLocation": "images/capemay-6.jpg",
+              "alt": "Bride and Groom photo session"
             }
           ]
+        },
+        {
+          "title": "Other Weddings 2018",
+          "photoDetails": [
+            {
+              "imageLocation": "images/wedding-18.jpg",
+              "alt": "Wedding Lake"
+            },
+            {
+              "imageLocation": "images/wedding-19.jpg",
+              "alt": "David Mark Seidel with Bride and Groom"
+            },
+            {
+              "imageLocation": "images/wedding-20.jpg",
+              "alt": "Bride and Groom kissing"
+            },
+            {
+              "imageLocation": "images/wedding-21.jpg",
+              "alt": "David Mark Seidel with Bride and Groom"
+            },
+            {
+              "imageLocation": "images/wedding-22.jpg",
+              "alt": "David Mark Seidel with Bride and Groom"
+            },
+            {
+              "imageLocation": "images/wedding-23.jpg",
+              "alt": "David Mark Seidel with Bride and Groom"
+            },
+            {
+              "imageLocation": "images/wedding-24.jpg",
+              "alt": "Bride and Groom posing"
+            }
+            ]
         }
       ],
       "videos": [
@@ -398,12 +453,22 @@
       "subHeader": "Please fill out the information below"
     },
     "welcome": {
-      "heading": "David Mark Seidel - Wedding Officiant",
-      "headingSub": "Wedding Officiant, Multi-Lingual, Multi-Cultural, Ambassador of Love",
+      "heading": "David Mark Seidel - Wedding Officiant, Planner, Vocalist",
+      "headingSub": "Multi-Lingual, Multi-Cultural, Ambassador of Love",
       "paras": [
         "For more than 35 years, David has been performing ceremonies both spiritual and secular all over the  world.  He is a student and practitioner of World Faiths, among them: Christian, Jewish, Hindu, and Native American.  He spent 10 years of dedicated scriptural study in monastic settings both in New York and India.  His successful married life is 38 years strong and that was preceded by a 10 year blossoming friendship to his wife Jeanette ( and he is father to the handsomest 16 year old young man in Charlotte,  son Jonathan ).",
         "He currently officiates non-denominational weddings in the Charlotte region and beyond! He approaches the marriage ceremony as a wondrous vessel infused with joy and celebration.   Yes, you will be married and you will have a very great time! The sacred and the sublime are guests at your wedding.  Allow David to meet with you and create a ceremony and an event that launches your marriage with exquisite positive energy, a day that will “love you back to life again and again.",
-        "AND, his wedding team includes the most amazing DJ,  the classic 1958 Rolls Royce Silver Cloud and the finest musicians and performers from all musical genres.  If you are interested in booking David as your Officiant you can reach him at <a id='contactNum' href='tel:7045267284'>704.526.7284</a>, or <a href='mailto:david@davidmarkseidel.com'>david@davidmarkseidel.com</a> for availability. See Officiating Services page on this site.  David is multi-lingual Spanish/English and also is skilled in Hindi/Sanskrit for Indian weddings and Pujas. Same Sex Unions are Welcome."
+        "AND, his wedding team includes the most amazing DJ,  the classic 1958 Rolls Royce Silver Cloud and the finest musicians and performers from all musical genres.  If you are interested in booking David as your Officiant you can <a id='linkToContact' href='/#contact'>use our contact page</a>,  reach him at <a id='contactNum' href='tel:7045267284'>704.526.7284</a>, or <a id='emailDavidMarkSeidel' href='mailto:david@davidmarkseidel.com'>david@davidmarkseidel.com</a> for availability. David is multi-lingual Spanish/English and also is skilled in Hindi/Sanskrit for Indian weddings and Pujas. Same Sex Unions are Welcome."
+      ],
+      "images":[
+        {
+        "location": "images/wedding-1.jpg",
+        "alt": "Wedding Picture David Seidel with Couple Sunset"
+      },
+        {
+          "location": "images/wedding-17.jpg",
+          "alt": "Wedding Picture David Seidel with Couple"
+        }
       ]
     },
     "home": {
@@ -455,11 +520,18 @@
         ]
       },
       {
+        "title": "Location",
+        "type": "Default",
+        "content": [
+          "Charlotte, NC"
+        ]
+      },
+      {
         "title": "Social",
         "type": "Social",
         "content": [
           {
-            "href": "",
+            "href": "https://www.facebook.com/pages/category/Local-Business/Reverend-David-Mark-Seidel-1402710086513124/",
             "icon": "facebook"
           },
           {

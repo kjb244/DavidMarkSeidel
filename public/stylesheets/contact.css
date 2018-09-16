@@ -2,6 +2,10 @@
     height: 200px;
 }
 
+[data-section="contact"] h2, [data-section="contact"] h3{
+    text-align: center;
+}
+
 [data-section="contact"] .button{
     width: 100%;
 }

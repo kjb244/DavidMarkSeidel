@@ -9,7 +9,11 @@ let emailutils = require('../utils/emailUtils');
 
 //GETS
 router.get('/', function(req, res, next) {
-  res.render('index', {});
+    const content = {
+        title: 'David Mark Seidel - Wedding Officiant, Planner, Vocalist Charlotte NC',
+        metaContent: 'David Mark Seidel - Wedding Officiant, Planner, Vocalist Charlotte NC non-denominational Spanish Espanol Same Sex Unions Welcome'
+    };
+    res.render('index', content);
 
 });
 

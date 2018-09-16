@@ -1,3 +1,7 @@
+[data-section="gallery"] .title{
+    text-align: center;
+}
+
 [data-section="gallery"] .image-details > .columns{
     display: flex;
     flex-wrap: wrap;

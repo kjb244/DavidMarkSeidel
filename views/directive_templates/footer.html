@@ -9,12 +9,15 @@
                 <div class="switch-when col" ng-switch-when="Contact">
                     <div ng-repeat="rec2 in rec.content" ng-bind-html="rec2"></div>
                 </div>
+                <div class="switch-when col" ng-switch-when="Default">
+                    <p ng-repeat="rec2 in rec.content">{{rec2}}</p>
+                </div>
                 <div class="switch-when rw" ng-switch-when="Social">
                     <div class="social" ng-repeat="rec2 in rec.content">
-                        <a ng-if="rec2.icon === 'facebook'">
+                        <a id="facebookLink" target="_blank" ng-if="rec2.icon === 'facebook'" href="{{rec2.href}}">
                             <i class="fa fa-facebook-official" aria-hidden="true"></i>
                         </a>
-                        <a ng-if="rec2.icon === 'twitter'">
+                        <a id="twitterLink" target="_blank" ng-if="rec2.icon === 'twitter'">
                             <i class="fa fa-twitter" aria-hidden="true"></i>
                         </a>
                     </div>

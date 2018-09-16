@@ -11,15 +11,19 @@ body{
 body h4, body h6, body h5, body h4, body h3, body h2, body h1, body p, body label, body select, body span, body li{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    color: #5f6c75;
+
 }
 
 body p{
     font-weight: 300;
-    font-size: 14px;
+    line-height: 2;
+    font-size: 16px;
+}
+body h2{
+    font-size: 28px;
 }
 body h3{
-    font-size: 24px;
+    font-size: 20px;
 }
 body h4{
     font-size: 18px;

@@ -1,17 +1,26 @@
 <div class="row">
-    <div class="small-12 columns">
-        <h3>{{copy.routes.welcome.heading}}</h3>
-        <h4>{{copy.routes.welcome.headingSub}}</h4>
-        <div class="paras-wrapper" ng-repeat="rec in copy.routes.welcome.paras">
-            <p ng-bind-html="rec"></p>
-        </div>
+    <div class="small-12 small-centered columns heading">
+        <h2>{{copy.routes.welcome.heading}}</h2>
+        <h3>{{copy.routes.welcome.headingSub}}</h3>
+    </div>
 
-        <div class="row collapse">
-            <div class="small-12 large-9 large-centered columns">
+    <div class="details">
+        <div class="small-12 medium-6 columns">
 
-
+            <div class="paras-wrapper" ng-repeat="rec in copy.routes.welcome.paras">
+                <p ng-bind-html="rec"></p>
             </div>
 
+            <div class="row collapse">
+                <div class="small-12 large-9 large-centered columns">
+
+
+                </div>
+
+            </div>
+        </div>
+        <div ng-repeat="rec in copy.routes.welcome.images" ng-class="{'last':$last}" class="image-container small-12 medium-6 columns">
+            <image src="{{rec.location}}" alt="{{rec.alt}}"></image>
         </div>
     </div>
 </div>

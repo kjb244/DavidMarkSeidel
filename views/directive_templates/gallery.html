@@ -1,18 +1,18 @@
 <div class="row collapse">
     <div class="small-12 columns">
-        <h3>{{copy.routes.gallery.heading}}</h3>
+        <h2 class="title">{{copy.routes.gallery.heading}}</h2>
     </div>
 </div>
 <div  ng-repeat="rec in copy.routes.gallery.photos" ng-init="parentLast = $last" class="gallery-wrapper">
     <div class="row collapse heading">
         <div class="small-12 columns">
-            <h5>{{rec.title}}</h5>
+            <h3>{{rec.title}}</h3>
         </div>
     </div>
     <div class="row collapse image-details">
         <div class="small-12 columns">
             <div class="photo-container" ng-click="photoClick($parent.$index, $index)" ng-repeat="photo in rec.photoDetails">
-                <div class="image-div" ng-init="initImagesCss(parentLast && $last)" data-src="{{photo.imageLocation}}"></div>
+                <div class="image-div" title="{{photo.alt}}" ng-init="initImagesCss(parentLast && $last)" data-src="{{photo.imageLocation}}"></div>
                 <i class="fa fa-search" aria-hidden="true"></i>
 
 
@@ -26,7 +26,7 @@
 <div  ng-repeat="rec in copy.routes.gallery.videos" class="video gallery-wrapper">
     <div class="row collapse heading">
         <div class="small-12 columns">
-            <h5>{{rec.title}}</h5>
+            <h3>{{rec.title}}</h3>
         </div>
     </div>
     <div class="row collapse video-details" ng-class="{'special-styling': rec.specialStyling }">

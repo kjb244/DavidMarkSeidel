@@ -1,8 +1,7 @@
 <div class="row collapse">
-    <native-modal-dir open="openModal" heading="modalHeading" body="modalBody"></native-modal-dir>
     <div class="small-12 medium-10 medium-centered columns">
         <h2>{{copy.routes.contact.header}}</h2>
-        <h4>{{copy.routes.contact.subHeader}}</h4>
+        <h3>{{copy.routes.contact.subHeader}}</h3>
         <form name="contactForm">
             <label>
                 *Name
@@ -22,6 +21,7 @@
             </label>
             <a class="button" ng-click="submitForm()" ng-disabled="!contactForm.$valid">Submit</a>
         </form>
+        <native-modal-dir open="openModal" heading="modalHeading" body="modalBody"></native-modal-dir>
 
     </div>
 </div>

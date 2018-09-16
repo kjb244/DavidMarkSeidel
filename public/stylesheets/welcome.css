@@ -1,12 +1,18 @@
 
 
-[data-section="welcome"] h3, [data-section="welcome"] h4{
+[data-section="welcome"] h2, [data-section="welcome"] h3{
     text-align: center;
 }
 
 
-[data-section="welcome"] .paras-wrapper{
+[data-section="welcome"] .details{
     margin-top: 25px;
+}
+
+
+
+[data-section="welcome"] .image-container:not(.last){
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 39.9375em) {

@@ -9,7 +9,7 @@
         <form name="updateCMSForm">
             <div ng-show="cms.data">
             <div class="contact container">
-                <h3>Contact</h3>
+                <h2>Contact</h2>
                 <div ng-repeat="(k,v) in cms.model.routes.contact">
                     <p>{{k}}</p>
                     <div class="wrapper">
@@ -19,7 +19,7 @@
             </div>
 
             <div class="welcome container">
-                <h3>Welcome</h3>
+                <h2>Welcome</h2>
                 <div ng-repeat="(k,v) in cms.model.routes.welcome">
                     <div ng-if="typeOf(v,'string')">
                         <p>{{k}}</p>
@@ -40,7 +40,7 @@
             </div>
 
             <div class="services container">
-                <h3>Services</h3>
+                <h2>Services</h2>
                 <div ng-repeat="(k,v) in cms.model.routes.services">
                     <div ng-if="typeOf(v,'string')">
                         <p>{{k}}</p>
