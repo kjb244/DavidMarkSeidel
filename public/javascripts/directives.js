@@ -271,10 +271,12 @@ app.directive('cmsDir', function(ajaxFetch){
                            $scope.authenticationError=false;
                            ajaxFetch.getData('/getContent')
                                .then(function (res) {
+                                   console.log(res.data);
                                    var payload = res.data;
 
                                    $scope.cms.model = payload;
                                    $scope.cms.data = true;
+
                                    $scope.cms.routes = {};
 
 

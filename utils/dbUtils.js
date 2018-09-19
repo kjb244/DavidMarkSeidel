@@ -21,6 +21,8 @@ let config = {
 class dbUtils{
 
     authenticateUser(username, password){
+
+
         return new Promise(function(resolve, reject){
            if(localLogin){
                resolve();

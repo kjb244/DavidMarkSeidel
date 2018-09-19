@@ -8,6 +8,7 @@
         </form>
         <form name="updateCMSForm">
             <div ng-show="cms.data">
+
             <div class="contact container">
                 <h2>Contact</h2>
                 <div ng-repeat="(k,v) in cms.model.routes.contact">
@@ -28,7 +29,7 @@
                         </div>
                     </div>
                     <div ng-if="typeOf(v,'array')">
-                        <div ng-repeat="para in v track by $index">
+                        <div ng-if="typeOf(v[$index],'string')"  ng-repeat="para in v track by $index">
                             <p>paragraph {{$index+1}}</p>
                             <div class="wrapper">
                                 <textarea ng-blur="updateModel($event)" ng-model="cms.model.routes.welcome.paras[$index]"></textarea>

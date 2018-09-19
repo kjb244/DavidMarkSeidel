@@ -1,7 +1,7 @@
 <div class="row collapse">
     <div class="small-12 medium-10 medium-centered columns">
         <h2>{{copy.routes.contact.header}}</h2>
-        <h3>{{copy.routes.contact.subHeader}}</h3>
+        <h3 ng-bind-html="copy.routes.contact.subHeader"></h3>
         <form name="contactForm">
             <label>
                 *Name

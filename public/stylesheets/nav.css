@@ -1,11 +1,11 @@
 
-
 [data-section="menu"] nav .title-bar {
     margin-bottom: 15px;
     height: 60px;
     padding: 0;
     display: flex;
     align-items: center;
+    background: #2199e8;
 }
 
 [data-section="menu"] nav .title-bar .title{
@@ -43,18 +43,23 @@
     display: none;
 }
 
+[data-section="menu"] .is-drilldown .vertical{
+    background: #2199e8 !important;
+
+}
+
 [data-section="menu"] .vertical.menu{
     background-color: #222b31;
     padding: 8px;
 }
 
 [data-section="menu"] .vertical.menu a{
-    color: rgba(254, 254, 254, 0.6);
+    color: rgba(254, 254, 254, 1);
     transition: color .2s ease-in;
 }
 
 [data-section="menu"] .vertical.menu a:hover{
-  color: rgba(254, 254, 254, 0.9);
+  color: rgba(254, 254, 254, 0.6);
 }
 
 [data-section="menu"] nav  li:focus, [data-section="menu"] nav  li a:focus {

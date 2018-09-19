@@ -36,6 +36,10 @@ body h6{
     font-size: 16px;
 }
 
+.blue{
+    color: #2199e8;
+}
+
 .overlay{
     z-index: 10;
     height: 200%;
@@ -186,5 +190,3 @@ body h6{
         opacity: 0;
     }
 }
-
-

@@ -27,8 +27,8 @@
 }
 
 [data-section="services"] .title {
-    background-color: #333333;
-    color: #EEEEEE;
+    background-color: #2199e8;
+    color: rgb(254, 254, 254);
     font-size: 0.875rem;
     border-bottom: 0;
 }
