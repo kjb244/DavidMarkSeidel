@@ -198,19 +198,40 @@ app.directive('servicesDir', function(){
         },
         controller: function($scope){
 
-
+            $scope.commaCount = function(rec){
+                rec = rec || '';
+                return rec.split(',').length-1;
+            }
 
         }
     };
 });
 
-app.directive('contactDir', function(ajaxFetch){
+app.directive('contactDir', function(ajaxFetch, angularStore){
     return {
         restrict: 'EA',
         scope: false,
         templateUrl: 'directive_templates/contact.html',
         link: function($scope, elem, attrs){
+            var copy = angularStore.getContent('copy');
             $scope.form = {};
+            var checkboxArr = copy.routes.services.data.reduce(function(accum,e){
+                var arr = e.points.filter(function(e2){
+                    if(e2.split(',').length-1 > 7){
+                        return e2;
+                    }
+                });
+                if(arr.length){
+                    accum.push(arr[0]);
+                }
+                return accum;
+
+            },[]);
+
+            $scope.form.checkboxModel = checkboxArr[0].split(',').map(function(e){
+              return {name: e.trim(), value: false}
+            });
+
 
         },
         controller: function($scope){

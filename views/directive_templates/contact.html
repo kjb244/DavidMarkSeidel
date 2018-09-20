@@ -15,6 +15,15 @@
                 Phone
                 <input type="tel" id="phone" name="phone"  ng-model="form.phone"/>
             </label>
+            <div class="checkbox-wrapper row">
+                <h4>Interested In</h4>
+                <div class="small-6 medium-4 columns" ng-repeat="rec in form.checkboxModel">
+                    <label>
+                        <input type="checkbox" ng-model="rec.value" /> {{rec.name}}
+                    </label>
+                </div>
+
+            </div>
             <label>
                 Comments
                 <textarea name="comments" id="comments" ng-model="form.comments"/>

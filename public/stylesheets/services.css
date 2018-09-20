@@ -11,7 +11,25 @@
 }
 [data-section="services"] li{
     list-style-type: none;
+}
 
+[data-section="services"] .bullet-items .last{
+    float: left !important;
+}
+
+[data-section="services"] .bullet-items .item{
+    margin-bottom: 5px;
+}
+
+[data-section="services"] .bullet-items .item::before{
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    -moz-border-radius: 5.5px;
+    -webkit-border-radius: 5.5px;
+    border-radius: 5.5px;
+    background-color: #566d7c;
 }
 
 [data-section="services"] .pricing-table{
