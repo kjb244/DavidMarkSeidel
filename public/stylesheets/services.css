@@ -39,7 +39,7 @@
 
 [data-section="services"]  li {
     border-bottom: dotted 1px #DDDDDD;
-    font-size: 0.75rem;
+    font-size: 17px;
     padding: 0.875rem 1.125rem;
 
 }
@@ -47,7 +47,7 @@
 [data-section="services"] .title {
     background-color: #2199e8;
     color: rgb(254, 254, 254);
-    font-size: 0.875rem;
+    font-size: 18px;
     border-bottom: 0;
 }
 

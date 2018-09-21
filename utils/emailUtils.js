@@ -26,10 +26,14 @@ class emailUtils{
 
     }
 
-    sendEmailContact(name, email, phone, comments){
+    sendEmailContact(name, email, phone, comments, checkboxModel){
         comments = (comments || '').substr(0,6000);
 
-        const htmlString = `<div><b>Name:</b> ${name}<br><br><b>Email:</b> ${email}<br><br><b>Phone:</b> ${phone}<br><br><b>Comments:</b> ${comments}</div>`;
+        const checkboxModelStr = (checkboxModel || []).map((e) => {
+           return `${e.name}: ${e.value === false ? 'unchecked': 'checked'}<br>`;
+        }).join('');
+
+        const htmlString = `<div><b>Name:</b> ${name}<br><br><b>Email:</b> ${email}<br><br><b>Phone:</b> ${phone}<br><br><b>Checkboxes:</b><br>${checkboxModelStr}<br><b>Comments:</b> ${comments}</div>`;
 
         return this.sendEmail(
                 'weddingadmin@dms.com',

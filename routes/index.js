@@ -33,7 +33,6 @@ router.get('/route_templates/:name', function (req, res) {
 });
 
 router.get('/getContent', function(req, res){
-    //return res.json(content);
     const prom = dbutils.getValue('copy');
     prom.then(function(e){
        return res.json(JSON.parse(e));
@@ -56,8 +55,8 @@ router.get('/getAuthenticated', function(req, res){
 
 router.post('/submitContactInfo', function(req, res) {
     const data = req.body.data;
-    const {name, email, phone, comments} = data;
-    const emailProm = emailutils.sendEmailContact(name, email, phone, comments);
+    const {name, email, phone, comments, checkboxModel} = data;
+    const emailProm = emailutils.sendEmailContact(name, email, phone, comments, checkboxModel);
     emailProm.then(function(){
         return res.json('success');
     }).catch(function(){
