@@ -73,9 +73,9 @@
  }
 
 [data-section="testimonial"] .bottom img{
-    width: 113px;
-    height: 113px;
-    border-radius: 60px;
+    width: 30%;
+    height: 30%;
+    border-radius: 10px;
     order: 1;
 }
 
