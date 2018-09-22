@@ -8,8 +8,11 @@
                 <i class="fa fa-quote-right" aria-hidden="true"></i>
             </div>
             <div class="bottom">
-                <h4>{{rec.person}}</h4>
-                <h5>{{rec.sub}}</h5>
+                <img ng-if="rec.image" src="{{rec.image.location}}" alt="{{rec.image.alt}}">
+                <div clas="headings">
+                    <h4>{{rec.person}}</h4>
+                    <h5>{{rec.sub}}</h5>
+                </div>
             </div>
         </div>
     </div>

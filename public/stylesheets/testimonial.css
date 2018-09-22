@@ -56,7 +56,12 @@
 
 [data-section="testimonial"] .bottom{
     margin-top: 20px;
+    display: flex;
 
+}
+
+[data-section="testimonial"] .container-wrapper.odd .bottom{
+    justify-content: flex-end;
 }
 
 [data-section="testimonial"] .bottom h4{
@@ -64,5 +69,17 @@
 }
 
 [data-section="testimonial"] .bottom h5{
-    color: #9c8b8b;
+     color: #9c8b8b;
+ }
+
+[data-section="testimonial"] .bottom img{
+    width: 113px;
+    height: 113px;
+    border-radius: 60px;
+    order: 1;
+}
+
+[data-section="testimonial"] .container-wrapper.even .bottom img{
+    order: 2;
+    margin-left: 16px;
 }
