@@ -170,6 +170,11 @@
           "title": "Nicole & T.J. Video",
           "specialStyling": true,
           "iframe": "<iframe src=\"https://player.vimeo.com/video/273026374?color=db82e2&title=0&byline=0&portrait=0\" width=\"640\" height=\"280\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
+        },
+        {
+          "title": "Shellie and Jarrett Video",
+          "specialStyling": true,
+          "iframe": "<iframe src=\"https://player.vimeo.com/video/280652106?color=db82e2&title=0&byline=0&portrait=0\" width=\"640\" height=\"280\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
         }
       ]
     },
@@ -186,7 +191,7 @@
             "Lovely, keepsake certificates of marriage suitable for framing",
             "Experienced, professional and caring officiant for your ceremony",
             "Vocal music can be sung by David if requested",
-            "Marriage license(s) sent back to the County Clerk of Record",
+            "Marriage license sent back to the County Clerk of Record",
             "Can be performed anywhere within Mecklenburg County – outside of county may include a small travel fee"
           ]
         },
@@ -200,9 +205,9 @@
             "Pre-marital counseling is available to all couples with at least one session being the recommended minimum commitment",
             "Vocal music can be sung by David if requested",
             "Lovely, keepsake certificates of marriage suitable for framing",
-            "Marriage license(s) sent by certified mail back to the County Clerk of Record",
+            "Marriage license sent back to the County Clerk of Record",
             "Travel within Mecklenburg County – a small travel fee may incur if outside the county",
-            "Rehearsals are optional",
+            "Rehearsals are optional and highly recommended",
             "Optional professional music coordination for the ceremony with our in-house audio technician."
           ]
         },
@@ -211,7 +216,7 @@
           "price": false,
           "description": false,
           "points": [
-            "Typically 4 counseling sessions that focus on building inspiring relationship skills:  communication of feelings with good listening, self-inquiry, intimacy, and humor.  At least one session being the recommended minimum commitment."
+            "Typically 4 counseling sessions that focus on building inspiring relationship skills:  communication of feelings, good listening, self-inquiry, intimacy, and humor.  At least one session being the recommended minimum commitment."
           ]
         },
         {
@@ -467,7 +472,7 @@
       "paras": [
         "For more than 35 years, David has been performing ceremonies all over the  world.",
         "His weddings have been featured on Live with Kelly and Ryan, ABC NEWS, and all major news outlets! Reverend David is a one-of-a-kind Original. No one else inside the Wedding industry is able to bring the level of intimacy and trust to a ceremony like he does. His trademark is to allow the entire gathering of family and friends to bestow their blessings on the Newlyweds, just as the couple blesses each other. A wedding with Reverend David is a gathering fully engaged in the ritual of celebration, not merely spectators at a distance. ",
-        "He currently officiates non-denominational weddings in the Carolinas and beyond!  His couples enjoy pre-marital counseling sessions that focus on building inspiring relationship skills:  communication of feelings with good listening, self-inquiry, intimacy, and  humor.  ",
+        "He currently officiates non-denominational weddings in the Carolinas and beyond!  His couples enjoy pre-marital counseling sessions that focus on building inspiring relationship skills:  communication of feelings, good listening, self-inquiry, intimacy, and  humor.",
         "He is an expert Wedding Planner, providing FREE Vendor selection and management of: Venue, Caterer, DJ, Musicians, Vocalist, Photographer, Videographer, Rentals, Cake, Floral, Décor, Dress, Transportation, and Lodging.",
         "As a Vocalist, David approaches the marriage ceremony as a wondrous vessel infused with joy and celebration and offers love songs from the Best of Broadway and The Great American Songbook!",
         "If you are interested in booking David you can use our contact page, reach him at <a id='contactNum' href='tel:7045267284'>704.526.7284</a>, or <a id='emailDavidMarkSeidel' href='mailto:david@davidmarkseidel.com'>david@davidmarkseidel.com</a> for availability. David is multi-lingual Spanish/English, <span class='blue'>Se Habla Espanol</span> and also is skilled in Hindi/Sanskrit for Indian weddings and Pujas. Same Sex Unions are Welcome."
