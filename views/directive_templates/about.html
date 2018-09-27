@@ -4,10 +4,13 @@
     </div>
 </div>
 <div class="row">
-    <div class="small-12 columns medium-push-6 medium-6">
-        <image src="{{copy.routes.about.image.imageLocation}}" alt="{{copy.routes.about.image.alt}}"></image>
+    <div class="small-12 columns medium-push-6 medium-6 large-7 large-push-5">
+        <div class="image-wrapper">
+            <image ng-repeat="rec in copy.routes.about.images" src="{{rec.imageLocation}}" alt="{{rec.alt}}"></image>
+        </div>
+
     </div>
-    <div class="small-12 columns medium-pull-6 medium-6">
+    <div class="small-12 columns medium-pull-6 medium-6 large-5 large-pull-7">
         <div ng-repeat="rec in copy.routes.about.paras">
             <p>{{rec}}</p>
         </div>
