@@ -2,23 +2,6 @@
     text-align: center;
 }
 
-
-[data-section="about"] .image-wrapper img:first-child{
-    margin-bottom: 4px;
+[data-section="about"] .footer{
+    margin-top: 10px;
 }
-
-@media screen and (min-width: 64em) {
-    [data-section="about"] .image-wrapper {
-        display: flex;
-    }
-
-    [data-section="about"] .image-wrapper img{
-        max-height: 400px;
-    }
-
-    [data-section="about"] .image-wrapper img:first-child{
-        margin-right: 4px;
-        margin-bottom: 0;
-    }
-}
-

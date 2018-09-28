@@ -1,3 +1,7 @@
+[data-section="services"] h2{
+    text-align: center;
+}
+
 [data-section="services"] ul:first-child{
     margin-top: 20px;
 }

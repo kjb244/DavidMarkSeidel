@@ -49,16 +49,14 @@
         "David  is a practitioner of World Faiths, among them: Christian, Jewish, Hindu, and Native American. He spent 10 years of dedicated scriptural study in monastic settings both in New York and India. His successful married life is 39 years strong and that was preceded by a 10 year blossoming friendship to his wife Jeanette ( and he is father to the handsomest 17 year old young man in Charlotte, son Jonathan ).",
         "When you meet him, you will see and feel what he is all about and you will be very pleased you chose him to make your marriage a sacred and everlasting relationship. . Allow David to create a ceremony and an event that launches your marriage with exquisite positive energy, a day that will 'love you back to life again and again.'"
       ],
-      "images": [
-        {
-          "imageLocation": "images/wedding-11.jpg",
-          "alt": "David Mark Seidel with Bride"
-        },
-        {
-          "imageLocation": "images/wedding-25.jpg",
-          "alt": "David Mark Seidel with Bride"
-        }
-      ]
+      "topImage": {
+        "imageLocation": "images/wedding-11.jpg",
+        "alt": "David Mark Seidel with Bride"
+      },
+      "bottomImage": {
+        "imageLocation": "images/wedding-25.jpg",
+        "alt": "David Mark Seidel with Bride"
+      }
     },
     "gallery": {
       "heading": "Gallery",
@@ -185,8 +183,8 @@
       ]
     },
     "services": {
-      "heading": "David Mark Seidel has a package to fit every couple’s needs and budget. He will customize one just for you that is perfect for your ceremony. He is an ordained minister and wedding officiant in good standing and licensed to perform weddings in the United States.  He will also serve your Wedding as a Planner and provide beautiful Vocal solos for the Ceremony and Reception!",
-      "subHeading": "",
+      "heading": "Wedding Services",
+      "subHeading": "David Mark Seidel has a package to fit every couple’s needs and budget. He will customize one just for you that is perfect for your ceremony. He is an ordained minister and wedding officiant in good standing and licensed to perform weddings in the United States.  He will also serve your Wedding as a Planner and provide beautiful Vocal solos for the Ceremony and Reception!",
       "data": [
         {
           "heading": "Civil Ceremony",
@@ -245,18 +243,28 @@
       ]
     },
     "testimonials": {
-      "heading": "What Couples Are Saying",
+      "heading": "What Couples Are Saying!",
+      "images": [
+        {
+          "location": "images/review-1.jpg",
+          "alt": "Wedding Picture David Seidel with Couple"
+        },
+        {
+          "location": "images/review-2.jpg",
+          "alt": "Wedding Picture David Seidel with Couple"
+        },
+        {
+          "location": "images/review-3.jpg",
+          "alt": "Wedding Picture David Seidel with Couple"
+        }
+      ],
       "data": [
         {
           "text": [
             "Reverend David was awesome! We were searching for an officiant a few weeks before the wedding as the officiant we had lined up fell through. We’re so thankful we found Reverend David. He was transparent, easy to work with, and very professional. It was more than just a service he provided but he wanted to get to know not only my fiancé and I but our families and friends as well. He did an amazing job at our ceremony and it really couldn’t have been more perfect. So much so that my mother in law is using him to officiate her upcoming wedding. :) Thanks so much, Reverend David!!"
           ],
           "person": "Shellie",
-          "sub": "5/26/2018",
-          "image": {
-            "location": "images/review-1.jpg",
-            "alt": "Wedding Picture David Seidel with Couple"
-          }
+          "sub": "5/26/2018"
         },
         {
           "text": [

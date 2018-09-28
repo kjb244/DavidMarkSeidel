@@ -1,6 +1,10 @@
 <div class="row">
     <div class="small-12 columns">
         <h2>{{copy.routes.testimonials.heading}}</h2>
+        <div class="images">
+            <img ng-repeat="rec in copy.routes.testimonials.images" src="{{rec.location}}" alt="{{rec.alt}}">
+
+        </div>
         <div class="container-wrapper" ng-repeat="rec in copy.routes.testimonials.data" ng-class="{'even': $index % 2 === 0, 'odd': $index % 2 === 1}">
             <div class="container">
                 <i class="fa fa-quote-left" aria-hidden="true"></i>
@@ -8,7 +12,6 @@
                 <i class="fa fa-quote-right" aria-hidden="true"></i>
             </div>
             <div class="bottom">
-                <img ng-if="rec.image" src="{{rec.image.location}}" alt="{{rec.image.alt}}">
                 <div clas="headings">
                     <h4>{{rec.person}}</h4>
                     <h5>{{rec.sub}}</h5>

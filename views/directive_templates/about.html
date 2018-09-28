@@ -1,23 +1,21 @@
-<div class="row collapse">
+<div class="row">
     <div class="small-12 columns">
         <h2>{{copy.routes.about.heading}}</h2>
     </div>
 </div>
 <div class="row">
-    <div class="small-12 columns medium-push-6 medium-6 large-7 large-push-5">
-        <div class="image-wrapper">
-            <image ng-repeat="rec in copy.routes.about.images" src="{{rec.imageLocation}}" alt="{{rec.alt}}"></image>
-        </div>
-
+    <div class="small-12 columns medium-push-6 medium-6">
+            <image src="{{copy.routes.about.topImage.imageLocation}}" alt="{{copy.routes.about.topImage.alt}}"></image>
     </div>
-    <div class="small-12 columns medium-pull-6 medium-6 large-5 large-pull-7">
+    <div class="small-12 columns medium-pull-6 medium-6">
         <div ng-repeat="rec in copy.routes.about.paras">
             <p>{{rec}}</p>
         </div>
     </div>
-
 </div>
 
-
+<div class="row footer">
+    <div class="small-12 medium-10 medium-centered columns">
+        <image src="{{copy.routes.about.bottomImage.imageLocation}}" alt="{{copy.routes.about.bottomImage.alt}}"></image>
     </div>
 </div>
