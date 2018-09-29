@@ -45,7 +45,7 @@
     "about": {
       "heading": "About David Mark Seidel",
       "paras": [
-        "David Mark Seidel is an ordained minister and wedding officiant in good standing and licensed to perform weddings in the United States.",
+        "David Mark Seidel is an ordained minister and full-time wedding officiant and pre-marital counselor.  He performs weddings of all denominations (as well as non-denominational) throughout the United States and abroad.",
         "David  is a practitioner of World Faiths, among them: Christian, Jewish, Hindu, and Native American. He spent 10 years of dedicated scriptural study in monastic settings both in New York and India. His successful married life is 39 years strong and that was preceded by a 10 year blossoming friendship to his wife Jeanette ( and he is father to the handsomest 17 year old young man in Charlotte, son Jonathan ).",
         "When you meet him, you will see and feel what he is all about and you will be very pleased you chose him to make your marriage a sacred and everlasting relationship. . Allow David to create a ceremony and an event that launches your marriage with exquisite positive energy, a day that will 'love you back to life again and again.'"
       ],
@@ -161,6 +161,10 @@
             {
               "imageLocation": "images/wedding-22.jpg",
               "alt": "David Mark Seidel with Bride and Groom"
+            },
+            {
+              "imageLocation": "images/wedding-26.jpg",
+              "alt": "David Mark Seidel Officiating"
             }
           ]
         }
@@ -180,11 +184,20 @@
           "specialStyling": true,
           "iframe": "<iframe src=\"https://player.vimeo.com/video/280652106?color=db82e2&title=0&byline=0&portrait=0\" width=\"640\" height=\"280\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
         }
-      ]
+      ],
+      "credit": {
+        "heading": "Photos/Videos (some) courtesy of",
+        "data": [
+          "Melanie Mae Photography",
+          "Reel Weddings",
+          "Fipps Filming",
+          "Digital Spark Studios"
+        ]
+      }
     },
     "services": {
       "heading": "Wedding Services",
-      "subHeading": "David Mark Seidel has a package to fit every couple’s needs and budget. He will customize one just for you that is perfect for your ceremony. He is an ordained minister and wedding officiant in good standing and licensed to perform weddings in the United States.  He will also serve your Wedding as a Planner and provide beautiful Vocal solos for the Ceremony and Reception!",
+      "subHeading": "David Mark Seidel has a package to fit every couple’s needs and budget. He will customize one just for you that is perfect for your ceremony. David Mark Seidel is an ordained minister and full-time wedding officiant and pre-marital counselor.  He performs weddings of all denominations (as well as non-denominational) throughout the United States and abroad. He will also serve your Wedding as a Planner and provide beautiful Vocal solos for the Ceremony and Reception!",
       "data": [
         {
           "heading": "Civil Ceremony",
@@ -482,11 +495,11 @@
     },
     "welcome": {
       "heading": "David Mark Seidel - Wedding Officiant, Planner, Vocalist",
-      "headingSub": "Multi-Lingual, Multi-Cultural, Ambassador of Love",
+      "headingSub": "Multi-Lingual, Multi-Cultural, \"Ambassador of Love\"",
       "paras": [
         "For more than 35 years, David has been performing ceremonies all over the  world.",
         "His weddings have been featured on Live with Kelly and Ryan, ABC NEWS, and all major news outlets! Reverend David is a one-of-a-kind Original. No one else inside the Wedding industry is able to bring the level of intimacy and trust to a ceremony like he does. His trademark is to allow the entire gathering of family and friends to bestow their blessings on the Newlyweds, just as the couple blesses each other. A wedding with Reverend David is a gathering fully engaged in the ritual of celebration, not merely spectators at a distance. ",
-        "He currently officiates non-denominational weddings in the Carolinas and beyond!  His couples enjoy pre-marital counseling sessions that focus on building inspiring relationship skills:  communication of feelings, good listening, self-inquiry, intimacy, and  humor.",
+        "He currently officiates denominational and non-denominational weddings in the United States and abroad.  His couples enjoy pre-marital counseling sessions that focus on building inspiring relationship skills:  communication of feelings, good listening, self-inquiry, intimacy, and  humor.",
         "He is an expert Wedding Planner, providing FREE Vendor selection and management of: Venue, Caterer, DJ, Musicians, Vocalist, Photographer, Videographer, Rentals, Cake, Floral, Décor, Dress, Transportation, and Lodging.",
         "As a Vocalist, David approaches the marriage ceremony as a wondrous vessel infused with joy and celebration and offers love songs from the Best of Broadway and The Great American Songbook!",
         "If you are interested in booking David you can use our contact page, reach him at <a id='contactNum' href='tel:7045267284'>704.526.7284</a>, or <a id='emailDavidMarkSeidel' href='mailto:david@davidmarkseidel.com'>david@davidmarkseidel.com</a> for availability. David is multi-lingual Spanish/English, <span class='blue'>Se Habla Espanol</span> and also is skilled in Hindi/Sanskrit for Indian weddings and Pujas. Same Sex Unions are Welcome."

@@ -264,11 +264,24 @@ app.directive('cmsDir', function(ajaxFetch){
         link: function($scope, elem, attrs){
             $scope.form = {};
             $scope.form.lookupCMSForm = {};
+            $scope.form.choices = ['About', 'Welcome', 'Testimonial', 'Services', 'Contact' ];
+            $scope.form.choicesModel = null;
+
             $scope.cms = {};
             $scope.authenticationError=false;
 
         },
         controller: function($scope){
+
+            $scope.removeNode = function(route, masterKey, index){
+                if($scope.cms.model.routes[route] && $scope.cms.model.routes[route][masterKey]){
+                    if(Array.isArray($scope.cms.model.routes[route][masterKey])){
+                        $scope.cms.model.routes[route][masterKey].splice(index,1);
+                        $scope.updateModel();
+                    }
+
+                }
+            }
 
             $scope.updateModel = function($event){
                 var payload = angular.extend({},
@@ -277,9 +290,13 @@ app.directive('cmsDir', function(ajaxFetch){
 
                 ajaxFetch.getData('/submitCmsUpdate', 'POST', payload)
                     .then(function (res) {
-                        $event.target.parentNode.classList.add('saved');
-                        setTimeout(function(){
-                            $event.target.parentNode.classList.remove('saved');                        },3000);
+                        if($event){
+                            $event.target.parentNode.classList.add('saved');
+                            setTimeout(function(){
+                                $event.target.parentNode.classList.remove('saved');
+                            },3000);
+                        }
+
 
                     });
             };
@@ -292,7 +309,6 @@ app.directive('cmsDir', function(ajaxFetch){
                            $scope.authenticationError=false;
                            ajaxFetch.getData('/getContent')
                                .then(function (res) {
-                                   console.log(res.data);
                                    var payload = res.data;
 
                                    $scope.cms.model = payload;

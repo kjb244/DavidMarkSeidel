@@ -1,3 +1,7 @@
+[data-section="cms"] .button{
+    width: 100%;
+}
+
 [data-section="cms"] .container{
     margin-bottom: 20px;
 }
@@ -29,4 +33,34 @@
 
 [data-section="cms"] .saved::after{
     opacity: 1;
+}
+
+
+
+
+[data-section="cms"] .animate-switch.ng-enter{
+    animation: 1s appear;
+}
+
+[data-section="cms"] .animate-switch.ng-leave{
+
+    animation: 1s disappear;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }

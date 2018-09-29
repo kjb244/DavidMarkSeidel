@@ -8,78 +8,143 @@
         </form>
         <form name="updateCMSForm">
             <div ng-show="cms.data">
+                <label>Select a Section
+                    <select ng-model="form.choicesModel" ng-options="o as o for o in form.choices"></select>
+                </label>
 
-            <div class="contact container">
-                <h2>Contact</h2>
-                <div ng-repeat="(k,v) in cms.model.routes.contact">
-                    <p>{{k}}</p>
-                    <div class="wrapper">
-                        <textarea ng-blur="updateModel($event)"  ng-model="cms.model.routes.contact[k]"></textarea>
-                    </div>
-                </div>
-            </div>
+                <div class="selection-wrapper" ng-switch on="form.choicesModel">
 
-            <div class="welcome container">
-                <h2>Welcome</h2>
-                <div ng-repeat="(k,v) in cms.model.routes.welcome">
-                    <div ng-if="typeOf(v,'string')">
-                        <p>{{k}}</p>
-                        <div class="wrapper">
-                            <textarea ng-blur="updateModel($event)"  ng-model="cms.model.routes.welcome[k]"></textarea>
-                        </div>
-                    </div>
-                    <div ng-if="typeOf(v,'array')">
-                        <div ng-if="typeOf(v[$index],'string')"  ng-repeat="para in v track by $index">
-                            <p>paragraph {{$index+1}}</p>
+
+                    <div ng-switch-when="Contact" class="contact container animate-switch">
+                        <div ng-repeat="(k,v) in cms.model.routes.contact">
+                            <p>{{k}}</p>
                             <div class="wrapper">
-                                <textarea ng-blur="updateModel($event)" ng-model="cms.model.routes.welcome.paras[$index]"></textarea>
+                                <textarea ng-blur="updateModel($event)"  ng-model="cms.model.routes.contact[k]"></textarea>
                             </div>
                         </div>
                     </div>
 
-                </div>
-            </div>
-
-            <div class="services container">
-                <h2>Services</h2>
-                <div ng-repeat="(k,v) in cms.model.routes.services">
-                    <div ng-if="typeOf(v,'string')">
-                        <p>{{k}}</p>
-                        <div class="wrapper">
-                            <textarea ng-blur="updateModel($event)" ng-model="cms.model.routes.services[k]"></textarea>
-                        </div>
-                    </div>
-                    <div ng-if="typeOf(v,'array')">
-                        <div ng-repeat="(k2,v2) in cms.model.routes.services[k]">
-                            <p>Data {{$index + 1}}</p>
-                            <div ng-repeat="(k3,v3) in cms.model.routes.services[k][$index]">
-                                <div ng-if="typeOf(v3,'string')">
-                                    <p>{{k3}}</p>
+                    <div ng-switch-when="Welcome" class="welcome container animate-switch">
+                        <div ng-repeat="(k,v) in cms.model.routes.welcome">
+                            <div ng-if="typeOf(v,'string')">
+                                <p>{{k}}</p>
+                                <div class="wrapper">
+                                    <textarea ng-blur="updateModel($event)"  ng-model="cms.model.routes.welcome[k]"></textarea>
+                                </div>
+                            </div>
+                            <div ng-if="typeOf(v,'array')">
+                                <div ng-if="typeOf(v[$index],'string')"  ng-repeat="para in v track by $index">
+                                    <p>paragraph {{$index+1}}</p>
                                     <div class="wrapper">
-                                        <textarea ng-blur="updateModel($event)" ng-model="cms.model.routes.services[k][$parent.$parent.$index][k3]"></textarea>
+                                        <textarea ng-blur="updateModel($event)" ng-model="cms.model.routes.welcome.paras[$index]"></textarea>
                                     </div>
+                                </div>
+                            </div>
 
+                        </div>
+                    </div>
+
+                    <div ng-switch-when="About" class="about container animate-switch">
+                        <div ng-repeat="(k,v) in cms.model.routes.about">
+                            <div ng-if="typeOf(v,'string')">
+                                <p>{{k}}</p>
+                                <div class="wrapper">
+                                    <textarea ng-blur="updateModel($event)"  ng-model="cms.model.routes.about[k]"></textarea>
                                 </div>
-                                <div ng-if="typeOf(v3,'array')">
-                                    <div ng-repeat="(k4,v4) in cms.model.routes.services[k][$parent.$parent.$index][k3] track by $index">
-                                        <p>{{k3}} {{$index + 1}}</p>
-                                        <div class="wrapper">
-                                            <textarea ng-blur="updateModel($event)" ng-model="cms.model.routes.services[k][$parent.$parent.$parent.$index][k3][$index]"></textarea>
-                                        </div>
+                            </div>
+                            <div ng-if="typeOf(v,'array')">
+                                <div ng-if="typeOf(v[$index],'string')"  ng-repeat="para in v track by $index">
+                                    <p>paragraph {{$index+1}}</p>
+                                    <div class="wrapper">
+                                        <textarea ng-blur="updateModel($event)" ng-model="cms.model.routes.about.paras[$index]"></textarea>
                                     </div>
                                 </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div ng-switch-when="Testimonial" class="testimonial container animate-switch">
+                        <div ng-repeat="(k,v) in cms.model.routes.testimonials">
+                            <div ng-if="typeOf(v,'string')">
+                                <p>{{k}}</p>
+                                <div class="wrapper">
+                                    <textarea ng-blur="updateModel($event)"  ng-model="cms.model.routes.testimonials[k]"></textarea>
+                                </div>
+                            </div>
+                            <div ng-if="typeOf(v,'array')">
+                                <div ng-repeat="(k2,v2) in cms.model.routes.testimonials[k]">
+                                    <p>Data {{$index + 1}}</p>
+                                    <button type="button" class="alert button" ng-click="removeNode('testimonials',k, $index)">Remove Data Node {{$index +1}}</button>
+                                    <div ng-repeat="(k3,v3) in cms.model.routes.testimonials[k][$index]">
+                                        <div ng-if="typeOf(v3,'string')">
+                                            <p>{{k3}}</p>
+                                            <div class="wrapper">
+                                                <textarea ng-blur="updateModel($event)" ng-model="cms.model.routes.testimonials[k][$parent.$parent.$index][k3]"></textarea>
+                                            </div>
+
+                                        </div>
+                                        <div ng-if="typeOf(v3,'array')">
+                                            <div ng-repeat="(k4,v4) in cms.model.routes.testimonials[k][$parent.$parent.$index][k3] track by $index">
+                                                <p>{{k3}} {{$index + 1}}</p>
+                                                <div class="wrapper">
+                                                    <textarea ng-blur="updateModel($event)" ng-model="cms.model.routes.testimonials[k][$parent.$parent.$parent.$index][k3][$index]"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div ng-switch-when="Services" class="services container animate-switch">
+                        <div ng-repeat="(k,v) in cms.model.routes.services">
+                            <div ng-if="typeOf(v,'string')">
+                                <p>{{k}}</p>
+                                <div class="wrapper">
+                                    <textarea ng-blur="updateModel($event)" ng-model="cms.model.routes.services[k]"></textarea>
+                                </div>
+                            </div>
+                            <div ng-if="typeOf(v,'array')">
+                                <div ng-repeat="(k2,v2) in cms.model.routes.services[k]">
+                                    <p>Data {{$index + 1}}</p>
+                                    <div ng-repeat="(k3,v3) in cms.model.routes.services[k][$index]">
+                                        <div ng-if="typeOf(v3,'string')">
+                                            <p>{{k3}}</p>
+                                            <div class="wrapper">
+                                                <textarea ng-blur="updateModel($event)" ng-model="cms.model.routes.services[k][$parent.$parent.$index][k3]"></textarea>
+                                            </div>
+
+                                        </div>
+                                        <div ng-if="typeOf(v3,'array')">
+                                            <div ng-repeat="(k4,v4) in cms.model.routes.services[k][$parent.$parent.$index][k3] track by $index">
+                                                <p>{{k3}} {{$index + 1}}</p>
+                                                <div class="wrapper">
+                                                    <textarea ng-blur="updateModel($event)" ng-model="cms.model.routes.services[k][$parent.$parent.$parent.$index][k3][$index]"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
 
                             </div>
                         </div>
-
-
-
                     </div>
+
                 </div>
+
+
             </div>
-
-
-        </div>
         </form>
     </div>
 </div>

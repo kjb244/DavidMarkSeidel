@@ -82,3 +82,7 @@
         margin-top: -45px;
     }
 }
+
+[data-section="gallery"] .credit p{
+    margin: 0;
+}
