@@ -37,7 +37,7 @@ class emailUtils{
 
         return this.sendEmail(
                 'weddingadmin@dms.com',
-                email,
+                process.env.EMAIL_TO,
                 `Wedding Contact ${name}`,
                 htmlString
             ) ;

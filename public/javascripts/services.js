@@ -14,9 +14,58 @@ app.service('angularStore', function(){
         setContent: setContent
     }
 
-})
+});
 
-app.service('utilityFunctions', function(){
+app.service('notifyingService', function($rootScope){
+    return {
+        subscribe: function(scope, callback) {
+            var handler = $rootScope.$on('notifying-service-event', callback);
+            scope.$on('$destroy', handler);
+        },
+
+        notify: function() {
+            $rootScope.$emit('notifying-service-event');
+        }
+    };
+});
+
+app.service('utilityFunctions', function($q){
+    this.backgroundImagesLoaded = function(elem, clazz){
+        return $q(function(resolve, reject) {
+            var node = elem[0].querySelectorAll(clazz);
+            if(!node || !node.length){
+                return resolve();
+            }
+            var cntr = 0;
+            var storageArr = [];
+
+            for(var i=0; i<node.length; i++){
+                var img = node[i].style.backgroundImage;
+                if(img){
+                    var stripped = img.replace('url','').match(/[\w-/\/\.]+/)[0];
+                    storageArr.push(stripped);
+
+                }
+            }
+
+            if(!storageArr.length){
+                resolve();
+            }
+
+            for(var j=0; j<storageArr.length; j++){
+                var domImage = document.createElement('img');
+
+                domImage.src = storageArr[j];
+                domImage.onload = function(){
+                    cntr++;
+                    if(cntr === storageArr.length){
+                        return resolve();
+                    }
+                }
+            }
+        });
+    };
+
 
     this.scrollTop = function(element, speed){
         speed = speed || 500;
