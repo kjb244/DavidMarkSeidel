@@ -1,3 +1,11 @@
+drop table if exists email_count;
+
+create table email_count(
+  id serial primary key,
+  curr_date date default current_date,
+  count integer
+);
+
 drop table if exists key_value_storage;
 
 create table key_value_storage(

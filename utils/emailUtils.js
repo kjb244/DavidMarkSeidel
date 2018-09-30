@@ -1,4 +1,7 @@
 'use strict';
+
+const dbutils = require('./dbUtils.js');
+
 const localLogin = !(process.env.SENDGRID_API_KEY || '').length;
 
 class emailUtils{
@@ -6,22 +9,33 @@ class emailUtils{
     sendEmail(from, to, subject, bodyHtml){
         return new Promise((resolve, reject) => {
             if (localLogin) return resolve();
-            const sgMail = require('@sendgrid/mail');
-            sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-            const msg = {
-                to: to,
-                from: from,
-                subject: subject,
-                html: bodyHtml
-            };
-            console.log(`about to make email call ${subject}`);
-            sgMail.send(msg).then(()=> {
-                console.log(`email call successful ${subject}`);
-                resolve();
-            }).catch((error) => {
-                console.log(`email call error ${error}`)
-                reject();
+            const emailCountDay = dbutils.emailCount();
+            emailCountDay.then(function(payload){
+                console.log(payload);
+                if(payload < 30){
+                    const sgMail = require('@sendgrid/mail');
+                    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+                    const msg = {
+                        to: to,
+                        from: from,
+                        subject: subject,
+                        html: bodyHtml
+                    };
+                    console.log(`about to make email call ${subject}`);
+                    sgMail.send(msg).then(()=> {
+                        console.log(`email call successful ${subject}`);
+                        resolve();
+                    }).catch((error) => {
+                        console.log(`email call error ${error}`)
+                        reject();
+                    })
+                }
+                else{
+                    reject();
+                }
+
             })
+
         });
 
     }

@@ -43,6 +43,64 @@ class dbUtils{
 
     }
 
+    runInsertUpdate(sql, parms = []) {
+        return new Promise(function (resolve, reject) {
+            let pool = new pg.Pool(config);
+            pool.connect(function (err, client, done) {
+
+
+                client.query(sql, parms, function (err, res) {
+                    done();
+                    if (err) {
+                        console.log(`error runInsertUpdate with error ${err}`);
+                        reject();
+                    }
+                    else {
+                        resolve();
+                    }
+
+                });
+            });
+        });
+    };
+
+    emailCount(){
+        const self = this;
+        return new Promise(function(resolve, reject){
+            const selectQuery = 'select coalesce(sum(count),0) cnt from email_count where curr_date = current_date';
+            const insertQuery = 'insert into email_count (count) values (1)';
+
+            let pool = new pg.Pool(config);
+            pool.connect(function (err, client, done) {
+
+
+                client.query(selectQuery, [], function (err, res) {
+                    done();
+                    if (err) {
+                        console.log(`error emailCount with error ${err}`);
+                        reject();
+                    }
+                    else{
+                        const rows = res.rows;
+                        const cnt = rows[0].cnt;
+
+                        console.log(`success emailCount with count ${cnt}`);
+                        const prom = self.runInsertUpdate(insertQuery);
+                        prom.then(function(){
+                            resolve(cnt);
+                        }).catch(function(){
+                           reject();
+                        });
+
+                    }
+
+                });
+            });
+
+
+        });
+    };
+
 
     updateKeyByValue(key, value){
         key = key || '';
