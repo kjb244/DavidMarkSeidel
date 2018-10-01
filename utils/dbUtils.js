@@ -69,6 +69,7 @@ class dbUtils{
         return new Promise(function(resolve, reject){
             const selectQuery = 'select coalesce(sum(count),0) cnt from email_count where curr_date = current_date';
             const insertQuery = 'insert into email_count (count) values (1)';
+            const updateQuery = 'update email_count set count = count + 1 where curr_date = current_date';
 
             let pool = new pg.Pool(config);
             pool.connect(function (err, client, done) {
@@ -85,7 +86,13 @@ class dbUtils{
                         const cnt = rows[0].cnt;
 
                         console.log(`success emailCount with count ${cnt}`);
-                        const prom = self.runInsertUpdate(insertQuery);
+                        let prom;
+                        if(cnt == 0){
+                            prom = self.runInsertUpdate(insertQuery);
+                        }
+                        else{
+                            prom = self.runInsertUpdate(updateQuery);
+                        }
                         prom.then(function(){
                             resolve(cnt);
                         }).catch(function(){
