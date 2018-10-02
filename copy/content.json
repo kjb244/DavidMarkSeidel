@@ -186,12 +186,13 @@
         }
       ],
       "credit": {
-        "heading": "Photos/Videos (some) courtesy of",
+        "heading": "Photos/Videos courtesy of",
         "data": [
           "Melanie Mae Photography",
           "Reel Weddings",
           "Fipps Filming",
-          "Digital Spark Studios"
+          "Digital Spark Studios",
+          "David Mark Seidel"
         ]
       }
     },
@@ -263,11 +264,7 @@
           "alt": "Wedding Picture David Seidel with Couple"
         },
         {
-          "location": "images/review-2.jpg",
-          "alt": "Wedding Picture David Seidel with Couple"
-        },
-        {
-          "location": "images/review-3.jpg",
+          "location": "images/wedding-1.jpg",
           "alt": "Wedding Picture David Seidel with Couple"
         }
       ],
@@ -560,7 +557,9 @@
         "title": "Contact",
         "type": "Contact",
         "content": [
-          "<a id='contactNumFooter' href='tel:7045267284'>704.526.7284</a>"
+          "<a id='contactNumFooter' href='tel:7045267284'>704.526.7284</a>",
+          "<a id='weddingWireFooter' href='https://www.weddingwire.com/biz/reverend-david-mark-seidel-wedding-officiant-charlotte/e6a0c1205642b6df.html' target='_blank' >Wedding Wire</a>",
+          "<a id='thumbtackFooter' href='https://www.thumbtack.com/-Charlotte-NC/service/3292408' target='_blank'>Thumb Tack</a>"
         ]
       },
       {
