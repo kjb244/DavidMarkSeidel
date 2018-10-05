@@ -346,7 +346,7 @@ app.directive('testimonialDir', function(){
     return {
         restrict: 'EA',
         scope: false,
-        templateUrl: 'directive_templates/testimonial.html',
+        templateUrl: 'directive_templates/testimonials.html',
         link: function($scope, elem, attrs){$scope.form = {};
 
         },

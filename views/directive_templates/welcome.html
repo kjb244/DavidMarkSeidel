@@ -6,13 +6,13 @@
 </div>
 
     <div class="row details">
-        <div class="small-12 medium-6 columns medium-push-6">
+        <div class="small-12 medium-6 large-5 columns medium-push-6 large-push-7">
 
             <div ng-repeat="rec in copy.routes.welcome.images" ng-class="{'last':$last}" class="image-container">
                 <image src="{{rec.location}}" alt="{{rec.alt}}"></image>
             </div>
         </div>
-        <div class="small-12 medium-6 columns medium-pull-6">
+        <div class="small-12 medium-6 large-7 columns medium-pull-6 large-pull-5">
 
             <div class="paras-wrapper" ng-repeat="rec in copy.routes.welcome.paras">
                 <p ng-bind-html="rec"></p>

@@ -32,8 +32,8 @@
         "route": "gallery"
       },
       {
-        "name": "Testimonial",
-        "route": "testimonial"
+        "name": "Testimonials",
+        "route": "testimonials"
       },
       {
         "name": "Contact",
@@ -45,9 +45,9 @@
     "about": {
       "heading": "About David Mark Seidel",
       "paras": [
-        "David Mark Seidel is an ordained minister and full-time wedding officiant and pre-marital counselor.  He performs weddings of all denominations (as well as non-denominational) throughout the United States and abroad.",
-        "David  is a practitioner of World Faiths, among them: Christian, Jewish, Hindu, and Native American. He spent 10 years of dedicated scriptural study in monastic settings both in New York and India. His successful married life is 39 years strong and that was preceded by a 10 year blossoming friendship to his wife Jeanette ( and he is father to the handsomest 17 year old young man in Charlotte, son Jonathan ).",
-        "When you meet him, you will see and feel what he is all about and you will be very pleased you chose him to make your marriage a sacred and everlasting relationship. . Allow David to create a ceremony and an event that launches your marriage with exquisite positive energy, a day that will 'love you back to life again and again.'"
+        "David Mark Seidel is an ordained minister and full-time wedding officiant and marraige counselor.  He performs weddings nationally and internationally.",
+        "David  is a practitioner of World Faiths, among them: Christian, Jewish, Hindu, and Native American. He spent 10 years of dedicated scriptural study in monastic settings both in New York and India. His successful married life is 39 years strong and that was preceded by a 10 year blossoming friendship to his wife Jeanette.   He is father to the handsomest 17-year-old young man in Charlotte, son Jonathan.",
+        "When you meet him, you will see and feel what he is all about and you will be very pleased you chose him to make your marriage a sacred and everlasting relationship.  Allow David to create a ceremony and an event that launches your marriage with exquisite positive energy, a day that will \"love you back to life again and again\"."
       ],
       "topImage": {
         "imageLocation": "images/wedding-11.jpg",
@@ -165,6 +165,14 @@
             {
               "imageLocation": "images/wedding-26.jpg",
               "alt": "David Mark Seidel Officiating"
+            },
+            {
+              "imageLocation": "images/wedding-17.jpg",
+              "alt": "David Mark Seidel Officiating"
+            },
+            {
+              "imageLocation": "images/wedding-31.jpg",
+              "alt": "David Mark Seidel Officiating"
             }
           ]
         }
@@ -198,7 +206,7 @@
     },
     "services": {
       "heading": "Wedding Services",
-      "subHeading": "David Mark Seidel has a package to fit every couple’s needs and budget. He will customize one just for you that is perfect for your ceremony. David Mark Seidel is an ordained minister and full-time wedding officiant and pre-marital counselor.  He performs weddings of all denominations (as well as non-denominational) throughout the United States and abroad. He will also serve your Wedding as a Planner and provide beautiful Vocal solos for the Ceremony and Reception!",
+      "subHeading": "David Mark Seidel has a package to fit every couple’s needs and budget. He will customize one just for you that is perfect for your celebration. David Mark Seidel is an ordained minister and full-time wedding officiant and marriage counselor.  He will also serve your wedding as a Planner and provide beautiful vocals for the ceremony and reception.",
       "data": [
         {
           "heading": "Civil Ceremony",
@@ -230,7 +238,7 @@
           ]
         },
         {
-          "heading": "Pre-Marital Counseling",
+          "heading": "Marraige Counseling",
           "price": false,
           "description": false,
           "points": [
@@ -242,7 +250,7 @@
           "price": false,
           "description": false,
           "points": [
-            "David provides FREE Vendor selection and management of:",
+            "David provides vendor selection and management of:",
             "Venue, Caterer, DJ, Musicians, Vocalist, Photographer, Videographer, Rentals, Cake, Floral, Décor, Dress, Transportation, Lodging"
           ]
         },
@@ -251,13 +259,13 @@
           "price": false,
           "description": false,
           "points": [
-            "As a Vocalist, David approaches the marriage ceremony and reception as a wondrous vessel infused with joy and celebration and offers love songs from the Best of Broadway and The Great American Songbook, making your wedding a day that will 'love you back to life again and again.'"
+            "As a Vocalist, David approaches the marriage ceremony and reception as a wondrous vessel infused with joy and celebration and offers love songs from the Best of Broadway and The Great American Songbook."
           ]
         }
       ]
     },
     "testimonials": {
-      "heading": "What Couples Are Saying!",
+      "heading": "What Couples Are Saying",
       "images": [
         {
           "location": "images/review-1.jpg",
@@ -292,10 +300,10 @@
         },
         {
           "text": [
-            "Reverend David performed my nephew's wedding in a very professional and friendly manner. I like the fact that he likes to come an hour earlier before the ceremony to talk to groom and bride and meet the family member.. It was a very nice and sweet ceremony. Thank you Reverend David."
+            "I struggle to find words depicting how perfect our ceremony, and just day in general, was. Everything came together as it should, and I believe it to be so because of Reverend Seidel’s leading role. His graciousness, leadership, positive attitude, and loving aura, smoothed the day over like a polished stone. Everyone went out of their way to compliment him, and they weren’t even aware of the phenomenal person he was behind the scenes. He is now my friend. He is now my family. I can not thank him enough. That being said, I highly recommend having him benefit any services he offers that you are in need of. Again to Reverend Seidel… Thank you. Thank you, thank you."
           ],
-          "person": "Roxana",
-          "sub": "6/15/2018"
+          "person": "David",
+          "sub": "10/21/2017"
         },
         {
           "text": [
@@ -306,28 +314,14 @@
         },
         {
           "text": [
-            "We just had our wedding this weekend. Thank you Reverend David. The ceremony was beautiful. We appreciate your attention to details. We also like the fact that he time to get to know us and tried to accommodate our wishes."
-          ],
-          "person": "Yisel",
-          "sub": "3/10/2018"
-        },
-        {
-          "text": [
-            "Great person and very charismatic and really friendly and easy to talk too"
-          ],
-          "person": "Marilyn",
-          "sub": "3/15/2018"
-        },
-        {
-          "text": [
-            "I have worked directly with David for a long time, he is very dedicated and take great pride in the job he does. He puts the bride and groom first and will ALWAYS make your special day that much more wonderful. Don't waste time looking for other Wedding Officiants, book him if you can, he is a busy man that really cares and is very talented!!!"
+            "I have worked directly with David for a long time, he is very dedicated and takes great pride in the job he does. He puts the bride and groom first and will ALWAYS make your special day that much more wonderful. Don't waste time looking for other Wedding Officiants, book him if you can, he is a busy man that really cares and is very talented!!!"
           ],
           "person": "Don",
           "sub": "2/26/2018"
         },
         {
           "text": [
-            "I had the opportunity to met and experience a great and personal ceremony when Reverend David Seidel married by son and daughter in law. He had a special touch and it was just the best!"
+            "I had the opportunity to meet and experience a great and personal ceremony when Reverend David Seidel married my son and daughter in law. He had a special touch and it was just the best!"
           ],
           "person": "Allen",
           "sub": "2/24/2018"
@@ -341,13 +335,6 @@
         },
         {
           "text": [
-            "Pastor Seidel was very warm and welcoming. Couldn't have asked for a more beautiful ceremony."
-          ],
-          "person": "Erica",
-          "sub": "2/23/2018"
-        },
-        {
-          "text": [
             "I was very involved in the planning of my brothers wedding and was having trouble finding an officiant who could conduct the ceremony in Spanish (as brides family would be streaming from overseas). Reverend David Mark Seidel conducted a beautiful ceremony in all spanish and made it feel very personal with moments of laughter as well as moments with tears. Received so many positive comments after ceremony. Could not be happier with the way it all turned out."
           ],
           "person": "Tania",
@@ -355,7 +342,7 @@
         },
         {
           "text": [
-            "Reverend David assisted us with a beautiful wedding ceremony. Not only did he have hart warming speech but also performed it in Spanish for us, family and, friends. Reverend David was kind and explained every step to us. He was very reliable and professional and would definitely recommend him if you are planning to get married. Thank you so much Reverend David!!!!"
+            "Reverend David assisted us with a beautiful wedding ceremony. Not only did he have heart warming speech but also performed it in Spanish for us, family and, friends. Reverend David was kind and explained every step to us. He was very reliable and professional and would definitely recommend him if you are planning to get married. Thank you so much Reverend David!!!!"
           ],
           "person": "David",
           "sub": "2/3/2018"
@@ -384,24 +371,10 @@
         },
         {
           "text": [
-            "My son and his new wife were honored to have Reverend David officiate their wedding last Sunday. He made the event especially poignant and personal. I highly recommend David to bring your loved ones together!"
-          ],
-          "person": "Shella",
-          "sub": "1/21/2018"
-        },
-        {
-          "text": [
-            "David was so responsive and flexible and only ever cared about making sure the moment my wife and I shared was as special and memorable as possible. Just be upfront with him and he will deliver ten fold. He is the most sincere and honest person you will ever meet!"
-          ],
-          "person": "Kyle",
-          "sub": "1/21/2018"
-        },
-        {
-          "text": [
             "Rev. David was Amazing. He made our ceremony a family event. He involved our kids in every aspect. He spoke the words that my husband and I have been wanting to say to each other we just didn’t know how.",
-            "The most important and wonderful thing he did for us was, He Sang a very special song for Mike and I. Our family couldn’t have asked for a better day. Rev. Davis is the reason. We wish him happiness, good health, but most of all Love and Laughter for the New Year."
+            "The most important and wonderful thing he did for us was, He Sang a very special song for Mike and I. Our family couldn’t have asked for a better day. Rev. David is the reason. We wish him happiness, good health, but most of all Love and Laughter for the New Year."
           ],
-          "person": "Michael",
+          "person": "Jennifer",
           "sub": "12/23/2017"
         },
         {
@@ -410,20 +383,6 @@
           ],
           "person": "Mary",
           "sub": "12/2/2017"
-        },
-        {
-          "text": [
-            "This was my first experience being at a wedding ceremony. He was great! Loved how he kept a smile! Thank David!"
-          ],
-          "person": "Jenese",
-          "sub": "11/9/2017"
-        },
-        {
-          "text": [
-            "Rev.Seidel is wonderful. Officiated Stanley and Wanda Wright wedding on 11/09/17.Great guy ! Family and friends very pleased. Thanks Rev. Seidel we love you."
-          ],
-          "person": "Wanda",
-          "sub": "11/9/2017"
         },
         {
           "text": [
@@ -443,24 +402,17 @@
         },
         {
           "text": [
-            "Reverend David Mark Seidel was very professional, involved, and encouraging during the process. I would recommend him to anyone."
+            "David was so responsive and flexible and only ever cared about making sure the moment my wife and I shared was as special and memorable as possible. Just be upfront with him and he will deliver ten fold. He is the most sincere and honest person you will ever meet!"
           ],
-          "person": "Michael",
-          "sub": "11/4/2017"
+          "person": "Kyle",
+          "sub": "Jan 2018"
         },
         {
           "text": [
-            "I struggle to find words depicting how perfect our ceremony, and just day in general, was. Everything came together as it should, and I believe it to be so because of Reverend Seidel’s leading role. His graciousness, leadership, positive attitude, and loving aura, smoothed the day over like a polished stone. Everyone went out of their way to compliment him, and they weren’t even aware of the phenomenal person he was behind the scenes. He is now my friend. He is now my family. I can not thank him enough. That being said, I highly recommend having him benefit any services he offers that you are in need of. Again to Reverend Seidel… Thank you. Thank you, thank you."
+            "He was everything you want a wedding officiant to be!. Reverend David performed my nephew's wedding in a very professional and friendly manner. I like the fact that he likes to come an hour before the ceremony to talk to the groom and the bride and meet the family members. It was a very nice and sweet ceremony. Thank you Reverend David."
           ],
-          "person": "David",
-          "sub": "10/21/2017"
-        },
-        {
-          "text": [
-            "David was excellent! He was everything you want a wedding officiant to be!."
-          ],
-          "person": "Cindy",
-          "sub": "10/21/2017"
+          "person": "Roxanna",
+          "sub": "6/15/2018"
         },
         {
           "text": [
@@ -468,14 +420,6 @@
           ],
           "person": "Beverly",
           "sub": "11/21/2017"
-        },
-        {
-          "text": [
-            "Wedding was spectacular, David was awesome! He meet our expectations. Every one was very pleased with the way he run the Ceremony. My Mother and her husband were very happy with his service.",
-            "Thank you David."
-          ],
-          "person": "Marily",
-          "sub": "9/1/2017"
         },
         {
           "text": [
@@ -487,7 +431,7 @@
       ]
     },
     "contact": {
-      "header": "Interested in Connecting?",
+      "header": "Interested in Connecting? Need Pricing?",
       "subHeader": "Please call or text David Mark Seidel at <a id='contactNum' href='tel:7045267284'>704.526.7284</a> or fill out the information below"
     },
     "welcome": {
@@ -496,10 +440,10 @@
       "paras": [
         "For more than 35 years, David has been performing ceremonies all over the  world.",
         "His weddings have been featured on Live with Kelly and Ryan, ABC NEWS, and all major news outlets! Reverend David is a one-of-a-kind Original. No one else inside the Wedding industry is able to bring the level of intimacy and trust to a ceremony like he does. His trademark is to allow the entire gathering of family and friends to bestow their blessings on the Newlyweds, just as the couple blesses each other. A wedding with Reverend David is a gathering fully engaged in the ritual of celebration, not merely spectators at a distance. ",
-        "He currently officiates denominational and non-denominational weddings in the United States and abroad.  His couples enjoy pre-marital counseling sessions that focus on building inspiring relationship skills:  communication of feelings, good listening, self-inquiry, intimacy, and  humor.",
-        "He is an expert Wedding Planner, providing FREE Vendor selection and management of: Venue, Caterer, DJ, Musicians, Vocalist, Photographer, Videographer, Rentals, Cake, Floral, Décor, Dress, Transportation, and Lodging.",
+        "He currently officiates denominational and non-denominational weddings in the United States and abroad.  His couples enjoy marraige counseling sessions that focus on building inspiring relationship skills:  communication of feelings, good listening, self-inquiry, intimacy, and  humor.",
+        "He is an expert Wedding Planner, providing Vendor selection and management of: Venue, Caterer, DJ, Musicians, Vocalist, Photographer, Videographer, Rentals, Cake, Floral, Décor, Dress, Transportation, and Lodging.",
         "As a Vocalist, David approaches the marriage ceremony as a wondrous vessel infused with joy and celebration and offers love songs from the Best of Broadway and The Great American Songbook!",
-        "If you are interested in booking David you can use our contact page, reach him at <a id='contactNum' href='tel:7045267284'>704.526.7284</a>, or <a id='emailDavidMarkSeidel' href='mailto:david@davidmarkseidel.com'>david@davidmarkseidel.com</a> for availability. David is multi-lingual Spanish/English, <span class='blue'>Se Habla Espanol</span> and also is skilled in Hindi/Sanskrit for Indian weddings and Pujas. Same Sex Unions are Welcome."
+        "Interested in pricing? Interested in booking David?  You can use our contact page, reach him at <a id='contactNum' href='tel:7045267284'>704.526.7284</a>, or <a id='emailDavidMarkSeidel' href='mailto:david@davidmarkseidel.com'>david@davidmarkseidel.com</a> for availability. David is multi-lingual Spanish/English/French, <span class='blue'>Se Habla Espanol</span> and also is skilled in Hindi/Sanskrit for Indian weddings and Pujas. Same Sex Unions are Welcome.\nAll prices and programs are subject to change."
       ],
       "images": [
         {
@@ -507,8 +451,16 @@
           "alt": "Wedding Picture David Seidel with Couple Sunset"
         },
         {
-          "location": "images/wedding-17.jpg",
+          "location": "images/wedding-28.jpg",
           "alt": "Wedding Picture David Seidel with Couple"
+        },
+        {
+          "location": "images/wedding-30.jpg",
+          "alt": "Wedding Picture Couple Flowers"
+        },
+        {
+          "location": "images/wedding-29.png",
+          "alt": "Wedding Picture Couple"
         }
       ]
     },
@@ -544,8 +496,8 @@
             "text": "Gallery"
           },
           {
-            "hash": "#/testimonial",
-            "text": "Testimonial"
+            "hash": "#/testimonials",
+            "text": "Testimonials"
           },
           {
             "hash": "#/contact",
@@ -559,7 +511,7 @@
         "content": [
           "<a id='contactNumFooter' href='tel:7045267284'>704.526.7284</a>",
           "<a id='weddingWireFooter' href='https://www.weddingwire.com/biz/reverend-david-mark-seidel-wedding-officiant-charlotte/e6a0c1205642b6df.html' target='_blank' >Wedding Wire</a>",
-          "<a id='thumbtackFooter' href='https://www.thumbtack.com/-Charlotte-NC/service/3292408' target='_blank'>Thumb Tack</a>"
+          "<a id='thumbtackFooter' href='https://www.thumbtack.com/-Charlotte-NC/service/3292408' target='_blank'>Thumbtack</a>"
         ]
       },
       {

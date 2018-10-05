@@ -23,8 +23,8 @@ app.config(function($routeProvider) {
         templateUrl: 'route_templates/route-gallery.html',
         controller: 'ctrlMain'
     })
-    .when('/testimonial', {
-        templateUrl: 'route_templates/route-testimonial.html',
+    .when('/testimonials', {
+        templateUrl: 'route_templates/route-testimonials.html',
         controller: 'ctrlMain'
     })
     .when('/contact', {
