@@ -9,6 +9,9 @@
     margin-top: 25px;
 }
 
+[data-section="welcome"] .image-container img{
+    width: 100%;
+}
 
 
 [data-section="welcome"] .image-container:not(.last){
