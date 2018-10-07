@@ -1,7 +1,7 @@
 <div class="row">
     <div class="small-12 columns">
         <h2>{{copy.routes.testimonials.heading}}</h2>
-        <div class="images">
+        <div ng-if="copy.routes.testimonials.images.length" class="images">
             <img ng-repeat="rec in copy.routes.testimonials.images" src="{{rec.location}}" alt="{{rec.alt}}">
 
         </div>

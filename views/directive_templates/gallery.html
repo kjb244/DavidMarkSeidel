@@ -12,7 +12,7 @@
     <div class="row collapse image-details">
         <div class="small-12 columns">
             <div class="photo-container" ng-click="photoClick($parent.$index, $index)" ng-repeat="photo in rec.photoDetails">
-                <div class="image-div" title="{{photo.alt}}" ng-init="initImagesCss(parentLast && $last)" data-src="{{photo.imageLocation}}"></div>
+                <div class="image-div" role="img" aria-label="{{photo.alt}}" ng-init="initImagesCss(parentLast && $last)" data-src="{{photo.imageLocation}}"></div>
                 <i class="fa fa-search" aria-hidden="true"></i>
 
 
