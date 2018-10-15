@@ -17,6 +17,10 @@
     list-style-type: none;
 }
 
+[data-section="services"] .bullet-items{
+    padding: 0;
+}
+
 [data-section="services"] .bullet-items .last{
     float: left !important;
 }
@@ -43,9 +47,15 @@
 
 [data-section="services"]  li {
     border-bottom: dotted 1px #DDDDDD;
-    font-size: 17px;
+    font-size: 14px;
     padding: 0.875rem 1.125rem;
 
+}
+
+@media screen and (min-width: 40em) {
+    [data-section="services"]  li {
+        font-size: 17px;
+    }
 }
 
 [data-section="services"] .title {
