@@ -12,7 +12,7 @@
                         <div ng-repeat = "rec2 in rec.points">
                             <li ng-if="commaCount(rec2) < 7">{{rec2}}</li>
                             <li class="bullet-items" ng-if="commaCount(rec2) >7">
-                                <div class="row" >
+                                <div class="row collpase">
                                     <div ng-class="{'last': $last}" ng-repeat="item in rec2.split(',')" class="small-6 medium-4 columns item">
                                         {{item}}
                                     </div>
