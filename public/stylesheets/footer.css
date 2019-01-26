@@ -43,6 +43,14 @@ footer .social a{
     font-size: 26px;
 }
 
+footer .image-wrapper{
+    margin-top: 20px;
+    text-align: center;
+}
+footer .image-wrapper img{
+    height: 125px;
+}
+
 
 footer p{
     margin: 0;
