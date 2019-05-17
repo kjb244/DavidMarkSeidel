@@ -1,8 +1,12 @@
-<div data-container="native-modal" class="reveal" id="nativeModal" data-reveal data-animation-in="slide-in-down" data-animation-out="slide-out-up"  >
+<div data-container="native-modal" class="reveal" id="{{id}}NativeModal" data-reveal data-animation-in="slide-in-down" data-animation-out="slide-out-up"
+     data-close-on-click="false" data-close-on-esc="false" >
     <button class="close-button" ng-click="closeModal()" data-close aria-label="Close modal" type="button">
         <span aria-hidden="true">&times;</span>
     </button>
     <br>
-    <h3>{{heading}}</h3>
-    <h4>{{body}}</h4>
+    <h2 ng-if="heading">{{heading}}</h2>
+    <h4 ng-if="body">{{body}}</h4>
+    <video ng-if="videosource" id="videoPlayer{{id}}" class="video-node" controls>
+        <source src="{{getVideoSrc(videosource)}}" type="video/mp4">
+    </video>
 </div>

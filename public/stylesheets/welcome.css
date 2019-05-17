@@ -4,6 +4,11 @@
     text-align: center;
 }
 
+[data-section="welcome"] .heading .button-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
 
 [data-section="welcome"] .details{
     margin-top: 25px;

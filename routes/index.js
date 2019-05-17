@@ -3,9 +3,11 @@
 let express = require('express');
 let router = express.Router();
 let path = require('path');
+let fs = require('fs');
 let content = require('../copy/content.json');
 let dbutils = require('../utils/dbUtils.js');
 let emailutils = require('../utils/emailUtils');
+let videoFilePath = '../public/videos/dms.mp4';
 
 //GETS
 router.get('/', function(req, res, next) {
@@ -71,27 +73,56 @@ router.post('/submitCmsUpdate', function(req, res) {
     const data = req.body.data;
     const model = data.model;
     const login = data.login;
-    const loginProm =   dbutils.authenticateUser(login.username,login.password);
-    loginProm.then(function(){
-        const changeToJsonString = JSON.stringify(model).replace(/'/g,"''");
-        const prom = dbutils.updateKeyByValue('copy',changeToJsonString);
-        prom.then(function(e){
+    const loginProm = dbutils.authenticateUser(login.username, login.password);
+    loginProm.then(function () {
+        const changeToJsonString = JSON.stringify(model).replace(/'/g, "''");
+        const prom = dbutils.updateKeyByValue('copy', changeToJsonString);
+        prom.then(function (e) {
             const pullFromDb = dbutils.getValue('copy');
-            pullFromDb.then(function(e2){
+            pullFromDb.then(function (e2) {
                 return res.json(JSON.parse(e2));
             })
-        }).catch(function(){
+        }).catch(function () {
 
         })
-    }).catch(function(){
+    }).catch(function () {
         res.json({});
     });
-
-
-
-
-
 });
+
+router.get('/videoDMS', function(req, res) {
+
+    const videoPath = path.join(__dirname,videoFilePath);
+    const stat = fs.statSync(videoPath);
+    const fileSize = stat.size;
+    const range = req.headers.range;
+    if (range) {
+        const parts = range.replace(/bytes=/, "").split("-");
+        const start = parseInt(parts[0], 10);
+        const end = parts[1]
+            ? parseInt(parts[1], 10)
+            : fileSize-1;
+        const chunksize = (end-start)+1;
+        const file = fs.createReadStream(videoPath, {start, end});
+        const head = {
+            'Content-Range': `bytes ${start}-${end}/${fileSize}`,
+            'Accept-Ranges': 'bytes',
+            'Content-Length': chunksize,
+            'Content-Type': 'video/mp4',
+        };
+        res.writeHead(206, head);
+        file.pipe(res);
+    } else {
+        const head = {
+            'Content-Length': fileSize,
+            'Content-Type': 'video/mp4',
+        };
+        res.writeHead(200, head)
+        fs.createReadStream(path).pipe(res)
+    }
+});
+
+
 
 
 

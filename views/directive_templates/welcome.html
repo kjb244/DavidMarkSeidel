@@ -2,30 +2,43 @@
     <div class="small-12 small-centered columns heading">
         <h2>{{copy.routes.welcome.heading}}</h2>
         <h3>{{copy.routes.welcome.headingSub}}</h3>
+        <div class="button-wrapper" ng-if="debug">
+            <a class="button large" ng-click="learnAboutMe()">Learn About Me</a>
+        </div>
     </div>
+
 </div>
 
-    <div class="row details">
-        <div class="small-12 medium-6 large-5 columns medium-push-6 large-push-7">
 
-            <div ng-repeat="rec in copy.routes.welcome.images" ng-class="{'last':$last}" class="image-container">
-                <image src="{{rec.location}}" alt="{{rec.alt}}"></image>
-            </div>
+<div class="row details">
+    <div class="small-12 medium-6 large-5 columns medium-push-6 large-push-7">
+
+        <div ng-repeat="rec in copy.routes.welcome.images" ng-class="{'last':$last}" class="image-container">
+            <image src="{{rec.location}}" alt="{{rec.alt}}"></image>
         </div>
-        <div class="small-12 medium-6 large-7 columns medium-pull-6 large-pull-5">
-
-            <div class="paras-wrapper" ng-repeat="rec in copy.routes.welcome.paras">
-                <p ng-bind-html="rec"></p>
-            </div>
-
-            <div class="row collapse">
-                <div class="small-12 large-9 large-centered columns">
-
-
-                </div>
-
-            </div>
-        </div>
-
     </div>
+    <div class="small-12 medium-6 large-7 columns medium-pull-6 large-pull-5">
+
+        <div class="paras-wrapper" ng-repeat="rec in copy.routes.welcome.paras">
+            <p ng-bind-html="rec"></p>
+        </div>
+
+        <div class="row collapse">
+            <div class="small-12 large-9 large-centered columns">
+
+
+            </div>
+
+        </div>
+    </div>
+
 </div>
+
+<native-modal-dir open="learnAboutMeOpenModal" heading="modalHeading" body="" id="videoModal"  videosource="/videoDMS"></native-modal-dir>
+
+
+
+
+
+
+

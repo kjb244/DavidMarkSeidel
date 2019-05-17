@@ -86,15 +86,20 @@ app.directive('welcomeDir', function(){
         scope: false,
         templateUrl: 'directive_templates/welcome.html',
         link: function($scope, elem, attrs){
-
+            $scope.learnAboutMeOpenModal = false;
+            $scope.modalHeading = "About David Mark Seidel";
         },
         controller: function($scope){
+            $scope.learnAboutMe = function(){
+                $scope.learnAboutMeOpenModal = !$scope.learnAboutMeOpenModal;
+
+            };
 
             $scope.initFoundation = function(last){
                 if(last){
                     $(document).foundation();
                 }
-            }
+            };
 
         }
     };
@@ -399,23 +404,38 @@ app.directive('nativeModalDir', function() {
         restrict: 'EA',
         scope: {
             open: '=',
+            id: '@',
             heading: '<',
-            body: '<'
+            body: '<',
+            videosource: '@'
         },
         templateUrl: 'directive_templates/native-modal.html',
         link: function ($scope, elem, attrs) {
+
 
             $scope.$watch('open', function(newValue, oldValue) {
                 if(newValue == true){
 
                     $('[data-container="native-modal"]').foundation();
-                    $('#nativeModal').foundation('open');
+                    $('#' + $scope.id + 'NativeModal').foundation('open');
 
+                }
+                else if (newValue == false){
+                    if($scope.videosource){
+                        var $vn = $('.video-node');
+                        if($vn.length){
+                            $vn.get(0).pause();
+
+                        }
+                    }
                 }
             });
 
         },
         controller: function ($scope) {
+            $scope.getVideoSrc = function (videoSrc) {
+                return ('/' + videoSrc).replace('//','/');
+            };
 
             $scope.closeModal = function(){
                 $scope.open = false;
