@@ -172,7 +172,13 @@ body h6{
 }
 
 .video-node{
-    height: 200px;
+    height: 170px;
+}
+
+@media screen and (min-width: 330px) {
+    .video-node{
+        height: 200px;
+    }
 }
 
 @media screen and (min-width: 39.9375em) {

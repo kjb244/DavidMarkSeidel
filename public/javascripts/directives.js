@@ -414,19 +414,20 @@ app.directive('nativeModalDir', function() {
 
 
             $scope.$watch('open', function(newValue, oldValue) {
+                var $vn = $('.video-node');
                 if(newValue == true){
-
                     $('[data-container="native-modal"]').foundation();
                     $('#' + $scope.id + 'NativeModal').foundation('open');
+                    //begin playing video immediately
+                    if ($scope.videosource && $vn.length){
+                        $vn.get(0).play();
+                    }
 
                 }
                 else if (newValue == false){
-                    if($scope.videosource){
-                        var $vn = $('.video-node');
-                        if($vn.length){
-                            $vn.get(0).pause();
-
-                        }
+                    //pause video when close modal
+                    if($scope.videosource && $vn.length){
+                        $vn.get(0).pause();
                     }
                 }
             });
