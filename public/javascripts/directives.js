@@ -418,10 +418,6 @@ app.directive('nativeModalDir', function() {
                 if(newValue == true){
                     $('[data-container="native-modal"]').foundation();
                     $('#' + $scope.id + 'NativeModal').foundation('open');
-                    //begin playing video immediately
-                    if ($scope.videosource && $vn.length){
-                        $vn.get(0).play();
-                    }
 
                 }
                 else if (newValue == false){
