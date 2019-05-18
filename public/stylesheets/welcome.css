@@ -4,10 +4,8 @@
     text-align: center;
 }
 
-[data-section="welcome"] .heading .button-wrapper{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+[data-section="welcome"] .video-learn-about-me{
+    text-align: center;
 }
 
 [data-section="welcome"] .details{

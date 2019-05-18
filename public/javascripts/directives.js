@@ -86,14 +86,8 @@ app.directive('welcomeDir', function(){
         scope: false,
         templateUrl: 'directive_templates/welcome.html',
         link: function($scope, elem, attrs){
-            $scope.learnAboutMeOpenModal = false;
-            $scope.modalHeading = "About David Mark Seidel";
         },
         controller: function($scope){
-            $scope.learnAboutMe = function(){
-                $scope.learnAboutMeOpenModal = !$scope.learnAboutMeOpenModal;
-
-            };
 
             $scope.initFoundation = function(last){
                 if(last){
