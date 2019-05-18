@@ -92,7 +92,7 @@ router.post('/submitCmsUpdate', function(req, res) {
 
 router.get('/videoDMS', function(req, res) {
 
-    const videoPath = path.join(__dirname,videoFilePath);
+    /*const videoPath = path.join(__dirname,videoFilePath);
     const stat = fs.statSync(videoPath);
     const fileSize = stat.size;
     const range = req.headers.range;
@@ -119,7 +119,7 @@ router.get('/videoDMS', function(req, res) {
         };
         res.writeHead(200, head)
         fs.createReadStream(path).pipe(res)
-    }
+    }*/
 });
 
 
