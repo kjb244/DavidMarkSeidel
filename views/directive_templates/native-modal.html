@@ -7,6 +7,6 @@
     <h2 ng-if="heading">{{heading}}</h2>
     <h4 ng-if="body">{{body}}</h4>
     <video ng-if="videosource" id="videoPlayer{{id}}" class="video-node" controls>
-        <source src="{{getVideoSrc(videosource)}}" type="video/mp4">
+        <source src="{{getVideoSrc(videosource)}}" type="video/mp4" preload playsinline >
     </video>
 </div>
