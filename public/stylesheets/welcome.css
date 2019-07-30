@@ -6,7 +6,19 @@
 
 [data-section="welcome"] .video-learn-about-me{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+
 }
+
+@media screen and (min-width: 1310px) {
+    [data-section="welcome"] .video-learn-about-me {
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+}
+
+
 
 [data-section="welcome"] .details{
     margin-top: 25px;
