@@ -3,25 +3,27 @@
         <h2>{{copy.routes.welcome.heading}}</h2>
         <h3>{{copy.routes.welcome.headingSub}}</h3>
     </div>
+</div>
 
-    <div class="row">
-       <div class="small-12 columns">
-           <div class="video-learn-about-me">
-               <div>
-                   <iframe width="560" height="315" src="https://www.youtube.com/embed/Vo1qCoi0bcY?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-               </div>
-                <div>
-                   <iframe  width="560" height="315" src="https://www.youtube.com/embed/2w7fHSkU1UU?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+<div class="row video-container">
+   <div ng-repeat="rec in copy.routes.welcome.youtubeIframeVideoInfo" class=""
+   ng-class="videoLearnAboutMeClass()">
+       <div class="video-learn-about-me">
+           <div>
+               <image ng-if="debug === true" ng-show="showVideoCoverArr[$index]" class="fade" ng-click="videoCoverClick($index)" src="{{rec.image}}" alt="">
+               </image>
+               <i ng-if="debug === true" ng-show="showVideoCoverArr[$index]" ng-click="videoCoverClick($index)"  class="fa fa-play fa-3x" aria-hidden="true"></i>
+               <div class="iframe-container" data-iframe="{{rec.iframe}}"></div>
+               <div style="width: 100%; height: 100%" ng-bind-html="iframeVideoArr[$index]"></div>
+           </div>
 
-            </div>
-       </div>
-
-
-    </div>
+        </div>
+   </div>
 
 
 </div>
+
+
 
 
 <div class="row details">

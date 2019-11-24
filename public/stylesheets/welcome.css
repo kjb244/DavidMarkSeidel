@@ -3,19 +3,66 @@
 [data-section="welcome"] h2, [data-section="welcome"] h3{
     text-align: center;
 }
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    [data-section="welcome"] .video-container .columns {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
 
 [data-section="welcome"] .video-learn-about-me{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+
+[data-section="welcome"] .video-learn-about-me img{
+
+    position: absolute;
+    height:100%;
+    width: 100%;
 
 }
 
-@media screen and (min-width: 1310px) {
-    [data-section="welcome"] .video-learn-about-me {
-        justify-content: space-evenly;
-        flex-direction: row;
+[data-section="welcome"] .video-learn-about-me > div{
+    position: relative;
+    width: 100%;
+    height: 260px;
+}
+
+@media screen and (min-width: 40em) {
+    [data-section="welcome"] .video-learn-about-me > div{
+
+        height: 320px;
     }
+
+}
+
+
+@media screen and (min-width: 64em) {
+    [data-section="welcome"] .video-learn-about-me > div{
+
+        height: 284px;
+    }
+
+}
+
+[data-section="welcome"] .video-learn-about-me .fa{
+
+    position: absolute;
+    top: 50%;
+    left: calc(50%);
+    color: blue;
+
+}
+
+
+[data-section="welcome"] .video-learn-about-me .fade {
+    transition: all linear 1s;
+    opacity: 1;
+}
+
+[data-section="welcome"] .video-learn-about-me .fade.ng-hide {
+    opacity: 0;
 }
 
 
@@ -43,15 +90,7 @@
     max-height: 350px;
 }
 
-[data-section="welcome"] iframe {
-    width: 100%;
-}
 
-@media screen and (min-width: 39.9375em) {
-    [data-section="welcome"] iframe {
-        width: 500px;
-    }
-}
 
 
 

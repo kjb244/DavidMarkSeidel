@@ -80,14 +80,48 @@ app.directive('aboutDir', function(){
     };
 });
 
-app.directive('welcomeDir', function(){
+app.directive('welcomeDir', function(utilityFunctions, $timeout, $sce){
     return {
         restrict: 'EA',
         scope: false,
         templateUrl: 'directive_templates/welcome.html',
         link: function($scope, elem, attrs){
+            $timeout(function(){
+                $scope.iframeVideoArr = [];
+                $scope.iframeId = [];
+                elem.find('[data-iframe]').each(function(i, el){
+                    var iframe = el.getAttribute('data-iframe');
+                    var matcher = iframe.match(/(id=[\"\']+)([A-z0-9]+)[\"\']+/);
+                    var id = matcher[2] ? matcher[2] : '';
+                    $scope.iframeId.push(id);
+                    $scope.iframeVideoArr.push($sce.trustAsHtml(iframe));
+                });
+            },1);
+
+            $scope.showVideoCoverArr = $scope.copy.routes.welcome.youtubeIframeVideoInfo.map(function(e){
+                return true;
+            });
+
+          $scope.videoLearnAboutMeClass = function(){
+            var classes = "small-12 columns ";
+            var len = $scope.copy.routes.welcome.youtubeIframeVideoInfo.length;
+            if (12 % len === 0){
+              classes += 'large-' + 12/len;
+            }
+            else {
+              classes += 'large-6';
+            }
+            return classes;
+          };
+
+            utilityFunctions.loadYTVideoControls();
         },
         controller: function($scope){
+
+            $scope.videoCoverClick = function(idx){
+              $scope.showVideoCoverArr[idx] = false;
+              utilityFunctions.playYTVideo($scope.iframeId[idx]);
+            };
 
             $scope.initFoundation = function(last){
                 if(last){

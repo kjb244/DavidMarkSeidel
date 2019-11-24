@@ -30,6 +30,37 @@ app.service('notifyingService', function($rootScope){
 });
 
 app.service('utilityFunctions', function($q){
+    this.injectScriptTag = function(src){
+        var scriptTag = document.querySelector('script[src="' + src + '"]');
+        if(!scriptTag){
+          var tag = document.createElement('script');
+          tag.src = src;
+          var firstScriptTag = document.getElementsByTagName('script')[0];
+          firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        }
+    };
+    this.loadYTVideoControls = function(){
+      this.injectScriptTag('https://www.youtube.com/player_api');
+
+      // this function gets called when API is ready to use
+      window.youTubeVideoReady = false;
+      window.onYouTubePlayerAPIReady = function() {
+          window.youTubeVideoReady = true;
+
+      }
+    };
+    this.playYTVideo = function(id){
+        if(window.youTubeVideoReady){
+          new YT.Player(id,{
+            events:{
+              'onReady': function(e){
+                e.target.playVideo();
+              }
+            }
+          });
+        }
+
+    };
     this.backgroundImagesLoaded = function(elem, clazz){
         return $q(function(resolve, reject) {
             var node = elem[0].querySelectorAll(clazz);
