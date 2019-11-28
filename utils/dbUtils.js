@@ -3,7 +3,7 @@
 const bcrypt = require('bcrypt');
 const localLogin = !(process.env.PASSWORD || '').length;
 const pg = require('pg');
-const conStringLocal = "postgres://postgres:sdf!@localhost:5432/davidmarkseidel";
+const conStringLocal = "postgres://postgres:root@localhost:5432/postgres";
 let conString = process.env.DATABASE_URL || conStringLocal;
 conString = conString.replace('postgres://','');
 let config = {
