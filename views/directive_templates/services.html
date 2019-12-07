@@ -10,8 +10,8 @@
                         <li ng-if="rec.price != false" class="price">{{rec.price}}</li>
                         <li ng-if="rec.description != false" class="description">{{rec.description}}</li>
                         <div ng-repeat = "rec2 in rec.points">
-                            <li ng-if="commaCount(rec2) < 7">{{rec2}}</li>
-                            <li class="bullet-items" ng-if="commaCount(rec2) >7">
+                            <li ng-if="commaCount(rec2) < 11">{{rec2}}</li>
+                            <li class="bullet-items" ng-if="commaCount(rec2) >11">
                                 <div class="row collpase">
                                     <div ng-class="{'last': $last}" ng-repeat="item in rec2.split(',')" class="small-6 medium-4 columns item">
                                         {{item}}
