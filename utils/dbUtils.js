@@ -13,7 +13,8 @@ let config = {
     host: conString.split('@')[1].split(':')[0],
     port: 5432,
     max: 10,
-    idleTimeoutMillis: 3000
+    idleTimeoutMillis: 3000,
+    ssl: true
 };
 
 
@@ -171,3 +172,5 @@ class dbUtils{
 const dbUtilObj = new dbUtils();
 
 module.exports = dbUtilObj;
+
+
