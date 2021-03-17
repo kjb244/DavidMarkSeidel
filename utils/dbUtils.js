@@ -18,6 +18,7 @@ let config = {
 
 
 
+
 class dbUtils{
 
     authenticateUser(username, password){
@@ -144,7 +145,7 @@ class dbUtils{
             let pool = new pg.Pool(config);
             console.log(pool);
             pool.connect(function (err, client, done) {
-                console.log('||||||', client, err);
+                console.log('||||||', config);
                 client.query('select value from key_value_storage where key = $1', [key], function (err, res) {
                     done();
                     if (err) {
