@@ -36,7 +36,6 @@ router.get('/route_templates/:name', function (req, res) {
 
 router.get('/getContent', function(req, res){
     //return res.json(content);
-    console.log('|||||| before get content');
     const prom = dbutils.getValue('copy');
     prom.then(function(e){
        return res.json(JSON.parse(e));
