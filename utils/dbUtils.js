@@ -143,6 +143,7 @@ class dbUtils{
         return new Promise(function(resolve, reject) {
             let pool = new pg.Pool(config);
             pool.connect(function (err, client, done) {
+                console.log('||||||', client);
                 client.query('select value from key_value_storage where key = $1', [key], function (err, res) {
                     done();
                     if (err) {
