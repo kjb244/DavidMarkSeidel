@@ -14,7 +14,7 @@ let config = {
     port: 5432,
     max: 10,
     idleTimeoutMillis: 3000,
-    ssl: true
+    ssl: localLogin ? false: true
 };
 
 
