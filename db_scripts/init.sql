@@ -1,3 +1,18 @@
+drop table if exists local_db_props;
+
+create table local_db_props(
+  id serial primary key,
+  prop_key text,
+  prop_value text
+);
+
+drop table if exists sms_count;
+
+create table sms_count(
+ id serial primary key,
+ curr_date_time timestamp
+);
+
 drop table if exists email_count;
 
 create table email_count(

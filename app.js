@@ -5,6 +5,9 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var exphbs = require('express-handlebars');
+var dbutils = require('./utils/dbUtils');
+var memoryCache = require('memory-cache');
+
 
 var index = require('./routes/index');
 
@@ -44,5 +47,17 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+app.listen(3000,'127.0.0.1', function(){
+    console.log('server startup local listening and loading cache');
+    const localCacheProm = dbutils.getLocalCache();
+    localCacheProm.then(function(cache){
+        Object.keys(cache || {}).forEach(function(key){
+            memoryCache.put(key, cache[key]);
+        });
+    })
+});
+
+
 
 module.exports = app;

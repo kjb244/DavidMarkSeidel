@@ -65,6 +65,45 @@ class dbUtils{
         });
     };
 
+    smsCountMonth(){
+        const self = this;
+        return new Promise(function(resolve, reject){
+            const selectQuery = "select count(*) cnt from sms_count where to_char(curr_date_time, 'yyyymm') = to_char(now(), 'yyyymm')";
+            const insertQuery = 'insert into sms_count (curr_date_time) values (now())';
+
+            let pool = new pg.Pool(config);
+            pool.connect(function (err, client, done) {
+
+
+                client.query(selectQuery, [], function (err, res) {
+                    done();
+                    if (err) {
+                        console.log(`error smsCount with error ${err}`);
+                        reject();
+                    }
+                    else{
+                        const rows = res.rows;
+                        const cnt = rows[0].cnt;
+
+                        console.log(`success smsCount with count ${cnt}`);
+                        let prom;
+                        prom = self.runInsertUpdate(insertQuery);
+
+                        prom.then(function(){
+                            resolve(cnt);
+                        }).catch(function(){
+                            reject();
+                        });
+
+                    }
+
+                });
+            });
+
+
+        });
+    };
+
     emailCount(){
         const self = this;
         return new Promise(function(resolve, reject){
@@ -97,7 +136,7 @@ class dbUtils{
                         prom.then(function(){
                             resolve(cnt);
                         }).catch(function(){
-                           reject();
+                            reject();
                         });
 
                     }
@@ -137,7 +176,7 @@ class dbUtils{
             });
 
         });
-    }
+    };
 
     getValue(key){
         key = key || '';
@@ -156,9 +195,28 @@ class dbUtils{
                 });
             });
         })
+    };
 
-
-    }
+    getLocalCache(){
+        return new Promise(function(resolve, reject){
+            let pool = new pg.Pool(config);
+            pool.connect(function (err, client, done) {
+                client.query('select prop_key, prop_value from local_db_props', function (err, res) {
+                    done();
+                    if (err) {
+                        reject();
+                    } else {
+                        const rows = res.rows || [];
+                        const rtnObj = rows.reduce(function(accum, e){
+                            accum[e.prop_key] = e.prop_value;
+                            return accum;
+                        },{});
+                        resolve(rtnObj);
+                    }
+                });
+            });
+        })
+    };
 
 
 
