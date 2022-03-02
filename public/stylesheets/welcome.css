@@ -8,6 +8,12 @@
         padding-left: 5rem;
         padding-right: 5rem;
     }
+
+}
+@media screen and (min-width: 64em) {
+    [data-section="welcome"] .top-video-container .first{
+        margin-top: 34px;
+    }
 }
 
 [data-section="welcome"] .video-learn-about-me{
