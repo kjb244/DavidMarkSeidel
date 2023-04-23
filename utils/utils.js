@@ -17,6 +17,7 @@ class Utils{
             }
             const smsCountMonth = dbutils.smsCountMonth();
             smsCountMonth.then(function(payload) {
+                console.log('about to make call to send sms')
                 if (payload < 20){
                     const countryCode = '+1';
                     const requestObj = {
@@ -121,7 +122,7 @@ class Utils{
                             <b>Comments:</b> ${comments}</div>`;
 
         return this.sendEmail(
-                'weddingadmin@dms.com',
+                'david@davidmarkseidel.com',
                 process.env.EMAIL_TO || memoryCache.get('EMAIL_TO'),
                 `Wedding Contact ${name}`,
                 htmlString
