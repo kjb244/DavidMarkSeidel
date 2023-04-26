@@ -94,7 +94,9 @@ class Utils{
             return accum;
         }, []).join('').slice(0,-2);
 
-        const smsString = `Wedding Officiant Lead\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nCheckboxes: ${checkboxModelStr}\nComments: ${comments || 'none'}`
+        const commentsSanitized = comments.replace(/[^\w\s]/g,'');
+
+        const smsString = `Wedding Officiant Lead\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nCheckboxes: ${checkboxModelStr}\nComments: ${commentsSanitized || 'none'}`
             .trim().substr(0,160);
 
 
