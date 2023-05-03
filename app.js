@@ -16,10 +16,14 @@ var app = express();
 app.engine('hbs', exphbs({defaultLayout: 'layout'}));
 
 app.get('*', function(req, res, next) {
+    const url = 'https://' + req.headers.host + req.url;
+    console.log('test', url);
     if((process.env.IS_PROD || '') === 'true' && req.protocol === 'http'){
         res.redirect('https://' + req.headers.host + req.url);
+    } else {
+        return next();
+
     }
-    return next();
 
 })
 
