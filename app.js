@@ -15,15 +15,6 @@ var app = express();
 
 app.engine('hbs', exphbs({defaultLayout: 'layout'}));
 
-app.all('/', function(req, res, next) {
-    if((process.env.IS_PROD || '') === 'true' && req.protocol === 'http'){
-        res.redirect('https://' + req.headers.host + req.url);
-    } else {
-        return next();
-
-    }
-
-})
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -57,6 +48,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
 
 app.listen(3000,'127.0.0.1', function(){
     console.log('server startup local listening and loading cache');

@@ -12,11 +12,18 @@ let videoFilePath = '../public/videos/dms.mp4';
 
 //GETS
 router.get('/', function(req, res, next) {
+
     const content = {
         title: 'David Mark Seidel - Wedding Officiant, Planner, Vocalist Charlotte NC',
         metaContent: 'David Mark Seidel - Wedding Officiant, Planner, Vocalist Charlotte NC non-denominational Spanish Espanol Same Sex Unions Welcome'
     };
-    res.render('index', content);
+    if((process.env.IS_PROD || '') === 'true' && req.protocol === 'http'){
+        res.redirect('https://' + req.headers.host + req.url);
+    } else {
+        res.render('index', content);
+
+
+    }
 
 });
 
