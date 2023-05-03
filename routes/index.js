@@ -17,13 +17,7 @@ router.get('/', function(req, res, next) {
         title: 'David Mark Seidel - Wedding Officiant, Planner, Vocalist Charlotte NC',
         metaContent: 'David Mark Seidel - Wedding Officiant, Planner, Vocalist Charlotte NC non-denominational Spanish Espanol Same Sex Unions Welcome'
     };
-    if((process.env.IS_PROD || '') === 'true' && req.protocol === 'http'){
-        res.redirect('https://' + req.headers.host + req.url);
-    } else {
-        res.render('index', content);
-
-
-    }
+    res.render('index', content);
 
 });
 

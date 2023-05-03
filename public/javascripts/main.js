@@ -41,6 +41,9 @@ app.config(function($routeProvider) {
 
 
 app.controller("ctrlMain", function($scope,ajaxFetch, angularStore) {
+    if(window.location.href.includes('http') && !window.location.href.includes('localhost')){
+        window.location = window.location.href.replace('http','https');
+    }
     $scope.menuChange = window.location.hash.replace(/#\//g,'');
     //remove any style associated with html node
     document.querySelector('html').removeAttribute('style');
