@@ -15,6 +15,14 @@ var app = express();
 
 app.engine('hbs', exphbs({defaultLayout: 'layout'}));
 
+app.get('*', function(req, res, next) {
+    if((process.env.IS_PROD || '') === 'true'){
+        res.redirect('https://' + req.headers.host + req.url);
+    }
+    return next();
+
+})
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
