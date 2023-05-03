@@ -16,7 +16,7 @@ var app = express();
 app.engine('hbs', exphbs({defaultLayout: 'layout'}));
 
 app.get('*', function(req, res, next) {
-    if((process.env.IS_PROD || '') === 'true'){
+    if((process.env.IS_PROD || '') === 'true' && req.protocol === 'http'){
         res.redirect('https://' + req.headers.host + req.url);
     }
     return next();
