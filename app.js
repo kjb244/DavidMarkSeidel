@@ -12,6 +12,13 @@ var memoryCache = require('memory-cache');
 var index = require('./routes/index');
 
 var app = express();
+app.use((req, res, next) => {
+    if (req.header('x-forwarded-proto') !== 'https' && (process.env.IS_PROD || '') === 'true') {
+        res.redirect(`https://${req.header('host')}${req.url}`)
+    } else {
+        next();
+    }
+});
 
 app.engine('hbs', exphbs({defaultLayout: 'layout'}));
 
