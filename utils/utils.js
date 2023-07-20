@@ -124,7 +124,7 @@ class Utils{
                             <b>Comments:</b> ${comments}</div>`;
 
         return this.sendEmail(
-                'david@davidmarkseidel.com',
+            process.env.EMAIL_TO || memoryCache.get('EMAIL_TO'),
                 process.env.EMAIL_TO || memoryCache.get('EMAIL_TO'),
                 `Wedding Contact ${name}`,
                 htmlString
