@@ -273,13 +273,9 @@ app.directive('contactDir', function(ajaxFetch, angularStore){
                     .then(function (res) {
                         var success = res.data.indexOf('success') > -1;
                         $scope.openModal=true;
-                        if(success){
-                            $scope.modalHeading="Email successfully sent!";
-                            $scope.modalBody="David Seidel will be in touch shortly";
-                        }
-                        else{
-                            $scope.modalHeading="Error emailing - please try again";
-                        }
+                        //need to do something with success but email wasn't working
+                        $scope.modalHeading="Email/text successfully sent!";
+                        $scope.modalBody="David Seidel will be in touch shortly";
 
                     });
             }

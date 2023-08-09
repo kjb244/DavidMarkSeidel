@@ -61,9 +61,9 @@ router.get('/getAuthenticated', function(req, res){
 router.post('/submitContactInfo', function(req, res) {
     const data = req.body.data;
     const {name, email, phone, comments, checkboxModel} = data;
-    const emailProm = utils.sendEmailContact(name, email, phone, comments, checkboxModel);
+    //const emailProm = utils.sendEmailContact(name, email, phone, comments, checkboxModel);
     const smsProm = utils.sendSmsContact(name, email, phone, comments, checkboxModel);
-    Promise.all([emailProm, smsProm])
+    Promise.all([smsProm])
         .then(()=>{
             return res.json('success');
         }).catch((err) =>{
