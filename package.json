@@ -6,8 +6,8 @@
     "start": "node ./bin/www"
   },
   "engines": {
-    "node": "10.16.x",
-    "npm": "3.10.x"
+    "node": "16.14.x",
+    "npm": "8.3.x"
   },
   "repository": {
     "type": "git",
