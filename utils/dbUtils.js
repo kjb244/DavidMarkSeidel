@@ -201,6 +201,7 @@ class dbUtils{
         return new Promise(function(resolve, reject){
             let pool = new pg.Pool(config);
             pool.connect(function (err, client, done) {
+                console.log(client);
                 client.query('select prop_key, prop_value from local_db_props', function (err, res) {
                     done();
                     if (err) {
