@@ -37,11 +37,11 @@ router.get('/route_templates/:name', function (req, res) {
 });
 
 router.get('/getContent', function(req, res){
-    //return res.json(content);
-    const copyProm = dbutils.getValue('copy');
-    copyProm.then(function(copy){
-        return res.json(JSON.parse(copy));
-    })
+    return res.json(content);
+    // const copyProm = dbutils.getValue('copy');
+    // copyProm.then(function(copy){
+    //     return res.json(JSON.parse(copy));
+    // })
 });
 
 
