@@ -183,6 +183,9 @@ class dbUtils{
         return new Promise(function(resolve, reject) {
             let pool = new pg.Pool(config);
             pool.connect(function (err, client, done) {
+                if(err){
+                    console.log('in pg connect error', err);
+                }
                 client.query('select value from key_value_storage where key = $1', [key], function (err, res) {
                     done();
                     if (err) {
