@@ -178,7 +178,7 @@ class dbUtils{
         });
     };
 
-    getValue(key){
+    async getValue(key){
         key = key || '';
         return new Promise(function(resolve, reject) {
             let pool = new pg.Pool(config);

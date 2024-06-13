@@ -59,12 +59,12 @@ app.use(function(err, req, res, next) {
 
 app.listen(3000,'127.0.0.1', function(){
     console.log('server startup local listening and loading cache');
-    const localCacheProm = dbutils.getLocalCache();
-    localCacheProm.then(function(cache){
-        Object.keys(cache || {}).forEach(function(key){
-            memoryCache.put(key, cache[key]);
-        });
-    })
+    // const localCacheProm = dbutils.getLocalCache();
+    // localCacheProm.then(function(cache){
+    //     Object.keys(cache || {}).forEach(function(key){
+    //         memoryCache.put(key, cache[key]);
+    //     });
+    // })
 });
 
 
