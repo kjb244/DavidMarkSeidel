@@ -37,14 +37,14 @@ router.get('/route_templates/:name', function (req, res) {
 });
 
 router.get('/getContent', function(req, res){
-    return res.json(content);
-    // const copyProm = dbutils.getValue('copy');
-    // copyProm.then(function(copy){
-    //     console.log('getContent hit');
-    //     return res.json(JSON.parse(copy));
-    // }).catch((err) => {
-    //     console.log('error getting content', err);
-    // })
+    //return res.json(content);
+    const copyProm = dbutils.getValue('copy');
+    copyProm.then(function(copy){
+        console.log('getContent hit');
+        return res.json(JSON.parse(copy));
+    }).catch((err) => {
+        console.log('error getting content', err);
+    })
 });
 
 

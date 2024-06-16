@@ -14,7 +14,7 @@ class Utils{
     async sendSms(phone, textString){
         return new Promise(async (resolve, reject) => {
             if (this.isLocal()) {
-                //return resolve();
+                return resolve();
             }
             const smsCountMonth = dbutils.smsCountMonth();
             smsCountMonth.then(function (payload) {
