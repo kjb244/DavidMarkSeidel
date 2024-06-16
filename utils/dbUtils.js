@@ -13,9 +13,13 @@ let config = {
     host: conString.split('@')[1].split(':')[0],
     port: 5432,
     max: 10,
-    idleTimeoutMillis: 3000,
-    ssl: localLogin ? false: true
+    idleTimeoutMillis: 3000
 };
+if(localLogin){
+    config.ssl = false;
+} else {
+    config.ssl = { rejectUnauthorized: false};
+}
 
 
 
