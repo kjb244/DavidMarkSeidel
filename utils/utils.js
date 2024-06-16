@@ -1,5 +1,6 @@
 'use strict';
 
+const AWS = require('aws-sdk');
 const dbutils = require('./dbUtils.js');
 const request = require('request');
 const memoryCache = require('memory-cache');
@@ -10,30 +11,30 @@ class Utils{
         return !(process.env.SENDGRID_API_KEY || '').length;
     }
 
-    sendSms(phone, textString){
-        return new Promise((resolve, reject) => {
-            if (this.isLocal()){
-                return resolve();
+    async sendSms(phone, textString){
+        return new Promise(async (resolve, reject) => {
+            if (this.isLocal()) {
+                //return resolve();
             }
             const smsCountMonth = dbutils.smsCountMonth();
-            smsCountMonth.then(function(payload) {
+            smsCountMonth.then(function (payload) {
                 console.log('about to make call to send sms')
-                if (payload < 20){
+                if (payload < 20) {
                     const countryCode = '+1';
                     const requestObj = {
                         headers: {
-                            'content-type' : 'application/x-www-form-urlencoded',
+                            'content-type': 'application/x-www-form-urlencoded',
                             'Accepts': 'application/json'
                         },
-                        url:  `${process.env.BLOWERIO_URL || memoryCache.get('BLOWERIO_URL')}/messages`,
+                        url: `${process.env.BLOWERIO_URL || memoryCache.get('BLOWERIO_URL')}/messages`,
                         form: {
                             to: `${countryCode}${phone}`,
                             message: textString
                         }
                     };
 
-                    request.post(requestObj, function(error, response, body){
-                        if (!error && response.statusCode == 201)  {
+                    request.post(requestObj, function (error, response, body) {
+                        if (!error && response.statusCode == 201) {
                             console.log('SMS Message sent!');
                             resolve();
                         } else {
@@ -42,8 +43,7 @@ class Utils{
                             reject();
                         }
                     })
-                }
-                else {
+                } else {
                     console.log('Sms max capacity reached');
                     return resolve();
                 }
@@ -53,30 +53,31 @@ class Utils{
     }
 
 
-    sendEmail(from, to, subject, bodyHtml){
+    async sendEmail(bodyHtml){
         return new Promise((resolve, reject) => {
             const emailCountDay = dbutils.emailCount();
-            emailCountDay.then(function(payload){
-                if(payload < 30){
-                    const sgMail = require('@sendgrid/mail');
-                    sgMail.setApiKey(process.env.SENDGRID_API_KEY || memoryCache.get('SENDGRID_API_KEY'));
-                    const msg = {
-                        to: to,
-                        from: from,
-                        subject: subject,
-                        html: bodyHtml
-                    };
-                    console.log(`about to make email call ${subject}`);
-                    sgMail.send(msg).then(()=> {
-                        console.log(`email call successful ${subject}`);
+            emailCountDay.then(async function (payload) {
+                if (payload < 30) {
+                    AWS.config.update({
+                        region: 'us-east-1',
+                        accessKeyId: process.env.SNS_ACCESS_KEY || memoryCache.get('SNS_ACCESS_KEY'),
+                        secretAccessKey: process.env.SNS_SECRET_ACCESS_KEY  || memoryCache.get('SNS_SECRET_ACCESS_KEY')
+                    });
+                    try {
+                        const sns = new AWS.SNS();
+                        const params = {
+                            Message: bodyHtml,
+                            Subject: 'Wedding Officiant Lead',
+                            TopicArn: process.env.SNS_EMAIL_TOPIC_ARN || memoryCache.get('SNS_EMAIL_TOPIC_ARN')
+                        };
+                        await sns.publish(params).promise();
+                        console.log(`email call successful`);
                         resolve();
-                    }).catch((error) => {
-                        console.log(`email call error ${error}`)
+                    } catch (e) {
+                        console.log(`email call error`, e)
                         reject();
-                    })
-                }
-                else{
-                    reject();
+                    }
+
                 }
 
             })
@@ -85,7 +86,7 @@ class Utils{
 
     }
 
-    sendSmsContact (name, email, phone, comments, checkboxModel){
+    async sendSmsContact (name, email, phone, comments, checkboxModel){
 
         const checkboxModelStr = (checkboxModel || []).reduce((accum, e) => {
             if (e.value === true) {
@@ -117,18 +118,9 @@ class Utils{
         },'').slice(0,-4);
 
 
-        const htmlString = `<div><b>Name:</b> ${name}<br><br>
-                            <b>Email:</b> ${email}<br><br>
-                            <b>Phone:</b> ${phone}<br><br>
-                            <b>Checkboxes:</b><br>${checkboxModelStr}<br><br>
-                            <b>Comments:</b> ${comments}</div>`;
+        const htmlString = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nCheckboxes: ${checkboxModelStr}\nComments: ${comments}`;
 
-        return this.sendEmail(
-            process.env.EMAIL_TO || memoryCache.get('EMAIL_TO'),
-                process.env.EMAIL_TO || memoryCache.get('EMAIL_TO'),
-                `Wedding Contact ${name}`,
-                htmlString
-            ) ;
+        return this.sendEmail(htmlString) ;
 
 
     }

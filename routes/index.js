@@ -37,11 +37,14 @@ router.get('/route_templates/:name', function (req, res) {
 });
 
 router.get('/getContent', function(req, res){
-    return res.json(content);
-    // const copyProm = dbutils.getValue('copy');
-    // copyProm.then(function(copy){
-    //     return res.json(JSON.parse(copy));
-    // })
+    //return res.json(content);
+    const copyProm = dbutils.getValue('copy');
+    copyProm.then(function(copy){
+        console.log('getContent hit');
+        return res.json(JSON.parse(copy));
+    }).catch((err) => {
+        console.log('error getting content', err);
+    })
 });
 
 
@@ -61,9 +64,9 @@ router.get('/getAuthenticated', function(req, res){
 router.post('/submitContactInfo', function(req, res) {
     const data = req.body.data;
     const {name, email, phone, comments, checkboxModel} = data;
-    //const emailProm = utils.sendEmailContact(name, email, phone, comments, checkboxModel);
-    const smsProm = utils.sendSmsContact(name, email, phone, comments, checkboxModel);
-    Promise.all([smsProm])
+    const emailProm = utils.sendEmailContact(name, email, phone, comments, checkboxModel);
+    //const smsProm = utils.sendSmsContact(name, email, phone, comments, checkboxModel);
+    Promise.all([emailProm])
         .then(()=>{
             return res.json('success');
         }).catch((err) =>{

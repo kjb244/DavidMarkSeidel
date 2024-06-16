@@ -22,8 +22,6 @@ let config = {
 class dbUtils{
 
     authenticateUser(username, password){
-
-
         return new Promise(function(resolve, reject){
            if(localLogin){
                resolve();
@@ -37,188 +35,128 @@ class dbUtils{
                        reject();
                    }
                });
-
            }
         });
-
-
     }
 
-    runInsertUpdate(sql, parms = []) {
-        return new Promise(function (resolve, reject) {
-            let pool = new pg.Pool(config);
-            pool.connect(function (err, client, done) {
-
-
-                client.query(sql, parms, function (err, res) {
-                    done();
-                    if (err) {
-                        console.log(`error runInsertUpdate with error ${err}`);
-                        reject();
-                    }
-                    else {
-                        resolve();
-                    }
-
-                });
+    async runInsertUpdate(sql, parms = []) {
+        return new Promise(async function (resolve, reject) {
+            const client = new pg.Client(config);
+            await client.connect();
+            const res = await client.query(sql, parms);
+            await client.end();
+            resolve();
             });
-        });
-    };
+        };
 
-    smsCountMonth(){
+    async smsCountMonth(){
         const self = this;
-        return new Promise(function(resolve, reject){
+        return new Promise(async function (resolve, reject) {
             const selectQuery = "select count(*) cnt from sms_count where to_char(curr_date_time, 'yyyymm') = to_char(now(), 'yyyymm')";
             const insertQuery = 'insert into sms_count (curr_date_time) values (now())';
 
-            let pool = new pg.Pool(config);
-            pool.connect(function (err, client, done) {
+            const client = new pg.Client(config);
+            await client.connect();
+            const res = await client.query(selectQuery, []);
+            const rows = res.rows;
+            const cnt = rows[0].cnt;
 
+            console.log(`success smsCount with count ${cnt}`);
+            let prom;
+            prom = self.runInsertUpdate(insertQuery);
 
-                client.query(selectQuery, [], function (err, res) {
-                    done();
-                    if (err) {
-                        console.log(`error smsCount with error ${err}`);
-                        reject();
-                    }
-                    else{
-                        const rows = res.rows;
-                        const cnt = rows[0].cnt;
-
-                        console.log(`success smsCount with count ${cnt}`);
-                        let prom;
-                        prom = self.runInsertUpdate(insertQuery);
-
-                        prom.then(function(){
-                            resolve(cnt);
-                        }).catch(function(){
-                            reject();
-                        });
-
-                    }
-
-                });
+            prom.then(async function () {
+                await client.end();
+                resolve(cnt);
+            }).catch(async function () {
+                await client.end();
+                reject();
             });
-
 
         });
     };
 
-    emailCount(){
+    async emailCount(){
         const self = this;
-        return new Promise(function(resolve, reject){
+        return new Promise(async function (resolve, reject) {
             const selectQuery = 'select coalesce(sum(count),0) cnt from email_count where curr_date = current_date';
             const insertQuery = 'insert into email_count (count) values (1)';
             const updateQuery = 'update email_count set count = count + 1 where curr_date = current_date';
+            const client = new pg.Client(config);
+            await client.connect();
+            const res = await client.query(selectQuery, []);
+            const rows = res.rows;
+            const cnt = rows[0].cnt;
 
-            let pool = new pg.Pool(config);
-            pool.connect(function (err, client, done) {
+            console.log(`success emailCount with count ${cnt}`);
+            let prom;
+            if (cnt == 0) {
+                prom = self.runInsertUpdate(insertQuery);
+            } else {
+                prom = self.runInsertUpdate(updateQuery);
+            }
+            prom.then(async function () {
+                await client.end();
 
-
-                client.query(selectQuery, [], function (err, res) {
-                    done();
-                    if (err) {
-                        console.log(`error emailCount with error ${err}`);
-                        reject();
-                    }
-                    else{
-                        const rows = res.rows;
-                        const cnt = rows[0].cnt;
-
-                        console.log(`success emailCount with count ${cnt}`);
-                        let prom;
-                        if(cnt == 0){
-                            prom = self.runInsertUpdate(insertQuery);
-                        }
-                        else{
-                            prom = self.runInsertUpdate(updateQuery);
-                        }
-                        prom.then(function(){
-                            resolve(cnt);
-                        }).catch(function(){
-                            reject();
-                        });
-
-                    }
-
-                });
+                resolve(cnt);
+            }).catch(async function () {
+                await client.end();
+                reject();
             });
-
 
         });
     };
 
 
-    updateKeyByValue(key, value){
+    async updateKeyByValue(key, value){
         key = key || '';
-        return new Promise(function(resolve, reject){
-            if(typeof value !== 'string'){
+        return new Promise(async function (resolve, reject) {
+            if (typeof value !== 'string') {
                 reject();
             }
+            const client = new pg.Client(config);
+
             console.log(`attempting to run updateKeyByValue for key ${key}`);
-
-            let pool = new pg.Pool(config);
-            pool.connect(function (err, client, done) {
-
-
-                client.query(`update key_value_storage set value = $1 where key = $2`, [value, key], function (err, res) {
-                    done();
-                    if (err) {
-                        console.log(`error updatingKeyByValue with error ${err}`);
-                        reject();
-                    }
-                    else{
-                        console.log(`success updatingKeyByValue with row count ${res.rowCount}`);
-                        resolve(res.rowCount);
-                    }
-
-                });
-            });
-
+            await client.connect();
+            const res = await client.query(`update key_value_storage set value = $1 where key = $2`, [value, key]);
+            console.log(`success updatingKeyByValue with row count ${res.rowCount}`);
+            await client.end();
+            resolve(res.rowCount);
         });
     };
 
     async getValue(key){
+        const client = new pg.Client(config);
         key = key || '';
-        return new Promise(function(resolve, reject) {
-            let pool = new pg.Pool(config);
-            pool.connect(function (err, client, done) {
-                if(err){
-                    console.log('in pg connect error', err);
-                }
-                client.query('select value from key_value_storage where key = $1', [key], function (err, res) {
-                    done();
-                    if (err) {
-                        reject();
-                    } else {
-                        const rows = res.rows;
-                        const node = rows[0].value.replace(/''/g,"'");
-                        resolve(node);
-                    }
-                });
-            });
+        return new Promise(async function (resolve, reject) {
+            await client.connect();
+            const res = await client.query('select value from key_value_storage where key = $1', [key]);
+            const rows = res.rows;
+            const node = rows[0].value.replace(/''/g, "'");
+            await client.end();
+            resolve(node);
         })
     };
 
-    getLocalCache(){
-        return new Promise(function(resolve, reject){
-            let pool = new pg.Pool(config);
-            pool.connect(function (err, client, done) {
-                console.log(client);
-                client.query('select prop_key, prop_value from local_db_props', function (err, res) {
-                    done();
-                    if (err) {
-                        reject();
-                    } else {
-                        const rows = res.rows || [];
-                        const rtnObj = rows.reduce(function(accum, e){
-                            accum[e.prop_key] = e.prop_value;
-                            return accum;
-                        },{});
-                        resolve(rtnObj);
-                    }
-                });
-            });
+    async getLocalCache(){
+
+        return new Promise(async function (resolve, reject) {
+            try{
+                const client = new pg.Client(config);
+
+                await client.connect();
+                const res = await client.query('select prop_key, prop_value from local_db_props', []);
+                const rows = res.rows || [];
+                const rtnObj = rows.reduce(function (accum, e) {
+                    accum[e.prop_key] = e.prop_value;
+                    return accum;
+                }, {});
+                await client.end();
+                resolve(rtnObj);
+            } catch(e){
+                console.log(e);
+            }
+
         })
     };
 
