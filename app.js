@@ -63,6 +63,7 @@ app.listen(3000,'127.0.0.1', function(){
     localCacheProm.then(function(cache){
         Object.keys(cache || {}).forEach(function(key){
             memoryCache.put(key, cache[key]);
+            console.log('memory cache', key, cache[key])
         });
     });
 });
