@@ -47,7 +47,6 @@ class Utils{
                     console.log('Sms max capacity reached');
                     return resolve();
                 }
-
             })
         });
     }
