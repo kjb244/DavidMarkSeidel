@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 var exphbs = require('express-handlebars');
 var dbutils = require('./utils/dbUtils');
 var memoryCache = require('memory-cache');
+const loggingUtil = require('./utils/loggingUtil');
 
 
 var index = require('./routes/index');
@@ -61,11 +62,14 @@ app.listen(3000,'127.0.0.1', function(){
     console.log('server startup local listening and loading cache');
     const localCacheProm = dbutils.getLocalCache();
     localCacheProm.then(function(cache){
+        loggingUtil.writeInfo('appListen','getting cache success');
         Object.keys(cache || {}).forEach(function(key){
             memoryCache.put(key, cache[key]);
-            console.log('memory cache', key)
         });
-    });
+    }).catch(function(e) {
+        loggingUtil.writeError('appListen','getting cache error', JSON.stringify(e));
+
+    })
 });
 
 

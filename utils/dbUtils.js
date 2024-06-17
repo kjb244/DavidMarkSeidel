@@ -1,5 +1,6 @@
 'use strict';
 
+const loggingUtil = require('./loggingUtil');
 const bcrypt = require('bcrypt');
 const localLogin = !(process.env.PASSWORD || '').length;
 const pg = require('pg');
@@ -64,8 +65,7 @@ class dbUtils{
             const res = await client.query(selectQuery, []);
             const rows = res.rows;
             const cnt = rows[0].cnt;
-
-            console.log(`success smsCount with count ${cnt}`);
+            loggingUtil.writeInfo('smsCountMonth',`success smsCount with count ${cnt}`);
             let prom;
             prom = self.runInsertUpdate(insertQuery);
 
@@ -91,8 +91,7 @@ class dbUtils{
             const res = await client.query(selectQuery, []);
             const rows = res.rows;
             const cnt = rows[0].cnt;
-
-            console.log(`success emailCount with count ${cnt}`);
+            loggingUtil.writeInfo('emailCount',`emailCount success with count ${cnt}`);
             let prom;
             if (cnt == 0) {
                 prom = self.runInsertUpdate(insertQuery);
@@ -103,8 +102,9 @@ class dbUtils{
                 await client.end();
 
                 resolve(cnt);
-            }).catch(async function () {
+            }).catch(async function (e) {
                 await client.end();
+                loggingUtil.writeError('emailCount',`emailCount error`, JSON.stringify(e));
                 reject();
             });
 
@@ -119,11 +119,12 @@ class dbUtils{
                 reject();
             }
             const client = new pg.Client(config);
+            loggingUtil.writeInfo('updateKeyByValue', `attempting to run updateKeyByValue for key ${key}`);
 
-            console.log(`attempting to run updateKeyByValue for key ${key}`);
             await client.connect();
             const res = await client.query(`update key_value_storage set value = $1 where key = $2`, [value, key]);
-            console.log(`success updatingKeyByValue with row count ${res.rowCount}`);
+            loggingUtil.writeInfo('updateKeyByValue', `success updatingKeyByValue with row count ${res.rowCount}`);
+
             await client.end();
             resolve(res.rowCount);
         });
@@ -145,8 +146,9 @@ class dbUtils{
     async getLocalCache(){
 
         return new Promise(async function (resolve, reject) {
+            const client = new pg.Client(config);
+
             try{
-                const client = new pg.Client(config);
 
                 await client.connect();
                 const res = await client.query('select prop_key, prop_value from local_db_props', []);
@@ -156,9 +158,12 @@ class dbUtils{
                     return accum;
                 }, {});
                 await client.end();
+                loggingUtil.writeInfo('getLocalCache', 'getLocalCache success')
                 resolve(rtnObj);
             } catch(e){
-                console.log(e);
+                await client.end();
+                loggingUtil.writeError('getLocalCache','getLocalCache error', JSON.stringify(e));
+                reject();
             }
 
         })

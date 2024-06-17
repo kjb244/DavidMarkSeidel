@@ -9,6 +9,8 @@ let dbutils = require('../utils/dbUtils.js');
 let utils = require('../utils/utils');
 let memoryCache = require('memory-cache');
 let videoFilePath = '../public/videos/dms.mp4';
+const loggingUtil = require('../utils/loggingUtil');
+
 
 //GETS
 router.get('/', function(req, res, next) {
@@ -40,10 +42,10 @@ router.get('/getContent', function(req, res){
     //return res.json(content);
     const copyProm = dbutils.getValue('copy');
     copyProm.then(function(copy){
-        console.log('getContent hit');
+        loggingUtil.writeInfo('getContent','getContent success');
         return res.json(JSON.parse(copy));
     }).catch((err) => {
-        console.log('error getting content', err);
+        loggingUtil.writeError('getContent','getContent error', JSON.stringify(err));
     })
 });
 
@@ -66,12 +68,14 @@ router.post('/submitContactInfo', function(req, res) {
     const {name, email, phone, comments, checkboxModel} = data;
     const emailProm = utils.sendEmailContact(name, email, phone, comments, checkboxModel);
     //const smsProm = utils.sendSmsContact(name, email, phone, comments, checkboxModel);
+
     Promise.all([emailProm])
         .then(()=>{
+            loggingUtil.writeInfo('submitContactInfo','submitContactInfo success');
             return res.json('success');
         }).catch((err) =>{
-        console.log('error submitting contact info', err);
-        return res.json('failure');
+            loggingUtil.writeInfo('submitContactInfo', 'submitContactInfo error', JSON.stringify(err));
+            return res.json('failure');
     })
 
 });

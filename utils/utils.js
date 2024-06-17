@@ -4,6 +4,8 @@ const AWS = require('aws-sdk');
 const dbutils = require('./dbUtils.js');
 const request = require('request');
 const memoryCache = require('memory-cache');
+const loggingUtil = require('./loggingUtil');
+
 
 class Utils{
 
@@ -70,15 +72,19 @@ class Utils{
                             TopicArn: process.env.SNS_EMAIL_TOPIC_ARN || memoryCache.get('SNS_EMAIL_TOPIC_ARN')
                         };
                         await sns.publish(params).promise();
-                        console.log(`email call successful`);
+                        loggingUtil.writeInfo('sendEmail', 'aws email call successful')
                         resolve();
                     } catch (e) {
-                        console.log(`email call error`, e)
+                        loggingUtil.writeError('sendEmail', 'aws email call error', JSON.stringify(e))
                         reject();
                     }
 
                 }
 
+            }).catch(function(err){
+                loggingUtil.writeError('sendEmail', 'emailCount error', JSON.stringify(err))
+
+                reject();
             })
 
         });
@@ -111,7 +117,7 @@ class Utils{
 
         const checkboxModelStr = (checkboxModel || []).reduce((accum, e) => {
             if (e.value === true){
-                accum += `${e.name}: ${e.value}<br>`
+                accum += `${e.name}: ${e.value}    `
             }
             return accum;
         },'').slice(0,-4);
