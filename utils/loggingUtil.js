@@ -28,7 +28,7 @@ class LoggingUtil{
         if(error){
             logger.error = error;
         }
-        console.log(logger)
+        console.log(JSON.stringify(logger));
     }
 
 
