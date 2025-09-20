@@ -16,7 +16,7 @@ const loggingUtil = require('../utils/loggingUtil');
 router.get('/', function(req, res, next) {
 
     const content = {
-        title: 'David Mark Seidel - Wedding Officiant, Planner, Vocalist Charlotte NC',
+        title: 'David Mark Seidel Weddings - Wedding Officiants, Planners, Venues',
         metaContent: 'David Mark Seidel - Wedding Officiant, Planner, Vocalist Charlotte NC non-denominational Spanish Espanol Same Sex Unions Welcome'
     };
     res.render('index', content);
@@ -39,14 +39,14 @@ router.get('/route_templates/:name', function (req, res) {
 });
 
 router.get('/getContent', function(req, res){
-    //return res.json(content);
-    const copyProm = dbutils.getValue('copy');
-    copyProm.then(function(copy){
-        loggingUtil.writeInfo('getContent','getContent success');
-        return res.json(JSON.parse(copy));
-    }).catch((err) => {
-        loggingUtil.writeError('getContent','getContent error', JSON.stringify(err));
-    })
+    return res.json(content);
+    // const copyProm = dbutils.getValue('copy');
+    // copyProm.then(function(copy){
+    //     loggingUtil.writeInfo('getContent','getContent success');
+    //     return res.json(JSON.parse(copy));
+    // }).catch((err) => {
+    //     loggingUtil.writeError('getContent','getContent error', JSON.stringify(err));
+    // })
 });
 
 

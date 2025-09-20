@@ -80,6 +80,26 @@ app.directive('aboutDir', function(){
     };
 });
 
+app.directive('faqsDir', function(){
+    return {
+        restrict: 'EA',
+        scope: false,
+        templateUrl: 'directive_templates/faqs.html',
+        link: function($scope, elem, attrs){
+            $scope.copy = $scope.copy.routes.faqs;
+
+        },
+        controller: function($scope){
+
+            setTimeout(function(){
+                $(document).foundation();
+            },100)
+
+
+        }
+    };
+});
+
 app.directive('welcomeDir', function(utilityFunctions, $timeout, $sce){
     return {
         restrict: 'EA',

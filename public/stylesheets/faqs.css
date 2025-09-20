@@ -1,0 +1,11 @@
+[data-section="faqs"] h2, [data-section="faqs"] h3{
+    text-align: center;
+}
+
+[data-section="faqs"] .faqs-start{
+    margin-top: 40px;
+}
+
+[data-section="faqs"] .accordion-title{
+    font-size: 14px;
+}

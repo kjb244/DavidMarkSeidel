@@ -12,7 +12,7 @@
   },
   "navBar": {
     "heading": {
-      "who": "David Mark Seidel - Wedding Officiant, Planner, Vocalist"
+      "who": "David Mark Seidel Weddings - Wedding Officiants, Planners, Venues"
     },
     "links": [
       {
@@ -26,6 +26,10 @@
       {
         "name": "Services",
         "route": "services"
+      },
+      {
+        "name": "FAQs",
+        "route": "faqs"
       },
       {
         "name": "Gallery",
@@ -45,8 +49,8 @@
     "about": {
       "heading": "About David Mark Seidel",
       "paras": [
-        "David Mark Seidel is an ordained minister and full-time wedding officiant/wedding planner/and owner-operator of a full service Garden wedding venue in Charlotte''s Southpark.  He performs weddings nationally and internationally.  As a vocalist, he performs at gatherings of all sizes from private house parties to jazz clubs to wonderful wedding venues.",
-        "David is a practitioner of World Faiths, among them: Christian, Jewish, Hindu, and Native American. He spent 10 years of dedicated scriptural study in monastic settings both in New York and India. His successful married life is 42 years strong and that was preceded by a 10 year blossoming friendship to his wife Jeanette.   He is father to the handsomest 21-year-old young man in Charlotte, son Jonathan.",
+        "David Mark Seidel is an ordained minister and full-time wedding officiant/wedding planner/and owner-operator of a full service Wedding Garden Venue in Charlotte's Southpark.  His team of professionals perform weddings nationally and internationally.",
+        "David is a practitioner of World Faiths, among them: Christian, Jewish, Hindu, and Native American. He spent 10 years of dedicated scriptural study in monastic settings both in New York and India. His successful married life is 46 years strong and that was preceded by a 10 year blossoming friendship to his wife Jeanette.   He is the proud father of the handsomest young man in the Carolinas, son Jonathan.",
         "When you meet him, you will see and feel what he is all about and you will be very pleased you chose him to make your marriage a sacred and everlasting relationship.  Allow David to create a ceremony and an event that launches your marriage with exquisite positive energy, a day that will \"love you back to life again and again\"."
       ],
       "topImage": {
@@ -251,7 +255,7 @@
           ]
         },
         {
-          "heading": "Couples'' Support",
+          "heading": "Couples' Support",
           "price": false,
           "description": false,
           "points": [
@@ -318,7 +322,7 @@
         },
         {
           "text": [
-            "I have worked directly with David for a long time, he is very dedicated and takes great pride in the job he does. He puts the bride and groom first and will ALWAYS make your special day that much more wonderful. Don''t waste time looking for other Wedding Officiants, book him if you can, he is a busy man that really cares and is very talented!!!"
+            "I have worked directly with David for a long time, he is very dedicated and takes great pride in the job he does. He puts the bride and groom first and will ALWAYS make your special day that much more wonderful. Don't waste time looking for other Wedding Officiants, book him if you can, he is a busy man that really cares and is very talented!!!"
           ],
           "person": "Don",
           "sub": "2/26/2018"
@@ -353,7 +357,7 @@
         },
         {
           "text": [
-            "David''s remarkable uplifting personality and attitude towards a loving ceremony made it all the more. He was extremely sensitive to the newlyweds needs and emotions they were feeling. I would encourage everyone thinking about marriage to sit down and chat with David and you''ll see that he will be the perfect person to officiate. Thank you David for making a beautiful ceremony happen with such grace and ease."
+            "David's remarkable uplifting personality and attitude towards a loving ceremony made it all the more. He was extremely sensitive to the newlyweds needs and emotions they were feeling. I would encourage everyone thinking about marriage to sit down and chat with David and you'll see that he will be the perfect person to officiate. Thank you David for making a beautiful ceremony happen with such grace and ease."
           ],
           "person": "Steven",
           "sub": "1/21/2018"
@@ -368,7 +372,7 @@
         {
           "text": [
             "Weddings are a time of unity, laughter and happily ever after. Reverend David Seidel helped our family to accomplish all those things. His loving, yet professional, demeanor struck just the right note. His sense of humor and understanding heart helped us create a day we will remember always.",
-            " As the song goes, ''Love isn''t Love until you give it away.'' I am sure that everyone at the wedding loved a bit more deeply as he guided us all through this song and message. Thank You!"
+            " As the song goes, 'Love isn't Love until you give it away.' I am sure that everyone at the wedding loved a bit more deeply as he guided us all through this song and message. Thank You!"
           ],
           "person": "Helen",
           "sub": "1/21/2018"
@@ -383,7 +387,7 @@
         },
         {
           "text": [
-            "Great experience. One of a kind character. Made my daughter''s wedding a unique occasion. Great personality, very likable fellow."
+            "Great experience. One of a kind character. Made my daughter's wedding a unique occasion. Great personality, very likable fellow."
           ],
           "person": "Mary",
           "sub": "12/2/2017"
@@ -413,7 +417,7 @@
         },
         {
           "text": [
-            "He was everything you want a wedding officiant to be!. Reverend David performed my nephew''s wedding in a very professional and friendly manner. I like the fact that he likes to come an hour before the ceremony to talk to the groom and the bride and meet the family members. It was a very nice and sweet ceremony. Thank you Reverend David."
+            "He was everything you want a wedding officiant to be!. Reverend David performed my nephew's wedding in a very professional and friendly manner. I like the fact that he likes to come an hour before the ceremony to talk to the groom and the bride and meet the family members. It was a very nice and sweet ceremony. Thank you Reverend David."
           ],
           "person": "Roxanna",
           "sub": "6/15/2018"
@@ -436,11 +440,11 @@
     },
     "contact": {
       "header": "Interested in Connecting? Officiant Pricing and More?",
-      "subHeader": "Please call or text David Mark Seidel at <a id=''contactNum'' href=''tel:7045267284''>704.526.7284</a> or fill out the information below"
+      "subHeader": "Please call or text David Mark Seidel at <a id='contactNum' href='tel:7045267284'>704.526.7284</a> or fill out the information below"
     },
     "welcome": {
-      "heading": "David Mark Seidel - Wedding Officiant, Planner, Venue",
-      "headingSub": "Multi-Lingual, Multi-Cultural, \"Ambassador of Love\"",
+      "heading": "David Mark Seidel Weddings - Wedding Officiants, Planners, Venues",
+      "headingSub": "Multi-Lingual, Multi-Cultural, \"Ambassadors of Love\"",
       "youtubeIframeVideoInfo": [
         {
           "image": "images/dms-video-cover.jpg",
@@ -456,12 +460,12 @@
         }
       ],
       "paras": [
-        "For more than 40 years, David has been performing ceremonies all over the world.",
-        "His beautiful and intimate wedding garden in Charlotte Southpark is the number one choice for micro weddings at this time. A typical package includes customized ceremony, deluxe floral arch, bridal bouquet, artisan wedding cake and dedicated photo coverage of the ceremony, the couple and their intimate gathering. David Mark Seidel Weddings have been featured on Live with Kelly and Ryan, ABC NEWS, WBTV and all major news outlets.  David is a one-of-a-kind original. No one else inside the wedding industry is able to bring the level of intimacy and trust to a ceremony like he does. His trademark is to invite family and friends to stand and bestow blessings on the couple just before they say their \" I dos \".   A wedding with David is a gathering fully engaged in the ritual of celebration, not merely spectators at a distance.",
-        "He currently officiates denominational and non-denominational weddings in the United States and abroad.  His couples enjoy pre-marital counseling sessions that focus on building inspiring relationship skills:  communication of feelings, good listening, self-inquiry, intimacy, and  humor.",
-        "He is an expert Wedding Planner, providing Vendor selection and management of: Venue, Caterer, DJ, Musicians, Vocalist, Photographer, Videographer, Rentals, Cake, Floral, Décor, Dress, Transportation, and Lodging.  AND...  His company''s dedicated team of professionals includes expert Photographers, Multi-Lingual Officiants, Floral/Decor Designers, Musicians, Hair and Make-up Artists, Artisan Bakers, DJ''s, Videographers and selected Venues in the Carolinas.",
-        "As a Vocalist, David approaches the marriage ceremony as a wondrous vessel infused with joy and celebration and offers love songs from the Best of Broadway and The Great American Songbook!",
-        "Interested in pricing? Interested in booking David?  You can use our contact page, reach him at <a id=''contactNum'' href=''tel:7045267284''>704.526.7284</a>, or <a id=''emailDavidMarkSeidel'' href=''mailto:david@davidmarkseidel.com''>david@davidmarkseidel.com</a> for availability. David is multi-lingual Spanish/English/French, <span class=''blue''>Se Habla Espanol</span> and also is skilled in Hindi/Sanskrit for Indian weddings/ Pujas and Hebrew for Jewish weddings. David performs same sex marriages.\nAll prices and programs are subject to change."
+        "For more than 40 years, David and his team have been performing ceremonies all over the world.",
+        "Our beautiful and intimate wedding garden in Charlotte's Southpark is the number one choice for micro weddings at this time. A typical package includes customized ceremony, deluxe floral arch, bridal bouquet, artisan wedding cake and dedicated photo coverage of the ceremony, the couple and their intimate gathering. David Mark Seidel Weddings have been featured on Live with Kelly and Ryan, ABC NEWS, WBTV and all major news outlets.  David Mark Seidel is a one-of-a-kind original. No one else inside the wedding industry is able to bring the level of intimacy and trust to a ceremony like he does. His trademark is to invite family and friends to stand and bestow blessings on the couple just before they say their \" I dos \".   A wedding with David and company is a gathering fully engaged in the ritual of celebration, not merely spectators at a distance.",
+        "We currently officiate denominational and non-denominational weddings in the United States and abroad.  Our couples enjoy pre-marital coaching sessions that focus on building inspiring relationship skills:  communication of feelings, good listening, self-inquiry, intimacy, and  humor.",
+        "We are expert Wedding Planners, providing Vendor selection and management of: Venue, Caterer, DJ, Musicians, Vocalist, Photographer, Videographer, Rentals, Cake, Floral, Décor, Dress, Transportation, and Lodging.  AND...  Our company's dedicated team of professionals includes expert Photographers, Multi-Lingual Officiants, Floral/Decor Designers, Musicians, Hair and Make-up Artists, Artisan Bakers, DJ's, Videographers and selected Venues in the Carolinas.",
+        "",
+        "Interested in pricing? Interested in booking David and his team?  You can use our contact page, reach us at <a id='contactNum' href='tel:7045267284'>704.526.7284</a>, or <a id='emailDavidMarkSeidel' href='mailto:david@davidmarkseidel.com'>david@davidmarkseidel.com</a> for availability.We are multi-lingual Spanish/English/French, <span class='blue'>Se Habla Espanol</span> and are also skilled in Hindi/Sanskrit for Indian weddings/ Pujas and Hebrew for Jewish weddings. We perform same sex marriages.\nAll prices and programs are subject to change."
       ],
       "images": [
         {
@@ -479,6 +483,81 @@
         {
           "location": "images/wedding-29.png",
           "alt": "Wedding Picture Couple"
+        }
+      ]
+    },
+    "faqs": {
+      "heading": "FAQs for your Officiant, Venue & Planning Needs",
+      "headingSub": "Welcome to DAVID MARK SEIDEL WEDDINGS! We are here to make your wedding event a truly special and memorable experience. Below are some of our most frequently asked questions to help you get started.",
+      "faqCategories": [
+        {
+          "title": "General Questions",
+          "questions": [
+            {
+              "question": "What services do you offer?",
+              "answer": "We offer a range of services to meet your wedding needs, including:",
+              "subs": [
+                "Officiant Services: We are licensed wedding officiants and ordained ministers available for weddings in the Charlotte, Ballantyne, and South Park areas. We perform non-denominational, interfaith, and multi-cultural ceremonies.",
+                "Planning & Coordination: We provide various planning services, from full-service wedding planning to \"day-of\" coordination, to ensure your special day runs smoothly.",
+                "Venue: Our beautiful and intimate wedding garden in Charlotte Southpark is the number one choice for micro weddings at this time. A typical package includes customized ceremony, deluxe floral arch, bridal bouquet, artisan wedding cake and dedicated photo coverage of the ceremony, the couple and their intimate gathering."
+              ]
+            },
+            {
+              "question": "Where are you located?",
+              "answer": "We serve Charlotte, The Carolinas, and all of the world's geography. We are familiar with many local wedding venues and can provide guidance on finding the perfect spot for your ceremony."
+            }
+          ]
+        },
+        {
+          "title": "Wedding Officiant Services",
+          "questions": [
+            {
+              "question": "Are you licensed wedding officiants?",
+              "answer": "Yes, we are fully licensed wedding officiants and ordained ministers. We are legally authorized to perform marriage ceremonies in the Carolinas and beyond."
+            },
+            {
+              "question": "Can you help us prepare for married life?",
+              "answer": "Yes, we offer couples coaching sessions...typically 4 coaching sessions that focus on building inspiring relationship skills: communication of feelings, good listening, self-inquiry, intimacy, and humor. At least one session being the recommended minimum commitment. Our sessions utilize recommended readings and regular homework."
+            },
+            {
+              "question": "Can you help us with our wedding vows?",
+              "answer": "Absolutely! We specialize in creating a ceremony that is unique to you as a couple. We can provide guidance and resources for writing customized wedding vows, or we can work with you to craft a ceremony that reflects your love story and values."
+            },
+            {
+              "question": "What kind of ceremonies do you perform?",
+              "answer": "We are experienced in a wide range of ceremonies, including:\n\u2022 Non-denominational Wedding Ceremony: A ceremony that focuses on your love and commitment without specific religious affiliations.\n\u2022 Interfaith Wedding Officiant: We are skilled in blending different faiths and traditions to create a meaningful ceremony that honors both partners.\n\u2022 Fusion & Multi-Cultural Weddings: We embrace and incorporate cultural traditions from around the world. We can officiate ceremonies that include elements from Hindu, Jewish, Christian, Latin American and other cultural traditions."
+            }
+          ]
+        },
+        {
+          "title": "Bilingual & Multi-Lingual Services",
+          "questions": [
+            {
+              "question": "Are you bilingual/multilingual officiants?",
+              "answer": "Yes, our team includes officiants who are fluent in English, Spanish, Hindi, Hebrew, and French."
+            },
+            {
+              "question": "Can you perform our ceremony in a language other than English?",
+              "answer": "Yes. We offer multi-lingual wedding ceremonies and can officiate your wedding in English and a language of your preference. We also specialize in intercultural wedding ceremonies that can incorporate multiple languages."
+            }
+          ]
+        },
+        {
+          "title": "Wedding Planning & Coordination",
+          "questions": [
+            {
+              "question": "Do I need a wedding planner or a \"day-of\" coordinator?",
+              "answer": "It depends on your needs! A full-service wedding planner will help you with every detail, from vendor selection to budget management. A \"day-of\" wedding coordinator is for couples who have done the planning themselves and need a professional to manage the timeline and logistics on the wedding day. We offer both services and can help you determine which option is best for you."
+            },
+            {
+              "question": "How do you work with wedding venues?",
+              "answer": "We have established relationships with many wedding venues in the Charlotte area, including outdoor wedding venues. We work closely with venue staff to ensure a seamless experience, and we can also assist you in finding the perfect venue for your vision and budget."
+            },
+            {
+              "question": "Do you provide vendor selection and management?",
+              "answer": "Yes, we provide vendor selection and management of Venue/ Caterer/ DJ/ Musicians/ Vocalist/ Photographer/ Videographer/ Equipment Rentals/ Cake/ Floral/ Décor/ Dress/ Tux/ Transportation/ Lodging/ Hair & Make-up"
+            }
+          ]
         }
       ]
     },
@@ -510,6 +589,10 @@
             "text": "Services"
           },
           {
+            "hash": "#faqs",
+            "text": "FAQs"
+          },
+          {
             "hash": "#/gallery",
             "text": "Gallery"
           },
@@ -527,9 +610,9 @@
         "title": "Contact",
         "type": "Contact",
         "content": [
-          "<a id=''contactNumFooter'' href=''tel:7045267284''>704.526.7284</a>",
-          "<a id=''weddingWireFooter'' href=''https://www.weddingwire.com/biz/reverend-david-mark-seidel-wedding-officiant-charlotte/e6a0c1205642b6df.html'' target=''_blank'' >Wedding Wire</a>",
-          "<a id=''thumbtackFooter'' href=''https://www.thumbtack.com/-Charlotte-NC/service/3292408'' target=''_blank''>Thumbtack</a>"
+          "<a id='contactNumFooter' href='tel:7045267284'>704.526.7284</a>",
+          "<a id='weddingWireFooter' href='https://www.weddingwire.com/biz/reverend-david-mark-seidel-wedding-officiant-charlotte/e6a0c1205642b6df.html' target='_blank' >Wedding Wire</a>",
+          "<a id='thumbtackFooter' href='https://www.thumbtack.com/-Charlotte-NC/service/3292408' target='_blank'>Thumbtack</a>"
         ]
       },
       {
