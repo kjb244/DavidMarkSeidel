@@ -86,7 +86,6 @@ app.directive('faqsDir', function(){
         scope: false,
         templateUrl: 'directive_templates/faqs.html',
         link: function($scope, elem, attrs){
-            $scope.copy = $scope.copy.routes.faqs;
 
         },
         controller: function($scope){

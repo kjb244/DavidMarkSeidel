@@ -1,8 +1,8 @@
 <div class="row">
     <div class="small-12 columns">
-        <h2>{{copy.heading}}</h2>
-        <h3>{{copy.headingSub}}</h3>
-        <div class="faqs-start" ng-repeat="rec in copy.faqCategories">
+        <h2>{{copy.routes.faqs.heading}}</h2>
+        <h3>{{copy.routes.faqs.headingSub}}</h3>
+        <div class="faqs-start" ng-repeat="rec in copy.routes.faqs.faqCategories">
             <p>{{rec.title}}</p>
             <ul class="accordion" data-accordion="accordion{{$index}}" data-allow-all-closed="true">
                 <li ng-repeat="rec2 in rec.questions" class="accordion-item"
