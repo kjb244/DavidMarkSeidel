@@ -279,7 +279,7 @@
                 "question": "What services do you offer?",
                 "answer": "We offer a range of services to meet your wedding needs, including:",
                 "subs": [
-                  "Officiant Services: We are licensed wedding officiants and ordained ministers available for weddings in the Charlotte, Ballantyne, and South Park areas. We perform non-denominational, interfaith, and multi-cultural ceremonies.",
+                  "We are wedding officiants/ ordained ministers available for weddings in the Carolinas and beyond. We perform non-denominational, interfaith, and multi-cultural ceremonies.",
                   "Planning & Coordination: We provide various planning services, from full-service wedding planning to \"day-of\" coordination, to ensure your special day runs smoothly.",
                   "Venue: Our beautiful and intimate wedding garden in Charlotte Southpark is the number one choice for micro weddings at this time. A typical package includes customized ceremony, deluxe floral arch, bridal bouquet, artisan wedding cake and dedicated photo coverage of the ceremony, the couple and their intimate gathering."
                 ]
@@ -294,8 +294,8 @@
             "title": "Wedding Officiant Services",
             "questions": [
               {
-                "question": "Are you licensed wedding officiants?",
-                "answer": "Yes, we are fully licensed wedding officiants and ordained ministers. We are legally authorized to perform marriage ceremonies in the Carolinas and beyond."
+                "question": "Are you ordained wedding officiants?",
+                "answer": "We are legally authorized to perform marriage ceremonies in the Carolinas and beyond."
               },
               {
                 "question": "Can you help us prepare for married life?",
@@ -307,7 +307,12 @@
               },
               {
                 "question": "What kind of ceremonies do you perform?",
-                "answer": "We are experienced in a wide range of ceremonies, including:\n\u2022 Non-denominational Wedding Ceremony: A ceremony that focuses on your love and commitment without specific religious affiliations.\n\u2022 Interfaith Wedding Officiant: We are skilled in blending different faiths and traditions to create a meaningful ceremony that honors both partners.\n\u2022 Fusion & Multi-Cultural Weddings: We embrace and incorporate cultural traditions from around the world. We can officiate ceremonies that include elements from Hindu, Jewish, Christian, Latin American and other cultural traditions."
+                "answer": "We are experienced in a wide range of ceremonies, including:",
+                "subs": [
+                  "Non-denominational Wedding Ceremony: A ceremony that focuses on your love and commitment without specific religious affiliations.",
+                  "Interfaith Wedding Officiant: We are skilled in blending different faiths and traditions to create a meaningful ceremony that honors both partners.",
+                  "Fusion & Multi-Cultural Weddings: We embrace and incorporate cultural traditions from around the world. We can officiate ceremonies that include elements from Hindu, Jewish, Christian, Latin American and other cultural traditions."
+                ]
               }
             ]
           },
