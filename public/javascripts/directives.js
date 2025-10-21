@@ -80,24 +80,6 @@ app.directive('aboutDir', function(){
     };
 });
 
-app.directive('faqsDir', function(){
-    return {
-        restrict: 'EA',
-        scope: false,
-        templateUrl: 'directive_templates/faqs.html',
-        link: function($scope, elem, attrs){
-
-        },
-        controller: function($scope){
-
-            setTimeout(function(){
-                $(document).foundation();
-            },100)
-
-
-        }
-    };
-});
 
 app.directive('welcomeDir', function(utilityFunctions, $timeout, $sce){
     return {
@@ -254,6 +236,10 @@ app.directive('servicesDir', function(){
                 rec = rec || '';
                 return rec.split(',').length-1;
             }
+
+            setTimeout(function(){
+                $(document).foundation();
+            },100)
 
         }
     };

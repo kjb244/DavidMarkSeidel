@@ -1,11 +1,15 @@
-[data-section="faqs"] h2, [data-section="faqs"] h3{
+[data-section="services"] h2, [data-section="faqs"] h3{
     text-align: center;
 }
 
-[data-section="faqs"] .faqs-start{
+[data-section="services"] .faqs-start{
     margin-top: 40px;
 }
 
-[data-section="faqs"] .accordion-title{
+[data-section="services"] .faq-title{
+    font-weight: bold;
+}
+
+[data-section="services"] .accordion-title{
     font-size: 14px;
 }

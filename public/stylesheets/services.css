@@ -2,11 +2,11 @@
     text-align: center;
 }
 
-[data-section="services"] ul:first-child{
+[data-section="services"] ul:not(.accordion):first-child{
     margin-top: 20px;
 }
 
-[data-section="services"] ul:nth-child(n+2){
+[data-section="services"] ul:not(.accordion):nth-child(n+2){
     margin-top: 40px;
 }
 
@@ -75,4 +75,8 @@
 [data-section="services"] .description {
     color: #777777;
     font-size: 1.1rem;
+}
+
+[data-section="services"] .row.faqs {
+    margin-top: 60px;
 }
