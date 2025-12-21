@@ -16,6 +16,35 @@
     }
 }
 
+[data-section="welcome"] li{
+    list-style-type: none;
+}
+
+[data-section="welcome"]  li {
+    border-bottom: dotted 1px #DDDDDD;
+    font-size: 14px;
+    padding: 0.875rem 1.125rem;
+
+}
+
+[data-section="welcome"] .pricing-table{
+    border: solid 1px #DDDDDD;
+
+}
+
+[data-section="welcome"] .pricing-wrapper{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+[data-section="welcome"] .title {
+    background-color: #2199e8;
+    color: rgb(254, 254, 254);
+    font-size: 18px;
+    border-bottom: 0;
+}
+
+
 [data-section="welcome"] .video-learn-about-me{
     margin-bottom: 10px;
 }

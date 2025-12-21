@@ -12,7 +12,9 @@
   },
   "navBar": {
     "heading": {
-      "who": "David Mark Seidel Weddings - Wedding Officiants, Planners, Venues"
+      "who": "David Mark Seidel Weddings - Wedding Officiants, Planners, Venues",
+      "googleReviewLink": "https://search.google.com/local/reviews?placeid=ChIJaSRIYIueVogRK97qGAbeOW4",
+      "googleReviewText": "Google reviews"
     },
     "links": [
       {
@@ -492,6 +494,11 @@
     "welcome": {
       "heading": "David Mark Seidel Weddings - Wedding Officiants, Planners, Venues",
       "headingSub": "Multi-Lingual, Multi-Cultural, \"Ambassadors of Love\"",
+      "callout": [
+        {
+        "heading": "SOUTHPARK GARDEN WEDDING, the most popular Micro Wedding Package...A typical package includes deluxe floral arch, bridal bouquet, custom wedding cake and dedicated photo coverage of the ceremony, the couple and their intimate gathering (up to 10 people)."
+        }
+      ],
       "youtubeIframeVideoInfo": [
         {
           "image": "images/dms-video-cover.jpg",

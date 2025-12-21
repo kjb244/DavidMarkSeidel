@@ -8,9 +8,31 @@
     background: #2199e8;
 }
 
-[data-section="menu"] nav .title-bar .title{
+[data-section="menu"] nav .title-bar .bar-left{
+    flex: 1;
     margin-left: 15px;
-    font-size: 16px;
+}
+
+[data-section="menu"] nav .bar-left *, [data-section="menu"] nav .bar-right *{
+    font-size: 14px;
+}
+
+@media screen and (min-width: 39.9375em) {
+    [data-section="menu"] nav .bar-left *, [data-section="menu"] nav .bar-right *{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 39.9375em) {
+
+    [data-section="menu"] nav .title-bar .bar-right {
+        max-width:80px;
+    }
+}
+
+[data-section="menu"] nav .title-bar .bar-right a{
+    margin-right: 5px;
+    margin-top: 14px;
 }
 
 @media screen and (min-width: 39.9375em) {
