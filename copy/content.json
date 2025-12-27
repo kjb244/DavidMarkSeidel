@@ -191,7 +191,19 @@
           ]
         }
       ],
+      "youtubeIframeVideoInfo": [
+
+      ],
       "videos": [
+        {
+          "title": "David Seidel - Wedding Officiant",
+          "iframe": "<iframe id=\"videoWelcome1\" width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/Vo1qCoi0bcY?enablejsapi=1&html5=1&rel=0\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+        },
+        {
+          "title": "Southpark Wedding",
+          "iframe": "<iframe id=\"videoWelcome2\" width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/RAsW2PuF7QQ\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+
+        },
         {
           "title": "Roselee & David Video",
           "iframe": "<iframe src=\"https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffippsfilmingco%2Fvideos%2F766456046812511%2F&width=500&show_text=false&height=280&appId\"  height=\"280\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowTransparency=\"true\" allow=\"encrypted-media\" allowFullScreen=\"true\"></iframe>"
@@ -492,20 +504,6 @@
       "callout": [
         {
         "heading": "SOUTHPARK WEDDING GARDEN, the most popular Micro Wedding Package...A typical package includes deluxe floral arch, bridal bouquet, custom wedding cake and dedicated photo coverage of the ceremony, the couple and their intimate gathering (up to 10 people)."
-        }
-      ],
-      "youtubeIframeVideoInfo": [
-        {
-          "image": "images/dms-video-cover.jpg",
-          "iframe": "<iframe id=\"videoWelcome1\" width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/Vo1qCoi0bcY?enablejsapi=1&html5=1&rel=0\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
-        },
-        {
-          "image": "images/dms-video-cover.jpg",
-          "iframe": "<iframe id=\"videoWelcome2\" width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/RAsW2PuF7QQ\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
-        },
-        {
-          "image": "images/dms-video-cover.jpg",
-          "iframe": "<iframe id=\"videoWelcome3\" width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/2w7fHSkU1UU?enablejsapi=1&html5=1&rel=0\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
         }
       ],
       "paras": [

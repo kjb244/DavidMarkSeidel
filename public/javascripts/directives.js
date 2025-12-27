@@ -99,30 +99,12 @@ app.directive('welcomeDir', function(utilityFunctions, $timeout, $sce){
                 });
             },1);
 
-            $scope.showVideoCoverArr = $scope.copy.routes.welcome.youtubeIframeVideoInfo.map(function(e){
-                return true;
-            });
 
-          $scope.videoLearnAboutMeClass = function(){
-            var classes = "small-12 columns ";
-            var len = $scope.copy.routes.welcome.youtubeIframeVideoInfo.length;
-            if (12 % len === 0){
-              classes += 'large-' + 12/len;
-            }
-            else {
-              classes += 'large-6';
-            }
-            return classes;
-          };
 
             utilityFunctions.loadYTVideoControls();
         },
         controller: function($scope){
 
-            $scope.videoCoverClick = function(idx){
-              $scope.showVideoCoverArr[idx] = false;
-              utilityFunctions.playYTVideo($scope.iframeId[idx]);
-            };
 
             $scope.initFoundation = function(last){
                 if(last){
@@ -152,6 +134,7 @@ app.directive('galleryDir', function($timeout, $sce, utilityFunctions){
             $timeout(function(){
                 var hm = {
                     small: {
+                        height: '200px',
                         width: '100%'
                     },
                     medium: {
@@ -178,6 +161,9 @@ app.directive('galleryDir', function($timeout, $sce, utilityFunctions){
 
 
             },1000);
+
+
+
 
         },
         controller: function($scope){
@@ -214,6 +200,7 @@ app.directive('galleryDir', function($timeout, $sce, utilityFunctions){
                 }
 
             }
+
 
 
 

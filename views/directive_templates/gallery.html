@@ -23,6 +23,9 @@
 
 </div>
 
+
+
+
 <div  ng-repeat="rec in copy.routes.gallery.videos" class="video gallery-wrapper">
     <div class="row collapse heading">
         <div class="small-12 columns">
@@ -30,7 +33,7 @@
         </div>
     </div>
     <div class="row collapse video-details" ng-class="{'special-styling': rec.specialStyling }">
-        <div class="small-12 columns">
+        <div class="small-12 medium-7 columns">
             <div class="iframe-container" data-iframe="{{rec.iframe}}"></div>
             <div ng-bind-html="iframeVideoArr[$index]" ></div>
         </div>

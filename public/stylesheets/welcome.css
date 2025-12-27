@@ -45,62 +45,6 @@
 }
 
 
-[data-section="welcome"] .video-learn-about-me{
-    margin-bottom: 10px;
-}
-
-
-[data-section="welcome"] .video-learn-about-me img{
-
-    position: absolute;
-    height:100%;
-    width: 100%;
-
-}
-
-[data-section="welcome"] .video-learn-about-me > div{
-    position: relative;
-    width: 100%;
-    height: 260px;
-}
-
-@media screen and (min-width: 40em) {
-    [data-section="welcome"] .video-learn-about-me > div{
-
-        height: 320px;
-    }
-
-}
-
-
-@media screen and (min-width: 64em) {
-    [data-section="welcome"] .video-learn-about-me > div{
-
-        height: 284px;
-    }
-
-}
-
-[data-section="welcome"] .video-learn-about-me .fa{
-
-    position: absolute;
-    top: 50%;
-    left: calc(50%);
-    color: blue;
-
-}
-
-
-[data-section="welcome"] .video-learn-about-me .fade {
-    transition: all linear 1s;
-    opacity: 1;
-}
-
-[data-section="welcome"] .video-learn-about-me .fade.ng-hide {
-    opacity: 0;
-}
-
-
 
 [data-section="welcome"] .details{
     margin-top: 25px;
