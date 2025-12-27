@@ -105,7 +105,7 @@
           ]
         },
         {
-          "title": "Cape May New Jersey 2018",
+          "title": "Cape May New Jersey",
           "photoDetails": [
             {
               "imageLocation": "images/capemay-1.jpg",
@@ -134,7 +134,7 @@
           ]
         },
         {
-          "title": "Great Weddings 2018",
+          "title": "Great Weddings",
           "photoDetails": [
             {
               "imageLocation": "images/wedding-18.jpg",
@@ -195,11 +195,6 @@
         {
           "title": "Roselee & David Video",
           "iframe": "<iframe src=\"https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffippsfilmingco%2Fvideos%2F766456046812511%2F&width=500&show_text=false&height=280&appId\"  height=\"280\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowTransparency=\"true\" allow=\"encrypted-media\" allowFullScreen=\"true\"></iframe>"
-        },
-        {
-          "title": "Nicole & T.J. Video",
-          "specialStyling": true,
-          "iframe": "<iframe src=\"https://player.vimeo.com/video/273026374?color=db82e2&title=0&byline=0&portrait=0\" width=\"640\" height=\"280\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"
         },
         {
           "title": "Shellie and Jarrett Video",
