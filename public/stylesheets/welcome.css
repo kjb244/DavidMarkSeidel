@@ -10,11 +10,7 @@
     }
 
 }
-@media screen and (min-width: 64em) {
-    [data-section="welcome"] .top-video-container .first{
-        margin-top: 34px;
-    }
-}
+
 
 [data-section="welcome"] li{
     list-style-type: none;
